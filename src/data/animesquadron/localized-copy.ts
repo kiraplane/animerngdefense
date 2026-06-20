@@ -300,7 +300,7 @@ const en: PageCopy = {
     summaryStatus: (count) => `${count} active codes tracked`,
     reviewNotes: [
       'Anime Squadron codes are case-sensitive; copy them exactly, including punctuation.',
-      'Redeem the six currently cross-checked release codes before older milestone codes.',
+      'Redeem the newest cross-checked active codes before older milestone codes.',
       'Older launch codes were moved out of the active table because two current sources list them inactive.',
       'Use codes before rerolling traits or stats so the free shards, cubes, gems, and gold shape your first real spend.',
       'If a code fails, rejoin a fresh server and retry before assuming it is expired.',
@@ -653,7 +653,7 @@ const vi: PageCopy = {
     summaryStatus: (count) => `${count} code đang hoạt động được theo dõi`,
     reviewNotes: [
       'Code Anime Squadron phân biệt chữ hoa chữ thường; hãy sao chép đúng cả dấu câu.',
-      'Đổi 6 code phát hành đã được nhiều nguồn xác nhận trước các code mốc cũ.',
+      'Đổi các code active mới nhất đã được nhiều nguồn xác nhận trước các code mốc cũ.',
       'Các code launch cũ đã được chuyển khỏi bảng active vì 2 nguồn hiện tại ghi nhận là không còn hoạt động.',
       'Hãy dùng code trước khi reroll trait hoặc stat để phần thưởng miễn phí định hướng lần tiêu tài nguyên đầu tiên.',
       'Nếu code lỗi, hãy vào server mới rồi thử lại trước khi xem là hết hạn.',
@@ -978,7 +978,7 @@ const th: PageCopy = {
     summaryStatus: (count) => `ติดตามโค้ดที่ใช้ได้ ${count} โค้ด`,
     reviewNotes: [
       'โค้ด Anime Squadron แยกตัวพิมพ์เล็กใหญ่ ควรคัดลอกให้ตรงรวมถึงเครื่องหมาย.',
-      'แลก 6 โค้ด launch ที่ตรวจสอบข้ามแหล่งแล้วก่อนโค้ด milestone เก่า.',
+      'แลกโค้ด active ล่าสุดที่ตรวจสอบข้ามแหล่งแล้วก่อนโค้ด milestone เก่า.',
       'โค้ดเก่าช่วง launch ถูกย้ายออกจาก active เพราะ 2 แหล่งปัจจุบันระบุว่าไม่ทำงานแล้ว.',
       'ใช้โค้ดก่อน reroll trait หรือ stat เพื่อให้รางวัลฟรีช่วยกำหนดการใช้ทรัพยากรครั้งแรก.',
       'ถ้าโค้ดใช้ไม่ได้ ให้เข้า server ใหม่แล้วลองอีกครั้งก่อนถือว่าหมดอายุ.',
@@ -1300,7 +1300,7 @@ const ptBr: PageCopy = {
     summaryStatus: (count) => `${count} códigos ativos acompanhados`,
     reviewNotes: [
       'Anime Squadron codes diferenciam maiúsculas e minúsculas; copie exatamente, incluindo pontuação.',
-      'Resgate primeiro os 6 códigos de lançamento confirmados por múltiplas fontes.',
+      'Resgate primeiro os códigos ativos mais novos confirmados por múltiplas fontes.',
       'Códigos antigos de lançamento foram removidos da tabela active porque 2 fontes atuais os listam como inativos.',
       'Use códigos antes de rerollar traits ou stats para deixar gemas, shards, cubos e gold guiarem o primeiro gasto real.',
       'Se um código falhar, entre em um servidor novo e tente novamente antes de assumir que expirou.',

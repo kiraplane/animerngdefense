@@ -1,12 +1,12 @@
 import { sources } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-06-19';
+export const CODE_CHECKED_AT = '2026-06-20';
 
 const coreSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.radioTimesCodes.label}`;
 const inactiveConflictLabel = `${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.radioTimesCodes.label}; ${sources.beebomCodes.label} or ${sources.pcgamesnCodes.label} may still list some older codes`;
 const newestSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.pcgamesnCodes.label}, ${sources.pocketTacticsCodes.label}, ${sources.radioTimesCodes.label}`;
-const june19SourceLabel = `${sources.beebomCodes.label}, ${sources.proGameGuidesCodes.label}`;
+const june20SourceLabel = `${sources.beebomCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.pcgamesnCodes.label}`;
 
 export const codes: GameCode[] = [
   {
@@ -16,9 +16,9 @@ export const codes: GameCode[] = [
     status: 'active',
     firstSeen: '2026-06-19',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: june19SourceLabel,
+    sourceLabel: june20SourceLabel,
     notes:
-      'New June 19 source-checked CCU milestone code. Beebom uses 50kCCU casing; Pro Game Guides also lists the code but has mixed casing in surrounding copy, so copy exactly from the active table before trying variants.',
+      'New source-checked CCU milestone code, rechecked June 20. Beebom uses 50kCCU casing; copy exactly from the active table before trying variants.',
   },
   {
     code: '10MilVisits!',
@@ -26,9 +26,9 @@ export const codes: GameCode[] = [
     status: 'active',
     firstSeen: '2026-06-19',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: june19SourceLabel,
+    sourceLabel: june20SourceLabel,
     notes:
-      'New June 19 source-checked visit milestone code listed by Beebom and Pro Game Guides.',
+      'New source-checked visit milestone code, rechecked June 20 across current trackers.',
   },
   {
     code: '40kCCU!',
@@ -112,12 +112,12 @@ export const codes: GameCode[] = [
   {
     code: 'Tysm10kCCU!',
     reward: '3,500 Gems, 50 Trait Shards, and 3 Perfect Cubes',
-    status: 'expired',
+    status: 'watch',
     firstSeen: '2026-06-11',
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: inactiveConflictLabel,
     notes:
-      'Moved out of active because Destructoid and Pro Game Guides list it as expired or inactive, while Beebom still lists it active.',
+      'Moved to watch instead of active because current sources disagree: Beebom and PCGamesN still list it active, while Pro Game Guides, Destructoid, and Radio Times list it inactive or expired.',
   },
   {
     code: 'SorryForChanges!',
@@ -240,7 +240,7 @@ export const codeCheckSummary = {
   reviewNotes: [
     'Anime Squadron codes are case-sensitive; copy them exactly, including punctuation.',
     'Redeem 50kCCU and 10MilVisits first because they are the newest source-checked additions.',
-    'Tysm10kCCU remains expired here because Pro Game Guides, Destructoid, and Radio Times list it inactive, even though some trackers still show it active.',
+    'Tysm10kCCU is kept on the watchlist because current sources disagree, so it is not promoted as an active code.',
     'Older launch codes stay out of the active table unless at least two current sources agree they still work.',
     'Use codes before rerolling traits or stats so the free shards, cubes, gems, and gold shape your first real spend.',
     'If a code fails, rejoin a fresh server and retry before assuming it is expired.',

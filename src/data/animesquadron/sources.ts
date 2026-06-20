@@ -23,9 +23,9 @@ export const sources = {
     type: 'guide_site',
     label: 'Beebom Anime Squadron codes',
     url: 'https://beebom.com/anime-squadron-codes/',
-    checkedAt: '2026-06-19',
+    checkedAt: '2026-06-20',
     confidence: 'medium',
-    note: 'Rechecked June 19, 2026. Used as a code and redeem-flow cross-check, not copied as article prose.',
+    note: 'Rechecked June 20, 2026. Used as a code and redeem-flow cross-check, not copied as article prose.',
   },
   destructoidCodes: {
     type: 'guide_site',
@@ -47,9 +47,9 @@ export const sources = {
     type: 'guide_site',
     label: 'PCGamesN Anime Squadron codes',
     url: 'https://www.pcgamesn.com/anime-squadron/codes',
-    checkedAt: '2026-06-17',
+    checkedAt: '2026-06-20',
     confidence: 'medium',
-    note: 'Checked June 17, 2026. Used to cross-check the 40kCCU and 5kInterested code additions.',
+    note: 'Checked June 20, 2026. Used to cross-check the newest milestone codes and source conflicts on older CCU codes.',
   },
   pocketTacticsCodes: {
     type: 'guide_site',
