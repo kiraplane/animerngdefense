@@ -1,14 +1,64 @@
 import { sources } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-06-20';
+export const CODE_CHECKED_AT = '2026-06-22';
 
 const coreSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.radioTimesCodes.label}`;
-const inactiveConflictLabel = `${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.radioTimesCodes.label}; ${sources.beebomCodes.label} or ${sources.pcgamesnCodes.label} may still list some older codes`;
+const inactiveConflictLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}; older trackers may still show stale entries`;
 const newestSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.pcgamesnCodes.label}, ${sources.pocketTacticsCodes.label}, ${sources.radioTimesCodes.label}`;
-const june20SourceLabel = `${sources.beebomCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.pcgamesnCodes.label}`;
+const june22SourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}`;
 
 export const codes: GameCode[] = [
+  {
+    code: 'Tysm80kCCU!',
+    reward:
+      '75 Trait Shards, 50 Reroll Cubes, 5,000 Gold, and reported bonus Gems',
+    status: 'active',
+    firstSeen: '2026-06-22',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: june22SourceLabel,
+    notes:
+      'Newest UPD 0.5 source-checked CCU code. Sources agree it is active, but the exact Gem reward text differs, so the in-game popup is final.',
+  },
+  {
+    code: 'Tysm60kCCU!',
+    reward: 'Free reroll, cube, Gold, Gem, and ticket rewards',
+    status: 'active',
+    firstSeen: '2026-06-22',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: june22SourceLabel,
+    notes:
+      'Newest UPD 0.5 source-checked CCU code. Reward wording differs by tracker, so copy the code first and trust the in-game reward popup.',
+  },
+  {
+    code: 'LongMaintenance!',
+    reward: '100 Rerolls, 20 Stat Cubes, 5 Perfect Cubes, and 5 Bounty Tickets',
+    status: 'active',
+    firstSeen: '2026-06-22',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: june22SourceLabel,
+    notes:
+      'UPD 0.5 maintenance compensation code listed by current June 22 code trackers.',
+  },
+  {
+    code: 'Eclipse!',
+    reward: '50 Rerolls, 30 Stat Cubes, and 3 Perfect Cubes',
+    status: 'active',
+    firstSeen: '2026-06-22',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: june22SourceLabel,
+    notes: 'UPD 0.5 code cross-checked across current June 22 code trackers.',
+  },
+  {
+    code: 'UPD0.5!',
+    reward: '25 Rerolls',
+    status: 'active',
+    firstSeen: '2026-06-22',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: june22SourceLabel,
+    notes:
+      'Update 0.5 code; keep the zero, dot, and exclamation mark when copying.',
+  },
   {
     code: '50kCCU!',
     reward:
@@ -16,9 +66,9 @@ export const codes: GameCode[] = [
     status: 'active',
     firstSeen: '2026-06-19',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: june20SourceLabel,
+    sourceLabel: june22SourceLabel,
     notes:
-      'New source-checked CCU milestone code, rechecked June 20. Beebom uses 50kCCU casing; copy exactly from the active table before trying variants.',
+      'Source-checked CCU milestone code, rechecked June 22. Copy exactly from the active table before trying variants.',
   },
   {
     code: '10MilVisits!',
@@ -26,58 +76,59 @@ export const codes: GameCode[] = [
     status: 'active',
     firstSeen: '2026-06-19',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: june20SourceLabel,
+    sourceLabel: june22SourceLabel,
     notes:
-      'New source-checked visit milestone code, rechecked June 20 across current trackers.',
+      'Source-checked visit milestone code, rechecked June 22 across current trackers.',
   },
   {
     code: '40kCCU!',
     reward: '40 Trait Rerolls, 3,500 Gems, 30 Stat Cubes, and 20 Zeni',
-    status: 'active',
+    status: 'expired',
     firstSeen: '2026-06-15',
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: newestSourceLabel,
     notes:
-      'Newest CCU milestone code found across current June 17 source checks. Some sources mention a level 10 requirement.',
+      'Moved to expired after the June 22 check because multiple current trackers list it inactive.',
   },
   {
     code: '5kInterested!',
     reward: '2,000 Gems, 2,000 Gold, and 20 Trait Rerolls',
-    status: 'active',
+    status: 'expired',
     firstSeen: '2026-06-15',
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: newestSourceLabel,
     notes:
-      'New interest milestone code cross-checked across Beebom, Destructoid, Pro Game Guides, PCGamesN, Pocket Tactics, and Radio Times.',
+      'Moved to expired after the June 22 check because multiple current trackers list it inactive.',
   },
   {
     code: 'Tysm30KCCU!',
     reward: '2,000 Gems, 5,000 Gold, 50 Trait Shards, and 30 Reroll Cubes',
-    status: 'active',
+    status: 'expired',
     firstSeen: '2026-06-14',
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: coreSourceLabel,
     notes:
-      'CCU milestone code still appears active across the June 17 source check.',
+      'Moved to expired after the June 22 check because multiple current trackers list it inactive.',
   },
   {
     code: 'Release!',
     reward: '1,000 Gems, 5,000 Gold, 100 Trait Shards, and 30 Reroll Cubes',
-    status: 'active',
+    status: 'expired',
     firstSeen: '2026-06-14',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: coreSourceLabel,
-    notes: 'Release code cross-checked across current June 2026 code trackers.',
+    sourceLabel: inactiveConflictLabel,
+    notes:
+      'Moved to expired after the June 22 check because current trackers no longer keep it in the active group.',
   },
   {
     code: 'CRAZYSUPPORT!',
     reward: '2,000 Gems, 25 Trait Shards, and 8,000 Gold',
-    status: 'active',
+    status: 'expired',
     firstSeen: '2026-06-14',
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: coreSourceLabel,
     notes:
-      'Current support milestone code listed by the checked code trackers.',
+      'Moved to expired after the June 22 check because current trackers no longer keep it in the active group.',
   },
   {
     code: 'EverythingIsPartOfMyPlan!',
@@ -87,7 +138,7 @@ export const codes: GameCode[] = [
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: coreSourceLabel,
     notes:
-      'Trait Shard code listed as active across the current June 2026 source check.',
+      'Still listed active across current June 22 code trackers, though some sources describe the reward as rerolls rather than Trait Shards.',
   },
   {
     code: 'Yokoso!',
@@ -97,27 +148,27 @@ export const codes: GameCode[] = [
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: coreSourceLabel,
     notes:
-      'Perfect Cube code listed as active across the current June 2026 source check.',
+      'Perfect Cube code still listed as active across current June 22 code trackers.',
   },
   {
     code: 'SorryForLongMaintenance!',
     reward: '1,000 Gems, 50 Trait Shards, and 2,000 Gold',
-    status: 'active',
+    status: 'expired',
     firstSeen: '2026-06-14',
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: coreSourceLabel,
     notes:
-      'Maintenance compensation code listed as active across Beebom, Destructoid, Pro Game Guides, and Radio Times.',
+      'Moved to expired after the June 22 check because the newer LongMaintenance code replaced it in current lists.',
   },
   {
     code: 'Tysm10kCCU!',
     reward: '3,500 Gems, 50 Trait Shards, and 3 Perfect Cubes',
-    status: 'watch',
+    status: 'expired',
     firstSeen: '2026-06-11',
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: inactiveConflictLabel,
     notes:
-      'Moved to watch instead of active because current sources disagree: Beebom and PCGamesN still list it active, while Pro Game Guides, Destructoid, and Radio Times list it inactive or expired.',
+      'Moved from watch to expired because current June 22 sources now agree it is no longer active.',
   },
   {
     code: 'SorryForChanges!',
@@ -239,8 +290,8 @@ export const codeCheckSummary = {
   ],
   reviewNotes: [
     'Anime Squadron codes are case-sensitive; copy them exactly, including punctuation.',
-    'Redeem 50kCCU and 10MilVisits first because they are the newest source-checked additions.',
-    'Tysm10kCCU is kept on the watchlist because current sources disagree, so it is not promoted as an active code.',
+    'Redeem the UPD 0.5 batch first: Tysm80kCCU!, Tysm60kCCU!, LongMaintenance!, Eclipse!, and UPD0.5!.',
+    'Tysm10kCCU moved from watch to expired after the June 22 source check.',
     'Older launch codes stay out of the active table unless at least two current sources agree they still work.',
     'Use codes before rerolling traits or stats so the free shards, cubes, gems, and gold shape your first real spend.',
     'If a code fails, rejoin a fresh server and retry before assuming it is expired.',
