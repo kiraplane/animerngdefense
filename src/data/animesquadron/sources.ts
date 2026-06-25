@@ -67,6 +67,14 @@ export const sources = {
     confidence: 'medium',
     note: 'Rechecked June 23, 2026. Used to confirm the current UPD 0.5 active group and flag conflicts on 50kCCU and 10MilVisits.',
   },
+  gamesRadarCodes: {
+    type: 'guide_site',
+    label: 'GamesRadar Anime Squadron codes',
+    url: 'https://www.gamesradar.com/games/strategy/anime-squadron-codes/',
+    checkedAt: '2026-06-25',
+    confidence: 'medium',
+    note: 'Checked June 25, 2026 after the June 24 update. Used to refresh UPD0.5 reward wording and move 50kCCU/10MilVisits out of the watch bucket.',
+  },
   beebomTierList: {
     type: 'guide_site',
     label: 'Beebom Anime Squadron tier list',

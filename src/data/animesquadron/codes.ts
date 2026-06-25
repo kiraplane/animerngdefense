@@ -1,12 +1,13 @@
 import { sources } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-06-23';
+export const CODE_CHECKED_AT = '2026-06-25';
 
 const coreSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.radioTimesCodes.label}`;
 const inactiveConflictLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}; older trackers may still show stale entries`;
-const newestSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.pcgamesnCodes.label}, ${sources.pocketTacticsCodes.label}, ${sources.radioTimesCodes.label}`;
+const newestSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.pcgamesnCodes.label}, ${sources.pocketTacticsCodes.label}, ${sources.radioTimesCodes.label}, ${sources.gamesRadarCodes.label}`;
 const june22SourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}`;
+const june25SourceLabel = `${sources.gamesRadarCodes.label}, ${sources.radioTimesCodes.label}`;
 
 export const codes: GameCode[] = [
   {
@@ -51,34 +52,35 @@ export const codes: GameCode[] = [
   },
   {
     code: 'UPD0.5!',
-    reward: '25 Rerolls',
+    reward:
+      '3 Bounty Tickets, 1,000 Gems, 50 Trait Shards, and 1,000 Gold',
     status: 'active',
     firstSeen: '2026-06-22',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: june22SourceLabel,
+    sourceLabel: `${june22SourceLabel}, ${sources.gamesRadarCodes.label}`,
     notes:
-      'Update 0.5 code; keep the zero, dot, and exclamation mark when copying.',
+      'Update 0.5 code; June 25 refresh used GamesRadar reward wording because the older local reward note was too narrow. Keep the zero, dot, and exclamation mark when copying.',
   },
   {
     code: '50kCCU!',
     reward:
       '100 Trait Shards, 1,000 Gold, 2,000 Gems, 25 Stat Cubes, and 2 Perfect Cubes',
-    status: 'watch',
+    status: 'expired',
     firstSeen: '2026-06-19',
     lastChecked: CODE_CHECKED_AT,
     sourceLabel: newestSourceLabel,
     notes:
-      'June 23 source conflict: Beebom and Pro Game Guides still list it active, while Radio Times moved it to expired. Try it after the newest UPD 0.5 codes and mark it inactive if the game rejects it.',
+      'Moved from watch to expired after the June 25 refresh because newer GamesRadar and Radio Times checks list it inactive. Only test it after the current UPD 0.5 batch if you are clearing stale lists.',
   },
   {
     code: '10MilVisits!',
     reward: '50 Trait Shards and 2,000 Gold',
-    status: 'watch',
+    status: 'expired',
     firstSeen: '2026-06-19',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: newestSourceLabel,
+    sourceLabel: june25SourceLabel,
     notes:
-      'June 23 source conflict: Beebom keeps it in the working set, while Radio Times lists it expired. Treat it as a try-last code until an in-game check confirms the result.',
+      'Moved from watch to expired after the June 25 refresh because newer GamesRadar and Radio Times checks list it inactive.',
   },
   {
     code: '40kCCU!',
@@ -287,11 +289,12 @@ export const codeCheckSummary = {
     sources.pcgamesnCodes,
     sources.pocketTacticsCodes,
     sources.radioTimesCodes,
+    sources.gamesRadarCodes,
   ],
   reviewNotes: [
     'Anime Squadron codes are case-sensitive; copy them exactly, including punctuation.',
     'Redeem the UPD 0.5 batch first: Tysm80kCCU!, Tysm60kCCU!, LongMaintenance!, Eclipse!, and UPD0.5!.',
-    '50kCCU and 10MilVisits moved to watch after the June 23 source check found active/expired disagreement.',
+    '50kCCU and 10MilVisits moved from watch to expired after the June 25 source check.',
     'Tysm10kCCU moved from watch to expired after the June 22 source check.',
     'Older launch codes stay out of the active table unless at least two current sources agree they still work.',
     'Use codes before rerolling traits or stats so the free shards, cubes, gems, and gold shape your first real spend.',
