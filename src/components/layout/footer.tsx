@@ -131,8 +131,8 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
           </span>
 
           <span className="text-muted-foreground text-sm">
-            Independent guide site. Not affiliated with Roblox, dream without
-            the vale, or the official Anime Card Farm team.
+            Independent guide site. Not affiliated with Roblox, Slized Games, or
+            the official Ice Tycoon 2 team.
           </span>
         </Container>
       </div>

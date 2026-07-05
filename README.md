@@ -1,14 +1,14 @@
-# Anime Card Farm Wiki
+# Ice Tycoon 2 Wiki
 
-Independent guide site for Anime Card Farm at `https://www.animecardfarm.wiki`.
+Independent guide site for Ice Tycoon 2 at `https://www.icetycoon-2.wiki`.
 
-The site is built on the existing Next.js / MkSaaS stack and focuses on:
+The site is built on the existing Next.js / OpenNext Cloudflare stack and focuses on:
 
-- Anime Card Farm Roblox codes and safe redemption notes
-- Pack routes, card upgrade priorities, offline money, mutations, and trait gems
-- Official Roblox page, group, Discord, and update-signal guidance
-- Wrong-game safety for Anime Card Clash and Anime Card Collection search overlap
-- Conservative best-card watch content until reliable card data exists
+- Ice Tycoon 2 Roblox codes status and safe watch notes
+- Beginner route, money upgrades, gems, secrets, trophies, rebirths, items, and badges
+- Official Roblox page, Slized Games source checks, and update-signal guidance
+- Wrong-game safety for original Ice Tycoon and unrelated Roblox pages
+- Conservative guide content until sequel-specific sources confirm codes or mechanics
 
 ## Development
 
@@ -22,7 +22,7 @@ pnpm build
 ## Content Rules
 
 - Do not publish unverified redeem codes as guaranteed active.
-- Treat tier-list demand as watch material until Anime Card Farm-specific data is reliable.
-- Prefer the official Roblox page, Roblox API facts, official group/community updates, current code sources, and current creator videos.
+- Keep original Ice Tycoon facts separate from Ice Tycoon 2.
+- Prefer the official Roblox page, Roblox API facts, current community pages, and recent guide videos.
 - Keep the site clearly labeled as an independent guide hub.
-- Do not reintroduce historical project names or content from earlier wiki builds.
+- Do not provide scripts, executors, APK mirrors, or account-risk shortcuts.

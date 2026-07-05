@@ -22,20 +22,22 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/admin(?:\/.*)?$/, target: '/' },
   { pattern: /^\/settings(?:\/.*)?$/, target: '/' },
   { pattern: /^\/payment(?:\/.*)?$/, target: '/' },
-  { pattern: /^\/units(?:\/.*)?$/, target: '/cards' },
-  { pattern: /^\/traits(?:\/.*)?$/, target: '/mutations' },
-  { pattern: /^\/trait-gems\/?$/, target: '/mutations' },
-  { pattern: /^\/game-modes\/?$/, target: '/guides/beginner-guide' },
-  { pattern: /^\/tierlist\/?$/, target: '/guides/best-cards-watch-guide' },
-  { pattern: /^\/tier-list\/?$/, target: '/guides/best-cards-watch-guide' },
-  { pattern: /^\/best-cards\/?$/, target: '/guides/best-cards-watch-guide' },
-  { pattern: /^\/cards-list\/?$/, target: '/cards' },
-  { pattern: /^\/card-list\/?$/, target: '/cards' },
-  { pattern: /^\/anime-card-farm-codes\/?$/, target: '/codes' },
-  { pattern: /^\/anime-card-farm-code\/?$/, target: '/codes' },
-  { pattern: /^\/anime-card-farm-packs\/?$/, target: '/packs' },
-  { pattern: /^\/anime-card-farm-discord\/?$/, target: '/discord' },
-  { pattern: /^\/discord-server\/?$/, target: '/discord' },
+  { pattern: /^\/gems(?:\/.*)?$/, target: '/guides/all-gems-locations-guide' },
+  { pattern: /^\/trophies(?:\/.*)?$/, target: '/guides/all-trophies-guide' },
+  { pattern: /^\/secret-finder\/?$/, target: '/guides/all-secrets-guide' },
+  { pattern: /^\/rebirth\/?$/, target: '/rebirths' },
+  {
+    pattern: /^\/rebirth-guide\/?$/,
+    target: '/guides/rebirth-requirements-guide',
+  },
+  { pattern: /^\/tierlist\/?$/, target: '/guides/best-upgrades-money-guide' },
+  { pattern: /^\/tier-list\/?$/, target: '/guides/best-upgrades-money-guide' },
+  {
+    pattern: /^\/best-upgrades\/?$/,
+    target: '/guides/best-upgrades-money-guide',
+  },
+  { pattern: /^\/ice-tycoon-2-codes\/?$/, target: '/codes' },
+  { pattern: /^\/ice-tycoon-2-code\/?$/, target: '/codes' },
   { pattern: /^\/roblox\/?$/, target: '/download' },
 ];
 
@@ -63,10 +65,7 @@ export default async function middleware(req: NextRequest) {
   const hostHeader = req.headers.get('host');
   const hostname = hostHeader?.split(':')[0].toLowerCase();
   const forwardedProto = req.headers.get('x-forwarded-proto');
-  const productionHosts = new Set([
-    'animecardfarm.wiki',
-    'www.animecardfarm.wiki',
-  ]);
+  const productionHosts = new Set(['icetycoon-2.wiki', 'www.icetycoon-2.wiki']);
 
   if (
     hostname &&

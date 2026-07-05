@@ -24,8 +24,8 @@ export function Logo({ className }: { className?: string }) {
   return (
     <Image
       src={logo}
-      alt="Anime Card Farm Wiki logo"
-      title="Anime Card Farm Wiki"
+      alt="Ice Tycoon 2 Wiki logo"
+      title="Ice Tycoon 2 Wiki"
       width={96}
       height={96}
       priority

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Anime Card Farm Wiki - dark, data-dense Roblox card guide theme */
+/* Ice Tycoon 2 Wiki - dark, data-dense Roblox guide theme */
 
 :root {
   --font-noto-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -389,7 +389,7 @@ body {
 }
 
 /*
- * Anime Card Farm theme colors
+ * Ice Tycoon 2 theme colors
  */
 .theme-default {
   --primary: #67f7d3;

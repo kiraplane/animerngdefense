@@ -1,11 +1,11 @@
 {
-  "name": "Anime Card Farm Wiki",
-  "short_name": "ACF Wiki",
-  "description": "Anime Card Farm Wiki for Roblox codes, packs, card upgrades, offline money, mutations, trait gems, Discord, and safe official links.",
+  "name": "Ice Tycoon 2 Wiki",
+  "short_name": "IT2 Wiki",
+  "description": "Ice Tycoon 2 Wiki for Roblox codes status, gems, secrets, trophies, rebirths, items, badges, and safe official links.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#080D17",
-  "theme_color": "#67F7D3",
+  "background_color": "#07111F",
+  "theme_color": "#8BE9FD",
   "icons": [
     {
       "src": "/favicon-32x32.png",

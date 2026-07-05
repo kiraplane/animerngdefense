@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "Anime Card Farm Wiki",
-    "title": "Anime Card Farm Wiki - Codes, Packs, Cards and Roblox Guide",
-    "description": "Anime Card Farm Wiki for Roblox codes, packs, card upgrades, offline money, mutations, trait gems, Discord, and safe official links."
+    "name": "Ice Tycoon 2 Wiki",
+    "title": "Ice Tycoon 2 Wiki - Codes, Gems, Secrets and Roblox Guide",
+    "description": "Ice Tycoon 2 Wiki for Roblox codes status, gems, secrets, trophies, rebirths, items, badges, upgrades, and safe official links."
   },
   "Common": {
     "premium": "Premium",
@@ -54,8 +54,8 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Optional supporter plans for keeping Anime Card Farm Wiki maintained",
-    "subtitle": "Simple support options for readers who want to help maintain source-checked guides and data updates",
+    "description": "Optional supporter plans for keeping Ice Tycoon 2 Wiki maintained",
+    "subtitle": "Simple support options for readers who want to help maintain source-checked guides and route updates",
     "monthly": "Monthly",
     "yearly": "Yearly",
     "payAsYouGo": "Pay as you go",
@@ -80,11 +80,11 @@
   "PricePlans": {
     "free": {
       "name": "Free",
-      "description": "Browse Anime Card Farm Wiki with no payment required",
+      "description": "Browse Ice Tycoon 2 Wiki with no payment required",
       "features": {
-        "feature-1": "Anime Card Farm code status and redemption notes",
-        "feature-2": "Packs, upgrades, offline money, and mutation guidance",
-        "feature-3": "Guides for codes, cards, Discord links, and beginner progression",
+        "feature-1": "Ice Tycoon 2 code status and watch notes",
+        "feature-2": "Gems, secrets, trophies, rebirths, and item guidance",
+        "feature-3": "Guides for upgrades, badges, official links, and beginner progression",
         "feature-4": "Core pages updated as game information changes"
       },
       "limits": {
@@ -99,7 +99,7 @@
       "description": "For readers who want to support ongoing guide updates",
       "features": {
         "feature-1": "Support site maintenance",
-        "feature-2": "Help fund future Anime Card Farm data checks",
+        "feature-2": "Help fund future Ice Tycoon 2 route checks",
         "feature-3": "Keep code and guide pages fresh",
         "feature-4": "Support cleaner walkthrough coverage",
         "feature-5": "Help improve page speed and hosting stability",
@@ -113,7 +113,7 @@
     },
     "max": {
       "name": "Backer",
-      "description": "For heavier support of Anime Card Farm Wiki maintenance",
+      "description": "For heavier support of Ice Tycoon 2 Wiki maintenance",
       "features": {
         "feature-1": "Support expanded guide coverage",
         "feature-2": "Help fund more frequent source reviews",
@@ -293,39 +293,37 @@
       "codes": {
         "title": "Codes"
       },
-      "tierList": {
-        "title": "Meta Watch"
-      },
       "guides": {
         "title": "Guides"
       },
       "download": {
-        "title": "Download"
+        "title": "Roblox"
       },
-      "packs": {
-        "title": "Packs"
+      "secrets": {
+        "title": "Secrets"
       },
-      "mutations": {
-        "title": "Mutations"
+      "rebirths": {
+        "title": "Rebirths"
       },
-      "cards": {
-        "title": "Cards"
+      "items": {
+        "title": "Items"
       },
-      "discord": {
-        "title": "Discord"
+      "badges": {
+        "title": "Badges"
       },
       "updates": {
         "title": "Updates"
       }
     },
     "footer": {
-      "tagline": "An independent Anime Card Farm Wiki for Roblox codes, packs, card upgrades, offline money, mutations, and safe official links.",
+      "tagline": "An independent Ice Tycoon 2 Wiki for Roblox codes status, gems, secrets, trophies, rebirths, items, badges, and safe official links.",
       "wiki": {
         "title": "Wiki",
         "items": {
-          "packs": "Packs",
-          "cards": "Cards",
-          "mutations": "Mutations",
+          "secrets": "Secrets",
+          "rebirths": "Rebirths",
+          "items": "Items",
+          "badges": "Badges",
           "codes": "Codes",
           "updates": "Updates"
         }
@@ -335,8 +333,8 @@
         "items": {
           "all": "All Guides",
           "beginner": "Beginner Guide",
-          "offlineMoney": "Offline Money Guide",
-          "packs": "Packs Guide"
+          "gems": "All Gems Guide",
+          "trophies": "Trophies Guide"
         }
       },
       "legal": {

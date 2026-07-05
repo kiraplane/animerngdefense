@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Privacy Policy | Anime Card Farm Wiki',
+    title: 'Privacy Policy | Ice Tycoon 2 Wiki',
     description:
-      'Privacy policy for the independent Anime Card Farm Wiki and Roblox guide site.',
+      'Privacy policy for the independent Ice Tycoon 2 Wiki and Roblox guide site.',
     locale,
     pathname: '/privacy',
   });
@@ -24,9 +24,10 @@ export default function PrivacyPolicyPage() {
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Privacy Policy</h1>
         <p className="leading-8 text-[#CBD5E1]">
-          Anime Card Farm Wiki is an independent Roblox guide site. We do not
-          require accounts for browsing codes, pack routes, card upgrade notes,
-          mutation guides, community links, or safety pages.
+          Ice Tycoon 2 Wiki is an independent Roblox guide site. We do not
+          require accounts for browsing codes status, gems, secrets, trophies,
+          rebirth routes, item notes, badge guides, official links, or safety
+          pages.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
           Standard analytics or hosting logs may record aggregate traffic data
@@ -38,7 +39,7 @@ export default function PrivacyPolicyPage() {
           asset files or provide downloads as standalone packs.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Privacy questions can be sent to hello@animecardfarm.wiki.
+          Privacy questions can be sent to hello@icetycoon-2.wiki.
         </p>
       </Container>
     </div>

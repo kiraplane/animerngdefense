@@ -35,6 +35,6 @@ export default function VerifyEmail({
 VerifyEmail.PreviewProps = {
   locale: routing.defaultLocale,
   messages: defaultMessages,
-  url: 'https://www.animecardfarm.wiki',
+  url: 'https://www.icetycoon-2.wiki',
   name: 'username',
 };

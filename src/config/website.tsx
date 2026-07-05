@@ -20,7 +20,7 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: '/animecardfarm/og-image.jpg',
+      ogImage: '/icetycoon2/og-image.png',
       logoLight: '/logo.png',
       logoDark: '/logo.png',
     },
@@ -28,7 +28,7 @@ export const websiteConfig: WebsiteConfig = {
       github: '',
       twitter: '',
       blueSky: '',
-      discord: 'https://discord.com/invite/xyBFac6R7q',
+      discord: '',
       mastodon: '',
       linkedin: '',
       youtube: '',
@@ -75,8 +75,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Anime Card Farm Wiki <hello@animecardfarm.wiki>',
-    supportEmail: 'hello@animecardfarm.wiki',
+    fromEmail: 'Ice Tycoon 2 Wiki <hello@icetycoon-2.wiki>',
+    supportEmail: 'hello@icetycoon-2.wiki',
   },
   newsletter: {
     enable: false,
