@@ -1,11 +1,11 @@
 {
-  "name": "Ice Tycoon 2 Wiki",
-  "short_name": "IT2 Wiki",
-  "description": "Ice Tycoon 2 Wiki for Roblox codes status, gems, secrets, trophies, rebirths, items, badges, and safe official links.",
+  "name": "Thanos Simulator Wiki",
+  "short_name": "Thanos Wiki",
+  "description": "Thanos Simulator Wiki for Infinity Stones, controls, weapons, bosses, Update 3.2, codes safety, and official Roblox links.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#07111F",
-  "theme_color": "#8BE9FD",
+  "background_color": "#080611",
+  "theme_color": "#F6C453",
   "icons": [
     {
       "src": "/favicon-32x32.png",

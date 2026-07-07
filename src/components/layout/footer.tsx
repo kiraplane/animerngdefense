@@ -131,8 +131,8 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
           </span>
 
           <span className="text-muted-foreground text-sm">
-            Independent guide site. Not affiliated with Roblox, Slized Games, or
-            the official Ice Tycoon 2 team.
+            Independent guide site. Not affiliated with Roblox, Marvel, Disney,
+            Blg42598, or the official creator.
           </span>
         </Container>
       </div>

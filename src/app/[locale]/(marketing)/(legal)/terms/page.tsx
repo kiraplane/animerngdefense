@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Terms of Service | Ice Tycoon 2 Wiki',
+    title: 'Terms of Service | Thanos Simulator Wiki',
     description:
-      'Terms for using the independent Ice Tycoon 2 Wiki and Roblox guide site.',
+      'Terms for using the independent Thanos Simulator Wiki and Roblox guide site.',
     locale,
     pathname: '/terms',
   });
@@ -24,15 +24,16 @@ export default function TermsOfServicePage() {
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Terms of Service</h1>
         <p className="leading-8 text-[#CBD5E1]">
-          This site provides independent Ice Tycoon 2 guides, data notes, and
-          strategy content. It is not affiliated with, endorsed by, sponsored
-          by, or operated by Roblox, Slized Games, or the official Ice Tycoon 2
-          team.
+          This site provides independent Thanos Simulator guides, data notes,
+          and strategy content. It is not affiliated with, endorsed by,
+          sponsored by, or operated by Roblox, Marvel, Disney, Blg42598, or the
+          official Thanos Simulator creator.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Game data can change quickly. Codes status, gems, secrets, trophies,
-          rebirth requirements, badges, rewards, update markers, and strategy
-          advice should be treated as guidance, not official instructions.
+          Game data can change quickly. Codes status, Infinity Stone routes,
+          weapon prerequisites, boss mechanics, map access, update markers, and
+          strategy advice should be treated as guidance, not official
+          instructions.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
           Do not use this site to distribute cheats, automation scripts, copied
@@ -40,7 +41,7 @@ export default function TermsOfServicePage() {
           platform terms.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Questions about these terms can be sent to hello@icetycoon-2.wiki.
+          Questions about these terms can be sent to hello@thanossimulator.wiki.
         </p>
       </Container>
     </div>

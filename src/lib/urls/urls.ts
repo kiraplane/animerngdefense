@@ -1,7 +1,7 @@
 import { routing } from '@/i18n/routing';
 import type { Locale } from 'next-intl';
 
-export const CANONICAL_BASE_URL = 'https://www.icetycoon-2.wiki';
+export const CANONICAL_BASE_URL = 'https://www.thanossimulator.wiki';
 
 function cleanBaseUrl(url: string) {
   return url.replace(/\/$/, '');
@@ -11,7 +11,7 @@ function isLocalBaseUrl(url?: string) {
   return !url || /localhost|127\.0\.0\.1|0\.0\.0\.0/.test(url);
 }
 
-function getIceTycoon2BaseUrl(url?: string) {
+function getThanosBaseUrl(url?: string) {
   if (!url || isLocalBaseUrl(url)) {
     return undefined;
   }
@@ -19,11 +19,11 @@ function getIceTycoon2BaseUrl(url?: string) {
   try {
     const parsedUrl = new URL(url);
     if (
-      parsedUrl.hostname === 'icetycoon-2.wiki' ||
-      parsedUrl.hostname === 'www.icetycoon-2.wiki'
+      parsedUrl.hostname === 'thanossimulator.wiki' ||
+      parsedUrl.hostname === 'www.thanossimulator.wiki'
     ) {
       parsedUrl.protocol = 'https:';
-      parsedUrl.hostname = 'www.icetycoon-2.wiki';
+      parsedUrl.hostname = 'www.thanossimulator.wiki';
       parsedUrl.port = '';
       parsedUrl.pathname = '';
       parsedUrl.search = '';
@@ -57,9 +57,9 @@ export function getBaseUrl(): string {
   const configuredBaseUrl =
     process.env.NEXT_PUBLIC_BASE_URL || process.env.BETTER_AUTH_URL;
 
-  const iceTycoon2BaseUrl = getIceTycoon2BaseUrl(configuredBaseUrl);
-  if (iceTycoon2BaseUrl) {
-    return iceTycoon2BaseUrl;
+  const thanosBaseUrl = getThanosBaseUrl(configuredBaseUrl);
+  if (thanosBaseUrl) {
+    return thanosBaseUrl;
   }
 
   return getCanonicalBaseUrl();

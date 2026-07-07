@@ -1,14 +1,13 @@
-# Ice Tycoon 2 Wiki
+# Thanos Simulator Wiki
 
-Independent guide site for Ice Tycoon 2 at `https://www.icetycoon-2.wiki`.
+Independent guide site for Thanos Simulator at `https://www.thanossimulator.wiki`.
 
-The site is built on the existing Next.js / OpenNext Cloudflare stack and focuses on:
+## Scope
 
-- Ice Tycoon 2 Roblox codes status and safe watch notes
-- Beginner route, money upgrades, gems, secrets, trophies, rebirths, items, and badges
-- Official Roblox page, Slized Games source checks, and update-signal guidance
-- Wrong-game safety for original Ice Tycoon and unrelated Roblox pages
-- Conservative guide content until sequel-specific sources confirm codes or mechanics
+- Infinity Stones route, gauntlet controls, map access, weapons, bosses, and Update 3.2.
+- Codes status with checked dates and no fake active code list.
+- Safety guidance for script/executor/search-risk demand.
+- Official Roblox access for place ID `3261957210`.
 
 ## Development
 
@@ -16,13 +15,12 @@ The site is built on the existing Next.js / OpenNext Cloudflare stack and focuse
 pnpm install
 pnpm dev
 pnpm lint
+pnpm exec tsc --noEmit
 pnpm build
 ```
 
-## Content Rules
+## Source Policy
 
-- Do not publish unverified redeem codes as guaranteed active.
-- Keep original Ice Tycoon facts separate from Ice Tycoon 2.
-- Prefer the official Roblox page, Roblox API facts, current community pages, and recent guide videos.
-- Keep the site clearly labeled as an independent guide hub.
-- Do not provide scripts, executors, APK mirrors, or account-risk shortcuts.
+- Official facts come from Roblox and Roblox API snapshots.
+- Community and YouTube sources are used as route signals, then rewritten into original player-facing guides.
+- Scripts, executors, modified clients, fake APKs, and account-risk shortcuts are not provided.

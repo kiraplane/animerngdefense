@@ -22,22 +22,44 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/admin(?:\/.*)?$/, target: '/' },
   { pattern: /^\/settings(?:\/.*)?$/, target: '/' },
   { pattern: /^\/payment(?:\/.*)?$/, target: '/' },
-  { pattern: /^\/gems(?:\/.*)?$/, target: '/guides/all-gems-locations-guide' },
-  { pattern: /^\/trophies(?:\/.*)?$/, target: '/guides/all-trophies-guide' },
-  { pattern: /^\/secret-finder\/?$/, target: '/guides/all-secrets-guide' },
-  { pattern: /^\/rebirth\/?$/, target: '/rebirths' },
   {
-    pattern: /^\/rebirth-guide\/?$/,
-    target: '/guides/rebirth-requirements-guide',
+    pattern: /^\/all-stones(?:\/.*)?$/,
+    target: '/guides/all-infinity-stones-guide',
   },
-  { pattern: /^\/tierlist\/?$/, target: '/guides/best-upgrades-money-guide' },
-  { pattern: /^\/tier-list\/?$/, target: '/guides/best-upgrades-money-guide' },
   {
-    pattern: /^\/best-upgrades\/?$/,
-    target: '/guides/best-upgrades-money-guide',
+    pattern: /^\/infinity-stones(?:\/.*)?$/,
+    target: '/guides/all-infinity-stones-guide',
   },
-  { pattern: /^\/ice-tycoon-2-codes\/?$/, target: '/codes' },
-  { pattern: /^\/ice-tycoon-2-code\/?$/, target: '/codes' },
+  {
+    pattern: /^\/stones-guide\/?$/,
+    target: '/guides/all-infinity-stones-guide',
+  },
+  {
+    pattern: /^\/controls-guide\/?$/,
+    target: '/guides/gauntlet-controls-guide',
+  },
+  { pattern: /^\/tierlist\/?$/, target: '/guides/weapons-progression-guide' },
+  { pattern: /^\/tier-list\/?$/, target: '/guides/weapons-progression-guide' },
+  {
+    pattern: /^\/weapon-tier-list\/?$/,
+    target: '/guides/weapons-progression-guide',
+  },
+  {
+    pattern: /^\/mechanical-gloves\/?$/,
+    target: '/guides/mechanical-gloves-doom-guide',
+  },
+  { pattern: /^\/doom\/?$/, target: '/guides/mechanical-gloves-doom-guide' },
+  { pattern: /^\/surtur\/?$/, target: '/guides/surtur-twilight-sword-guide' },
+  {
+    pattern: /^\/twilight-sword\/?$/,
+    target: '/guides/surtur-twilight-sword-guide',
+  },
+  { pattern: /^\/heart-of-ymir\/?$/, target: '/guides/heart-of-ymir-guide' },
+  { pattern: /^\/thanos-simulator-codes\/?$/, target: '/codes' },
+  {
+    pattern: /^\/infinity-gauntlet-thanos-simulator-codes\/?$/,
+    target: '/codes',
+  },
   { pattern: /^\/roblox\/?$/, target: '/download' },
 ];
 
@@ -65,7 +87,10 @@ export default async function middleware(req: NextRequest) {
   const hostHeader = req.headers.get('host');
   const hostname = hostHeader?.split(':')[0].toLowerCase();
   const forwardedProto = req.headers.get('x-forwarded-proto');
-  const productionHosts = new Set(['icetycoon-2.wiki', 'www.icetycoon-2.wiki']);
+  const productionHosts = new Set([
+    'thanossimulator.wiki',
+    'www.thanossimulator.wiki',
+  ]);
 
   if (
     hostname &&

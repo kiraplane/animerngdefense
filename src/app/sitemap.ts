@@ -1,10 +1,10 @@
-import { allCoreRoutes } from '@/data/icetycoon2/guides';
+import { allCoreRoutes } from '@/data/thanos/guides';
 import { Routes } from '@/routes';
 import type { MetadataRoute } from 'next';
 import { routing } from '../i18n/routing';
 import { getCanonicalBaseUrl } from '../lib/urls/urls';
 
-const stableLastModified = new Date('2026-07-05T00:00:00.000Z');
+const stableLastModified = new Date('2026-07-07T00:00:00.000Z');
 
 function getLocalizedRoute(locale: string, route: string) {
   if (locale === routing.defaultLocale) {
@@ -31,10 +31,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           route === Routes.Root
             ? 1
             : route === Routes.Codes ||
-                route === Routes.Secrets ||
-                route === Routes.Rebirths ||
-                route === Routes.Items ||
-                route === Routes.Badges ||
+                route === Routes.Stones ||
+                route === Routes.Weapons ||
+                route === Routes.Bosses ||
+                route === Routes.Map ||
+                route === Routes.Controls ||
                 route === Routes.Download ||
                 route === Routes.Updates
               ? 0.9

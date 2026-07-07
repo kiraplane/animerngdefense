@@ -20,7 +20,7 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: '/icetycoon2/og-image.png',
+      ogImage: '/thanos/og-image.png',
       logoLight: '/logo.png',
       logoDark: '/logo.png',
     },
@@ -75,8 +75,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Ice Tycoon 2 Wiki <hello@icetycoon-2.wiki>',
-    supportEmail: 'hello@icetycoon-2.wiki',
+    fromEmail: 'Thanos Simulator Wiki <hello@thanossimulator.wiki>',
+    supportEmail: 'hello@thanossimulator.wiki',
   },
   newsletter: {
     enable: false,

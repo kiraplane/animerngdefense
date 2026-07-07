@@ -1,0 +1,482 @@
+import Container from '@/components/layout/container';
+import { JsonLd } from '@/components/seo/json-ld';
+import {
+  ThanosMobileMenu,
+  ThanosRouteSidebar,
+} from '@/components/thanos/wiki-navigation';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { guides, siteDescription } from '@/data/thanos/guides';
+import { officialGameFacts } from '@/data/thanos/sources';
+import { topicPageList } from '@/data/thanos/topics';
+import { LocaleLink } from '@/i18n/navigation';
+import {
+  ArrowRight,
+  BookOpen,
+  Clock3,
+  Download,
+  ExternalLink,
+  Gamepad2,
+  Gem,
+  Hammer,
+  Map,
+  Play,
+  RadioTower,
+  ShieldAlert,
+  Swords,
+} from 'lucide-react';
+import Image from 'next/image';
+
+const primaryLinks = [
+  {
+    title: 'All Stones',
+    body: 'Route Reality, Space, Time, Power, Mind, and Soul before chasing late weapons.',
+    href: '/guides/all-infinity-stones-guide',
+    icon: Gem,
+  },
+  {
+    title: 'Controls',
+    body: 'Learn focus, teleport, shield, charge, snap, and why keybinds need stone unlocks.',
+    href: '/guides/gauntlet-controls-guide',
+    icon: Gamepad2,
+  },
+  {
+    title: 'Weapons',
+    body: 'Plan Mjolnir, Stormbreaker, Gungnir, Surtur, Heart of Ymir, and Mechanical Gloves.',
+    href: '/weapons',
+    icon: Hammer,
+  },
+  {
+    title: 'Bosses',
+    body: 'Prepare for Doom, Surtur, Eson, Lazarus, Astra, and special NPC route checks.',
+    href: '/bosses',
+    icon: Swords,
+  },
+  {
+    title: 'Codes Safety',
+    body: 'No active redeem codes are verified; avoid script and executor pages.',
+    href: '/codes',
+    icon: ShieldAlert,
+  },
+  {
+    title: 'Official Roblox',
+    body: 'Open the verified place ID 3261957210 by Blg42598.',
+    href: '/download',
+    icon: Download,
+  },
+];
+
+const keywordLinks = [
+  { keyword: 'thanos simulator', href: '/' },
+  { keyword: 'thanos simulator wiki', href: '/' },
+  { keyword: 'all stones', href: '/guides/all-infinity-stones-guide' },
+  { keyword: 'controls', href: '/guides/gauntlet-controls-guide' },
+  {
+    keyword: 'mechanical gloves',
+    href: '/guides/mechanical-gloves-doom-guide',
+  },
+  { keyword: 'surtur sword', href: '/guides/surtur-twilight-sword-guide' },
+  { keyword: 'codes', href: '/codes' },
+  { keyword: 'official roblox', href: '/download' },
+];
+
+const startSteps = [
+  {
+    title: 'Verify the official game',
+    href: '/download',
+    body: 'Use the Roblox page for [ Update ] Infinity Gauntlet | Thanos Simulator before trusting any guide link.',
+  },
+  {
+    title: 'Collect the six stones',
+    href: '/guides/all-infinity-stones-guide',
+    body: 'Split obby stones from NPC/drop stones so you know whether the blocker is movement, combat, or patience.',
+  },
+  {
+    title: 'Learn the gauntlet',
+    href: '/guides/gauntlet-controls-guide',
+    body: 'Keybinds become useful only after the right stone or charged state is available.',
+  },
+  {
+    title: 'Pick one weapon route',
+    href: '/guides/weapons-progression-guide',
+    body: 'Choose the next realistic unlock instead of chasing every weapon or a thin tier list.',
+  },
+];
+
+const latestUpdateItems = [
+  {
+    title: 'Roblox API snapshot',
+    date: officialGameFacts.updatedAt.slice(0, 10),
+    body: `${officialGameFacts.shortName} is verified at place ${officialGameFacts.robloxPlaceId}, universe ${officialGameFacts.robloxUniverseId}, by ${officialGameFacts.creatorName}.`,
+  },
+  {
+    title: 'Update 3.2 priority',
+    date: '2026-07-07',
+    body: 'The official description lists Doom and Mechanical Glove, so the launch wiki gives that route a current guide.',
+  },
+  {
+    title: 'Codes remain conservative',
+    date: '2026-07-07',
+    body: 'Search demand exists, but no active redeem code is verified. Script demand is handled as safety intent.',
+  },
+];
+
+export function ThanosHomePage() {
+  const latestGuides = guides.slice(0, 6);
+  const featuredVideo =
+    guides.find((guide) => guide.slug === 'all-infinity-stones-guide')?.video ??
+    guides.find((guide) => guide.video)?.video;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': `${officialGameFacts.domain}/#website`,
+        name: officialGameFacts.siteName,
+        url: officialGameFacts.domain,
+        description: siteDescription,
+      },
+      {
+        '@type': 'Organization',
+        name: officialGameFacts.siteName,
+        url: officialGameFacts.domain,
+        logo: `${officialGameFacts.domain}/thanos/icon.png`,
+      },
+      {
+        '@type': 'VideoGame',
+        name: officialGameFacts.shortName,
+        alternateName: officialGameFacts.commonName,
+        gamePlatform: ['Roblox'],
+        applicationCategory: 'Game',
+        genre: officialGameFacts.genre,
+        url: officialGameFacts.officialRobloxUrl,
+        publisher: {
+          '@type': 'Person',
+          name: officialGameFacts.creatorName,
+        },
+      },
+      featuredVideo
+        ? {
+            '@type': 'VideoObject',
+            name: featuredVideo.title,
+            thumbnailUrl: featuredVideo.thumbnailUrl,
+            embedUrl: `https://www.youtube.com/embed/${featuredVideo.id}`,
+            uploadDate: featuredVideo.publishedAt,
+          }
+        : undefined,
+    ].filter(Boolean),
+  };
+
+  return (
+    <div className="bg-[#080611] text-[#F8F1FF]">
+      <JsonLd data={jsonLd} />
+
+      <section className="relative overflow-hidden border-[#3A2D4E] border-b">
+        <Image
+          src="/thanos/hero.png"
+          alt="Infinity Gauntlet Thanos Simulator Roblox thumbnail"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,6,17,0.98)_0%,rgba(8,6,17,0.86)_42%,rgba(8,6,17,0.42)_72%,rgba(8,6,17,0.9)_100%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#080611] to-transparent" />
+
+        <Container className="relative px-4 py-8 md:py-10 lg:py-12">
+          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_360px] xl:grid-cols-[minmax(0,1fr)_420px]">
+            <div className="max-w-3xl space-y-5">
+              <div className="flex flex-wrap gap-2">
+                <Badge className="bg-[#F6C453] text-[#120C05]">
+                  Roblox Fighting
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="border-[#8D7CFF] bg-[#080611]/80 text-[#D8D2FF]"
+                >
+                  Infinity Gauntlet
+                </Badge>
+              </div>
+              <h1 className="font-display text-4xl font-black leading-tight sm:text-5xl md:text-7xl">
+                Thanos Simulator Wiki
+              </h1>
+              <p className="max-w-2xl text-[#D9D3E8] text-lg leading-8 md:text-xl">
+                Find all Infinity Stones, learn gauntlet controls, route major
+                weapons, prepare for Doom and Surtur, and use the official
+                Roblox page without falling for script or fake code shortcuts.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Button
+                  asChild
+                  className="bg-[#F6C453] text-[#120C05] hover:bg-[#FFE08A]"
+                >
+                  <LocaleLink href="/guides/all-infinity-stones-guide">
+                    Start Stones
+                    <ArrowRight className="size-4" />
+                  </LocaleLink>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-[#57D68D] bg-[#080611]/70 text-[#F8F1FF] hover:bg-[#57D68D] hover:text-[#07110B]"
+                >
+                  <LocaleLink href="/guides/mechanical-gloves-doom-guide">
+                    Update 3.2
+                  </LocaleLink>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-[#8D7CFF] bg-[#080611]/70 text-[#D8D2FF] hover:bg-[#8D7CFF] hover:text-[#080611]"
+                >
+                  <a
+                    href={officialGameFacts.officialRobloxUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Roblox
+                    <ExternalLink className="size-4" />
+                  </a>
+                </Button>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {keywordLinks.map((item) => (
+                  <LocaleLink
+                    key={item.keyword}
+                    href={item.href}
+                    className="rounded-md border border-[#3A2D4E] bg-[#080611]/75 px-3 py-2 font-medium text-[#C6BCD8] text-sm transition hover:border-[#F6C453] hover:text-[#F6C453]"
+                  >
+                    {item.keyword}
+                  </LocaleLink>
+                ))}
+              </div>
+            </div>
+
+            <aside
+              aria-label="Thanos Simulator guide video"
+              className="rounded-lg border border-[#3A2D4E] bg-[#080611]/85 p-4 shadow-2xl"
+            >
+              {featuredVideo ? (
+                <div className="overflow-hidden rounded-md border border-[#3A2D4E] bg-black">
+                  <iframe
+                    className="aspect-video w-full"
+                    src={`https://www.youtube.com/embed/${featuredVideo.id}`}
+                    title={featuredVideo.title}
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                  <a
+                    href={featuredVideo.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center justify-between gap-3 bg-[#151024] px-3 py-2 text-[#C6BCD8] text-xs transition hover:text-[#F6C453]"
+                  >
+                    <span className="inline-flex min-w-0 items-center gap-2">
+                      <Play className="size-3 shrink-0 text-[#57D68D]" />
+                      <span className="min-w-0 truncate">
+                        All-stones walkthrough reference
+                      </span>
+                    </span>
+                    <ExternalLink className="size-3 shrink-0" />
+                  </a>
+                </div>
+              ) : null}
+            </aside>
+          </div>
+        </Container>
+      </section>
+
+      <Container className="px-4 py-8">
+        <ThanosMobileMenu currentPath="/" />
+        <div className="grid gap-8 xl:grid-cols-[minmax(0,1fr)_264px]">
+          <main className="min-w-0 space-y-10">
+            <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {primaryLinks.map((link) => (
+                <LocaleLink
+                  key={link.title}
+                  href={link.href}
+                  className="group rounded-lg border border-[#3A2D4E] bg-[#151024] p-5 transition hover:border-[#F6C453]"
+                >
+                  <div className="flex items-start gap-4">
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-md bg-[#F6C453] text-[#120C05]">
+                      <link.icon className="size-5" />
+                    </span>
+                    <div className="min-w-0">
+                      <h2 className="font-display text-[#FFE7A8] text-xl font-bold">
+                        {link.title}
+                      </h2>
+                      <p className="mt-2 text-[#C6BCD8] text-sm leading-6">
+                        {link.body}
+                      </p>
+                    </div>
+                  </div>
+                </LocaleLink>
+              ))}
+            </section>
+
+            <section className="grid gap-5 lg:grid-cols-2">
+              <div className="rounded-lg border border-[#3A2D4E] bg-[#151024] p-6">
+                <div className="flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <p className="font-semibold text-[#57D68D] text-xs uppercase tracking-[0.18em]">
+                      Latest Game Updates
+                    </p>
+                    <h2 className="mt-2 font-display text-3xl font-black">
+                      Source-checked pulse
+                    </h2>
+                  </div>
+                  <Button
+                    asChild
+                    variant="ghost"
+                    className="text-[#D9D3E8] hover:text-[#F6C453]"
+                  >
+                    <LocaleLink href="/updates">
+                      All updates
+                      <ArrowRight className="size-4" />
+                    </LocaleLink>
+                  </Button>
+                </div>
+
+                <div className="mt-6 space-y-5">
+                  {latestUpdateItems.map((item) => (
+                    <LocaleLink
+                      key={item.title}
+                      href="/updates"
+                      className="group grid gap-3 rounded-md border border-transparent p-2 transition hover:border-[#3A2D4E] hover:bg-[#080611]"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div className="min-w-0">
+                          <h3 className="font-display font-bold text-[#FFE7A8]">
+                            {item.title}
+                          </h3>
+                          <p className="mt-2 text-[#C6BCD8] text-sm leading-6">
+                            {item.body}
+                          </p>
+                        </div>
+                        <time className="shrink-0 text-[#C6BCD8] text-xs">
+                          {item.date}
+                        </time>
+                      </div>
+                    </LocaleLink>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-lg border border-[#3A2D4E] bg-[#151024] p-6">
+                <div className="flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <p className="font-semibold text-[#F6C453] text-xs uppercase tracking-[0.18em]">
+                      Start Here
+                    </p>
+                    <h2 className="mt-2 font-display text-3xl font-black">
+                      First route checklist
+                    </h2>
+                  </div>
+                  <Clock3 className="size-8 text-[#F6C453]" />
+                </div>
+                <div className="mt-6 space-y-4">
+                  {startSteps.map((step, index) => (
+                    <LocaleLink
+                      key={step.title}
+                      href={step.href}
+                      className="group flex gap-3 rounded-lg border border-transparent p-2 transition hover:border-[#3A2D4E] hover:bg-[#080611]"
+                    >
+                      <span className="flex size-8 shrink-0 items-center justify-center rounded-full border border-[#57D68D] text-[#D9D3E8]">
+                        {index + 1}
+                      </span>
+                      <div className="min-w-0">
+                        <h3 className="font-display font-bold text-[#F8F1FF]">
+                          {step.title}
+                        </h3>
+                        <p className="mt-1 text-[#C6BCD8] text-sm leading-6">
+                          {step.body}
+                        </p>
+                      </div>
+                      <ArrowRight className="ml-auto mt-2 size-4 shrink-0 text-[#F6C453] transition group-hover:translate-x-0.5" />
+                    </LocaleLink>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div className="flex flex-wrap items-end justify-between gap-4">
+                <div>
+                  <p className="font-semibold text-[#57D68D] text-xs uppercase tracking-[0.18em]">
+                    Topic Hubs
+                  </p>
+                  <h2 className="mt-2 font-display text-3xl font-black">
+                    Core Thanos Simulator routes
+                  </h2>
+                </div>
+                <Button asChild variant="outline">
+                  <LocaleLink href="/guides">All guides</LocaleLink>
+                </Button>
+              </div>
+              <div className="mt-5 grid gap-4 md:grid-cols-2">
+                {topicPageList.map((topic) => (
+                  <LocaleLink
+                    key={topic.route}
+                    href={topic.route}
+                    className="group rounded-lg border border-[#3A2D4E] bg-[#151024] p-5 transition hover:border-[#F6C453]"
+                  >
+                    <div className="flex items-center justify-between gap-3">
+                      <h3 className="font-display text-[#FFE7A8] text-xl font-bold">
+                        {topic.label}
+                      </h3>
+                      <ArrowRight className="size-4 shrink-0 text-[#F6C453] transition group-hover:translate-x-0.5" />
+                    </div>
+                    <p className="mt-3 text-[#C6BCD8] text-sm leading-6">
+                      {topic.summary}
+                    </p>
+                  </LocaleLink>
+                ))}
+              </div>
+            </section>
+
+            <section>
+              <div>
+                <p className="font-semibold text-[#57D68D] text-xs uppercase tracking-[0.18em]">
+                  Latest Guides
+                </p>
+                <h2 className="mt-2 font-display text-3xl font-black">
+                  Player decisions covered
+                </h2>
+              </div>
+              <div className="mt-5 grid gap-4 lg:grid-cols-2">
+                {latestGuides.map((guide) => (
+                  <LocaleLink
+                    key={guide.slug}
+                    href={`/guides/${guide.slug}`}
+                    className="group rounded-lg border border-[#3A2D4E] bg-[#151024] p-5 transition hover:border-[#F6C453]"
+                  >
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-[#F6C453] text-[#120C05]">
+                        {guide.category}
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className="border-[#3A2D4E] text-[#C6BCD8]"
+                      >
+                        {guide.difficulty}
+                      </Badge>
+                    </div>
+                    <h3 className="mt-4 font-display text-[#FFE7A8] text-2xl font-bold">
+                      {guide.title}
+                    </h3>
+                    <p className="mt-3 text-[#C6BCD8] text-sm leading-6">
+                      {guide.summary}
+                    </p>
+                  </LocaleLink>
+                ))}
+              </div>
+            </section>
+          </main>
+
+          <ThanosRouteSidebar currentPath="/" />
+        </div>
+      </Container>
+    </div>
+  );
+}

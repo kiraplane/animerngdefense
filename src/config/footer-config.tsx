@@ -12,23 +12,23 @@ export function useFooterLinks(): NestedMenuItem[] {
       title: t('wiki.title'),
       items: [
         {
-          title: t('wiki.items.secrets'),
-          href: Routes.Secrets,
+          title: t('wiki.items.stones'),
+          href: Routes.Stones,
           external: false,
         },
         {
-          title: t('wiki.items.rebirths'),
-          href: Routes.Rebirths,
+          title: t('wiki.items.weapons'),
+          href: Routes.Weapons,
           external: false,
         },
         {
-          title: t('wiki.items.items'),
-          href: Routes.Items,
+          title: t('wiki.items.bosses'),
+          href: Routes.Bosses,
           external: false,
         },
         {
-          title: t('wiki.items.badges'),
-          href: Routes.Badges,
+          title: t('wiki.items.map'),
+          href: Routes.Map,
           external: false,
         },
         {
@@ -52,13 +52,13 @@ export function useFooterLinks(): NestedMenuItem[] {
           external: false,
         },
         {
-          title: t('guides.items.gems'),
-          href: Routes.GemsGuide,
+          title: t('guides.items.stones'),
+          href: Routes.StonesGuide,
           external: false,
         },
         {
-          title: t('guides.items.trophies'),
-          href: Routes.TrophiesGuide,
+          title: t('guides.items.controls'),
+          href: Routes.ControlsGuide,
           external: false,
         },
       ],

@@ -35,6 +35,6 @@ export default function ForgotPassword({
 ForgotPassword.PreviewProps = {
   locale: routing.defaultLocale,
   messages: defaultMessages,
-  url: 'https://www.icetycoon-2.wiki',
+  url: 'https://www.thanossimulator.wiki',
   name: 'username',
 };

@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "Ice Tycoon 2 Wiki",
-    "title": "Ice Tycoon 2 Wiki - Codes, Gems, Secrets and Roblox Guide",
-    "description": "Ice Tycoon 2 Wiki for Roblox codes status, gems, secrets, trophies, rebirths, items, badges, upgrades, and safe official links."
+    "name": "Thanos Simulator Wiki",
+    "title": "Thanos Simulator Wiki - Stones, Weapons and Roblox Guide",
+    "description": "Thanos Simulator Wiki for all Infinity Stones, gauntlet controls, weapons, bosses, Update 3.2, codes safety, and official Roblox links."
   },
   "Common": {
     "premium": "Premium",
@@ -54,7 +54,7 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Optional supporter plans for keeping Ice Tycoon 2 Wiki maintained",
+    "description": "Optional supporter plans for keeping Thanos Simulator Wiki maintained",
     "subtitle": "Simple support options for readers who want to help maintain source-checked guides and route updates",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -80,11 +80,11 @@
   "PricePlans": {
     "free": {
       "name": "Free",
-      "description": "Browse Ice Tycoon 2 Wiki with no payment required",
+      "description": "Browse Thanos Simulator Wiki with no payment required",
       "features": {
-        "feature-1": "Ice Tycoon 2 code status and watch notes",
-        "feature-2": "Gems, secrets, trophies, rebirths, and item guidance",
-        "feature-3": "Guides for upgrades, badges, official links, and beginner progression",
+        "feature-1": "Thanos Simulator code status and watch notes",
+        "feature-2": "Infinity Stones, controls, weapons, bosses, and map routes",
+        "feature-3": "Guides for Update 3.2, codes safety, official links, and beginner progression",
         "feature-4": "Core pages updated as game information changes"
       },
       "limits": {
@@ -99,7 +99,7 @@
       "description": "For readers who want to support ongoing guide updates",
       "features": {
         "feature-1": "Support site maintenance",
-        "feature-2": "Help fund future Ice Tycoon 2 route checks",
+        "feature-2": "Help fund future Thanos Simulator route checks",
         "feature-3": "Keep code and guide pages fresh",
         "feature-4": "Support cleaner walkthrough coverage",
         "feature-5": "Help improve page speed and hosting stability",
@@ -113,7 +113,7 @@
     },
     "max": {
       "name": "Backer",
-      "description": "For heavier support of Ice Tycoon 2 Wiki maintenance",
+      "description": "For heavier support of Thanos Simulator Wiki maintenance",
       "features": {
         "feature-1": "Support expanded guide coverage",
         "feature-2": "Help fund more frequent source reviews",
@@ -299,31 +299,34 @@
       "download": {
         "title": "Roblox"
       },
-      "secrets": {
-        "title": "Secrets"
+      "stones": {
+        "title": "Stones"
       },
-      "rebirths": {
-        "title": "Rebirths"
+      "weapons": {
+        "title": "Weapons"
       },
-      "items": {
-        "title": "Items"
+      "bosses": {
+        "title": "Bosses"
       },
-      "badges": {
-        "title": "Badges"
+      "map": {
+        "title": "Map"
+      },
+      "controls": {
+        "title": "Controls"
       },
       "updates": {
         "title": "Updates"
       }
     },
     "footer": {
-      "tagline": "An independent Ice Tycoon 2 Wiki for Roblox codes status, gems, secrets, trophies, rebirths, items, badges, and safe official links.",
+      "tagline": "An independent Thanos Simulator Wiki for Infinity Stones, controls, weapons, bosses, Update 3.2, codes safety, and official Roblox links.",
       "wiki": {
         "title": "Wiki",
         "items": {
-          "secrets": "Secrets",
-          "rebirths": "Rebirths",
-          "items": "Items",
-          "badges": "Badges",
+          "stones": "Stones",
+          "weapons": "Weapons",
+          "bosses": "Bosses",
+          "map": "Map",
           "codes": "Codes",
           "updates": "Updates"
         }
@@ -333,8 +336,8 @@
         "items": {
           "all": "All Guides",
           "beginner": "Beginner Guide",
-          "gems": "All Gems Guide",
-          "trophies": "Trophies Guide"
+          "stones": "All Stones Guide",
+          "controls": "Controls Guide"
         }
       },
       "legal": {
