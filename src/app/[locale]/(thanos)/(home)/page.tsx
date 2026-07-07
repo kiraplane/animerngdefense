@@ -11,7 +11,7 @@ export async function generateMetadata({
   const { locale } = await params;
 
   return constructMetadata({
-    title: 'Thanos Simulator Wiki - Infinity Stones, Weapons and Roblox Guide',
+    title: 'Thanos Simulator Wiki - Infinity Stones, Weapons and Guide',
     description:
       'Thanos Simulator Wiki covers all Infinity Stones, controls, weapons, bosses, Update 3.2, codes safety, and the official Roblox page.',
     locale,
