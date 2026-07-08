@@ -234,7 +234,7 @@ export function AnimeRngDefenseMobileMenu({
   currentPath?: string;
 }) {
   return (
-    <details className="mx-4 mb-6 rounded-lg border border-[#4A254F] bg-[#25102B] p-4 xl:hidden">
+    <details className="mx-4 mb-6 rounded-lg border border-[#4A254F] bg-[#25102B] p-4 lg:hidden">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 font-semibold text-white [&::-webkit-details-marker]:hidden">
         <span className="inline-flex items-center gap-2">
           <ListChecks className="size-4 text-[#FFB703]" />
@@ -272,7 +272,10 @@ export function AnimeRngDefenseRouteSidebar({
   currentPath?: string;
 }) {
   return (
-    <aside className="hidden w-[264px] shrink-0 space-y-4 xl:block">
+    <aside
+      aria-label="Anime RNG Defense wiki navigation"
+      className="hidden w-[248px] shrink-0 space-y-4 lg:block xl:w-[264px]"
+    >
       <div className="sticky top-24 max-h-[calc(100vh-7rem)] space-y-4 overflow-y-auto pb-6">
         <div className="rounded-lg border border-[#4A254F] bg-[#25102B] p-4">
           <div className="flex items-center justify-between gap-3">
@@ -359,9 +362,9 @@ export function AnimeRngDefensePageShell({
   return (
     <div className="bg-[#09060F]">
       <AnimeRngDefenseMobileMenu currentPath={currentPath} />
-      <div className="mx-auto grid max-w-7xl gap-8 xl:grid-cols-[minmax(0,1fr)_264px]">
-        <div className="min-w-0">{children}</div>
+      <div className="mx-auto grid max-w-[1500px] gap-6 px-4 lg:grid-cols-[248px_minmax(0,1fr)] xl:grid-cols-[264px_minmax(0,1fr)]">
         <AnimeRngDefenseRouteSidebar currentPath={currentPath} />
+        <div className="min-w-0">{children}</div>
       </div>
     </div>
   );
