@@ -23,12 +23,12 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: defaultMessages.Metadata.name,
-    short_name: 'Thanos Wiki',
+    short_name: 'ARD Wiki',
     description: defaultMessages.Metadata.description,
     start_url: '/',
     display: 'standalone',
-    background_color: '#080611',
-    theme_color: '#F6C453',
+    background_color: '#09060F',
+    theme_color: '#FFB703',
     icons: [
       {
         src: '/favicon-32x32.png',

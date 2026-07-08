@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Cookie Policy | Thanos Simulator Wiki',
+    title: 'Cookie Policy | Anime RNG Defense Wiki',
     description:
-      'How Thanos Simulator Wiki uses essential cookies, analytics, and similar technologies.',
+      'How Anime RNG Defense Wiki uses essential cookies, analytics, and similar technologies.',
     locale,
     pathname: '/cookie',
   });
@@ -24,7 +24,7 @@ export default function CookiePolicyPage() {
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Cookie Policy</h1>
         <p className="leading-8 text-[#CBD5E1]">
-          Thanos Simulator Wiki uses essential cookies and similar technologies
+          Anime RNG Defense Wiki uses essential cookies and similar technologies
           to keep the site working, remember basic preferences, and understand
           aggregate traffic patterns.
         </p>
@@ -40,7 +40,7 @@ export default function CookiePolicyPage() {
           work as expected when cookies are disabled.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Questions about this policy can be sent to hello@thanossimulator.wiki.
+          Questions about this policy can be sent to hello@animerngdefense.site.
         </p>
       </Container>
     </div>

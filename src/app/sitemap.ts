@@ -1,4 +1,4 @@
-import { allCoreRoutes } from '@/data/thanos/guides';
+import { allCoreRoutes } from '@/data/animerngdefense/guides';
 import { Routes } from '@/routes';
 import type { MetadataRoute } from 'next';
 import { routing } from '../i18n/routing';
@@ -31,11 +31,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           route === Routes.Root
             ? 1
             : route === Routes.Codes ||
-                route === Routes.Stones ||
-                route === Routes.Weapons ||
-                route === Routes.Bosses ||
-                route === Routes.Map ||
-                route === Routes.Controls ||
+                route === Routes.Units ||
+                route === Routes.Traits ||
+                route === Routes.TierList ||
+                route === Routes.Teams ||
+                route === Routes.Maps ||
+                route === Routes.Summons ||
                 route === Routes.Tools ||
                 route === Routes.Database ||
                 route === Routes.Download ||

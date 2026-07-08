@@ -1,13 +1,13 @@
-# Thanos Simulator Wiki
+# Anime RNG Defense Wiki
 
-Independent guide site for Thanos Simulator at `https://www.thanossimulator.wiki`.
+Independent guide site for Anime RNG Defense at `https://www.animerngdefense.site`.
 
 ## Scope
 
-- Infinity Stones route, gauntlet controls, map access, weapons, bosses, and Update 3.2.
-- Codes status with checked dates and no fake active code list.
-- Safety guidance for script/executor/search-risk demand.
-- Official Roblox access for place ID `3261957210`.
+- Active codes, redeem requirements, expired codes, and wrong-game warnings.
+- Units, traits, tier list, teams, map/wave planning, rewards, and luck boosts.
+- JJK update coverage with source-checked Roblox and guide references.
+- Official Roblox access for place ID `104693964860826`.
 
 ## Development
 

@@ -1,23 +1,23 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "thanossimulator",
+  "name": "animerngdefense",
   "keep_vars": true,
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "vars": {
-    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-7ZV6388SSX"
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-BF0YR8CHYT"
   },
   "routes": [
     {
-      "pattern": "thanossimulator.wiki",
+      "pattern": "animerngdefense.site",
       "custom_domain": true,
-      "zone_name": "thanossimulator.wiki"
+      "zone_name": "animerngdefense.site"
     },
     {
-      "pattern": "www.thanossimulator.wiki",
+      "pattern": "www.animerngdefense.site",
       "custom_domain": true,
-      "zone_name": "thanossimulator.wiki"
+      "zone_name": "animerngdefense.site"
     }
   ],
   "build": {

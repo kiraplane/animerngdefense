@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "Thanos Simulator Wiki",
-    "title": "Thanos Simulator Wiki - Infinity Stones, Weapons and Guide",
-    "description": "Thanos Simulator Wiki for all Infinity Stones, gauntlet controls, weapons, bosses, Update 3.2, codes safety, and official Roblox links."
+    "name": "Anime RNG Defense Wiki",
+    "title": "Anime RNG Defense Wiki - Codes, Units, Tier List and Guide",
+    "description": "Anime RNG Defense Wiki for active codes, units, traits, tier list, teams, maps, luck boosts, updates, and official Roblox links."
   },
   "Common": {
     "premium": "Premium",
@@ -54,7 +54,7 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Optional supporter plans for keeping Thanos Simulator Wiki maintained",
+    "description": "Optional supporter plans for keeping Anime RNG Defense Wiki maintained",
     "subtitle": "Simple support options for readers who want to help maintain source-checked guides and route updates",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -80,11 +80,11 @@
   "PricePlans": {
     "free": {
       "name": "Free",
-      "description": "Browse Thanos Simulator Wiki with no payment required",
+      "description": "Browse Anime RNG Defense Wiki with no payment required",
       "features": {
-        "feature-1": "Thanos Simulator code status and watch notes",
-        "feature-2": "Infinity Stones, controls, weapons, bosses, and map routes",
-        "feature-3": "Guides for Update 3.2, codes safety, official links, and beginner progression",
+        "feature-1": "Anime RNG Defense code status and watch notes",
+        "feature-2": "Units, traits, teams, maps, rewards, and roll planning",
+        "feature-3": "Guides for JJK update checks, code redemption, official links, and beginner progression",
         "feature-4": "Core pages updated as game information changes"
       },
       "limits": {
@@ -99,7 +99,7 @@
       "description": "For readers who want to support ongoing guide updates",
       "features": {
         "feature-1": "Support site maintenance",
-        "feature-2": "Help fund future Thanos Simulator route checks",
+        "feature-2": "Help fund future Anime RNG Defense source checks",
         "feature-3": "Keep code and guide pages fresh",
         "feature-4": "Support cleaner walkthrough coverage",
         "feature-5": "Help improve page speed and hosting stability",
@@ -113,7 +113,7 @@
     },
     "max": {
       "name": "Backer",
-      "description": "For heavier support of Thanos Simulator Wiki maintenance",
+      "description": "For heavier support of Anime RNG Defense Wiki maintenance",
       "features": {
         "feature-1": "Support expanded guide coverage",
         "feature-2": "Help fund more frequent source reviews",
@@ -299,35 +299,35 @@
       "download": {
         "title": "Roblox"
       },
-      "stones": {
-        "title": "Stones"
+      "units": {
+        "title": "Units"
       },
-      "weapons": {
-        "title": "Weapons"
+      "traits": {
+        "title": "Traits"
       },
-      "bosses": {
-        "title": "Bosses"
+      "teams": {
+        "title": "Teams"
       },
-      "map": {
-        "title": "Map"
+      "maps": {
+        "title": "Maps"
       },
-      "controls": {
-        "title": "Controls"
+      "summons": {
+        "title": "Summons"
       },
       "updates": {
         "title": "Updates"
       }
     },
     "footer": {
-      "tagline": "An independent Thanos Simulator Wiki for Infinity Stones, controls, weapons, bosses, Update 3.2, codes safety, and official Roblox links.",
+      "tagline": "An independent Anime RNG Defense Wiki for active codes, units, traits, tier list, teams, maps, luck boosts, updates, and official Roblox links.",
       "wiki": {
         "title": "Wiki",
         "items": {
-          "stones": "Stones",
-          "weapons": "Weapons",
-          "bosses": "Bosses",
-          "map": "Map",
           "codes": "Codes",
+          "units": "Units",
+          "traits": "Traits",
+          "teams": "Teams",
+          "maps": "Maps",
           "updates": "Updates"
         }
       },
@@ -336,8 +336,8 @@
         "items": {
           "all": "All Guides",
           "beginner": "Beginner Guide",
-          "stones": "All Stones Guide",
-          "controls": "Controls Guide"
+          "codes": "Codes Guide",
+          "tierList": "Tier List Guide"
         }
       },
       "legal": {

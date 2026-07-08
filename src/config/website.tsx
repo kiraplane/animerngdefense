@@ -20,7 +20,7 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: '/thanos/og-image.png',
+      ogImage: '/animerngdefense/og-image.png',
       logoLight: '/logo.png',
       logoDark: '/logo.png',
     },
@@ -75,8 +75,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Thanos Simulator Wiki <hello@thanossimulator.wiki>',
-    supportEmail: 'hello@thanossimulator.wiki',
+    fromEmail: 'Anime RNG Defense Wiki <hello@animerngdefense.site>',
+    supportEmail: 'hello@animerngdefense.site',
   },
   newsletter: {
     enable: false,

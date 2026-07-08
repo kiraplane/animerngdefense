@@ -22,43 +22,53 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/admin(?:\/.*)?$/, target: '/' },
   { pattern: /^\/settings(?:\/.*)?$/, target: '/' },
   { pattern: /^\/payment(?:\/.*)?$/, target: '/' },
+  { pattern: /^\/anime-rng-defense-wiki\/?$/, target: '/' },
+  { pattern: /^\/anime-rng-defense-codes\/?$/, target: '/codes' },
+  { pattern: /^\/anime-rng-defense-tier-list\/?$/, target: '/tier-list' },
+  { pattern: /^\/unit-tier-list\/?$/, target: '/tier-list' },
+  { pattern: /^\/tierlist\/?$/, target: '/tier-list' },
+  { pattern: /^\/best-units\/?$/, target: '/units' },
+  { pattern: /^\/best-teams\/?$/, target: '/teams' },
+  { pattern: /^\/traits-guide\/?$/, target: '/traits' },
+  { pattern: /^\/summon(?:s)?\/?$/, target: '/summons' },
   {
     pattern: /^\/all-stones(?:\/.*)?$/,
-    target: '/guides/all-infinity-stones-guide',
+    target: '/guides/name-confusion-guide',
   },
   {
     pattern: /^\/infinity-stones(?:\/.*)?$/,
-    target: '/guides/all-infinity-stones-guide',
+    target: '/guides/name-confusion-guide',
   },
   {
     pattern: /^\/stones-guide\/?$/,
-    target: '/guides/all-infinity-stones-guide',
+    target: '/guides/name-confusion-guide',
   },
   {
     pattern: /^\/controls-guide\/?$/,
-    target: '/guides/gauntlet-controls-guide',
+    target: '/guides/name-confusion-guide',
   },
-  { pattern: /^\/tierlist\/?$/, target: '/guides/weapons-progression-guide' },
-  { pattern: /^\/tier-list\/?$/, target: '/guides/weapons-progression-guide' },
   {
     pattern: /^\/weapon-tier-list\/?$/,
-    target: '/guides/weapons-progression-guide',
+    target: '/guides/name-confusion-guide',
   },
   {
     pattern: /^\/mechanical-gloves\/?$/,
-    target: '/guides/mechanical-gloves-doom-guide',
+    target: '/guides/name-confusion-guide',
   },
-  { pattern: /^\/doom\/?$/, target: '/guides/mechanical-gloves-doom-guide' },
-  { pattern: /^\/surtur\/?$/, target: '/guides/surtur-twilight-sword-guide' },
+  { pattern: /^\/doom\/?$/, target: '/guides/name-confusion-guide' },
+  { pattern: /^\/surtur\/?$/, target: '/guides/name-confusion-guide' },
   {
     pattern: /^\/twilight-sword\/?$/,
-    target: '/guides/surtur-twilight-sword-guide',
+    target: '/guides/name-confusion-guide',
   },
-  { pattern: /^\/heart-of-ymir\/?$/, target: '/guides/heart-of-ymir-guide' },
-  { pattern: /^\/thanos-simulator-codes\/?$/, target: '/codes' },
+  { pattern: /^\/heart-of-ymir\/?$/, target: '/guides/name-confusion-guide' },
+  {
+    pattern: /^\/thanos-simulator-codes\/?$/,
+    target: '/guides/name-confusion-guide',
+  },
   {
     pattern: /^\/infinity-gauntlet-thanos-simulator-codes\/?$/,
-    target: '/codes',
+    target: '/guides/name-confusion-guide',
   },
   { pattern: /^\/roblox\/?$/, target: '/download' },
 ];
@@ -88,8 +98,8 @@ export default async function middleware(req: NextRequest) {
   const hostname = hostHeader?.split(':')[0].toLowerCase();
   const forwardedProto = req.headers.get('x-forwarded-proto');
   const productionHosts = new Set([
-    'thanossimulator.wiki',
-    'www.thanossimulator.wiki',
+    'animerngdefense.site',
+    'www.animerngdefense.site',
   ]);
 
   if (

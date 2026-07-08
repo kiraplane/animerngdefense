@@ -17,7 +17,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer
       className={cn(
-        'border-[#27415F] border-t bg-[#080D17] text-[#F6FBFF]',
+        'border-[#4A254F] border-t bg-[#09060F] text-[#FFF8E6]',
         className
       )}
     >
@@ -48,7 +48,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={link.title}
-                      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#27415F] text-[#B8C8D8] hover:border-[#67F7D3] hover:bg-[#101827] hover:text-[#F6FBFF]"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#4A254F] text-[#E6D7EC] hover:border-[#6EE7B7] hover:bg-[#120915] hover:text-[#FFF8E6]"
                     >
                       <span className="sr-only">{link.title}</span>
                       {link.icon ? link.icon : null}

@@ -1,11 +1,11 @@
 {
-  "name": "Thanos Simulator Wiki",
-  "short_name": "Thanos Wiki",
-  "description": "Thanos Simulator Wiki for Infinity Stones, controls, weapons, bosses, Update 3.2, codes safety, and official Roblox links.",
+  "name": "Anime RNG Defense Wiki",
+  "short_name": "ARD Wiki",
+  "description": "Anime RNG Defense Wiki for active codes, units, traits, tier list, teams, maps, luck boosts, updates, and official Roblox links.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#080611",
-  "theme_color": "#F6C453",
+  "background_color": "#09060F",
+  "theme_color": "#FFB703",
   "icons": [
     {
       "src": "/favicon-32x32.png",

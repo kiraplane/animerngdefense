@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Thanos Simulator Wiki - dark, data-dense Roblox guide theme */
+/* Anime RNG Defense Wiki - dark, data-dense Roblox guide theme */
 
 :root {
   --font-noto-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -389,7 +389,7 @@ body {
 }
 
 /*
- * Thanos Simulator theme colors
+ * Anime RNG Defense theme colors
  */
 .theme-default {
   --primary: #67f7d3;

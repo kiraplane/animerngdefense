@@ -12,28 +12,28 @@ export function useFooterLinks(): NestedMenuItem[] {
       title: t('wiki.title'),
       items: [
         {
-          title: t('wiki.items.stones'),
-          href: Routes.Stones,
-          external: false,
-        },
-        {
-          title: t('wiki.items.weapons'),
-          href: Routes.Weapons,
-          external: false,
-        },
-        {
-          title: t('wiki.items.bosses'),
-          href: Routes.Bosses,
-          external: false,
-        },
-        {
-          title: t('wiki.items.map'),
-          href: Routes.Map,
-          external: false,
-        },
-        {
           title: t('wiki.items.codes'),
           href: Routes.Codes,
+          external: false,
+        },
+        {
+          title: t('wiki.items.units'),
+          href: Routes.Units,
+          external: false,
+        },
+        {
+          title: t('wiki.items.traits'),
+          href: Routes.Traits,
+          external: false,
+        },
+        {
+          title: t('wiki.items.teams'),
+          href: Routes.Teams,
+          external: false,
+        },
+        {
+          title: t('wiki.items.maps'),
+          href: Routes.Maps,
           external: false,
         },
       ],
@@ -52,13 +52,13 @@ export function useFooterLinks(): NestedMenuItem[] {
           external: false,
         },
         {
-          title: t('guides.items.stones'),
-          href: Routes.StonesGuide,
+          title: t('guides.items.codes'),
+          href: Routes.CodesRedeemGuide,
           external: false,
         },
         {
-          title: t('guides.items.controls'),
-          href: Routes.ControlsGuide,
+          title: t('guides.items.tierList'),
+          href: Routes.UnitTierListGuide,
           external: false,
         },
       ],
@@ -67,18 +67,18 @@ export function useFooterLinks(): NestedMenuItem[] {
       title: 'Tools',
       items: [
         {
-          title: 'Boss Checklist',
-          href: Routes.BossChecklist,
+          title: 'Team Builder',
+          href: Routes.TeamBuilder,
           external: false,
         },
         {
-          title: 'Weapon Planner',
-          href: Routes.WeaponPlanner,
+          title: 'Luck Planner',
+          href: Routes.LuckPlanner,
           external: false,
         },
         {
-          title: 'Stones Tracker',
-          href: Routes.StonesTracker,
+          title: 'Roll Tracker',
+          href: Routes.RollTracker,
           external: false,
         },
         {
