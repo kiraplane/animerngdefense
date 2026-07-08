@@ -67,7 +67,7 @@ export interface DatabaseTableRecord {
 export const databaseUpdatedAt = CHECKED_AT;
 
 export const databaseSourceNote =
-  'Structured from the official Roblox page, Roblox API facts, current code trackers, competitor route surfaces, and current YouTube results. Exact unit names, drop rates, and map values should be rechecked after updates.';
+  'This is a source-safe planning database, not a scraped official stat table. Official Roblox facts anchor the game loop, current code trackers anchor reward names, and competitor/YouTube results are used only as topic signals. Exact unit names, drop rates, map names, and banner odds are intentionally not published until stronger in-game or official evidence exists.';
 
 export const units: UnitEntry[] = [
   {

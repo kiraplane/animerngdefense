@@ -188,8 +188,12 @@ export function DatabaseTable({
               </div>
               <div>
                 <h3 className="font-semibold text-[#6EE7B7] text-sm uppercase">
-                  Source Pages
+                  Evidence Signals
                 </h3>
+                <p className="mt-2 text-[#B99BC3] text-xs leading-5">
+                  These labels explain what kind of source shaped the row; they
+                  do not imply an official stat table exists.
+                </p>
                 <div className="mt-2 flex flex-wrap gap-2">
                   {record.sourcePages.map((item) => (
                     <Badge

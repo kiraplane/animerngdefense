@@ -59,6 +59,12 @@ export default function DatabasePage() {
           <p className="text-[#B99BC3] text-sm">
             Checked {databaseUpdatedAt}. {databaseSourceNote}
           </p>
+          <div className="rounded-lg border border-[#4A254F] bg-[#120915] p-4 text-[#E6D7EC] text-sm leading-6">
+            The rows below are intentionally role-based. Rewards such as
+            Crystals, boxes, and Cursed Fingers come from current code sources;
+            unit, team, and map rows are planning categories inferred from the
+            official game loop until verifiable in-game tables are available.
+          </div>
         </header>
 
         <section className="grid gap-4 md:grid-cols-2">

@@ -77,6 +77,13 @@
 - YouTube 只作为 guide angle / workflow 信号，不搬运逐字稿。
 - 未证实的 unit exact stats、drop rate、banner odds 不伪造，使用 role-first 解释。
 
+Database 数据来源说明：
+
+- `rewards` 中的 Crystals、Common Boxes、Rare/Epic Boxes、Cursed Fingers、10k rolls requirement 等来自 Destructoid、Pro Game Guides 等当前 codes 页面交叉验证。
+- `units`、`teams`、`maps` 当前不是官方精确表，而是根据官方 Roblox 描述中的 roll units、place units、clear waves、protect base、upgrade team、boost luck 等玩法结构整理成的 role-based planning entries。
+- `sourcePages` 字段表示 evidence signal 类型，例如 Roblox official description、current code trackers、competitor route surfaces、YouTube guide result；它不是逐条官方数据库引用。
+- 后续若拿到可靠 in-game screenshots、官方 Discord patch notes、或社区完整 unit/map 表，再把 `watch/medium` entries 升级为具体 unit/map 数据。
+
 选用视频：
 
 | YouTube ID | 用途 |
