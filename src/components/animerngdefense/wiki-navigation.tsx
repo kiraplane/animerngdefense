@@ -355,16 +355,12 @@ export function AnimeRngDefensePageShell({
 }) {
   const currentPath = useLocalePathname();
 
-  if (currentPath === '/') {
-    return <>{children}</>;
-  }
-
   return (
     <div className="bg-[#09060F]">
       <AnimeRngDefenseMobileMenu currentPath={currentPath} />
-      <div className="mx-auto grid max-w-[1500px] gap-6 px-4 lg:grid-cols-[248px_minmax(0,1fr)] xl:grid-cols-[264px_minmax(0,1fr)]">
-        <AnimeRngDefenseRouteSidebar currentPath={currentPath} />
+      <div className="mx-auto grid max-w-[1500px] gap-6 px-4 lg:grid-cols-[minmax(0,1fr)_248px] xl:grid-cols-[minmax(0,1fr)_264px]">
         <div className="min-w-0">{children}</div>
+        <AnimeRngDefenseRouteSidebar currentPath={currentPath} />
       </div>
     </div>
   );
