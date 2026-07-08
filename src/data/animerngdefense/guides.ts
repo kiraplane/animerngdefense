@@ -297,6 +297,18 @@ export const guides: Guide[] = [
         ],
       },
       {
+        heading: 'Treat JJK and update units as role candidates first',
+        paragraphs: [
+          'Recent search and video demand is clustered around JJK update pulls, new codes, gems, and best units. That is useful as a watch signal, but it does not mean every new unit should jump to S tier on day one.',
+          'Put a new update unit into a job first: wave clear, boss damage, support, lane control, or farming value. If the unit does not outperform your current holder of that job on the same map, keep it as a watch unit until more source-checked data stabilizes.',
+        ],
+        bullets: [
+          'JJK/update carry: test against the wave that currently leaks.',
+          'JJK/update support: test whether it makes your main carry clear faster.',
+          'JJK/update finisher: test against durable enemies, not easy starter waves.',
+        ],
+      },
+      {
         heading: 'When to reroll for better units',
         paragraphs: [
           'Reroll when you can name the role you are missing. Rolling because the tier list says a mythical unit exists is a fast way to burn rewards. Rolling because your team lacks area clear, range, or boss damage is a real plan.',
@@ -551,6 +563,18 @@ export const guides: Guide[] = [
         paragraphs: [
           'Use boxes, Crystals, and luck boosts around a planned session. Redeem codes first, open relevant boxes, start boosts when you are ready to roll, and stop when your missing role is solved well enough to test maps.',
           'A boost ticking while you browse menus is wasted value. Prepare the plan before you activate time-limited luck.',
+        ],
+      },
+      {
+        heading: 'Use gems and boxes after the target is named',
+        paragraphs: [
+          'The safest gems route is not "spend because the balance increased." Decide whether gems are buying rolls, traits, or upgrade pressure for a unit that already has a job. If the account only needs a starter roster, boxes can be fine. If the account already has a carry, gems are better saved for the missing role or trait window.',
+          'This is especially important after code drops. A new code can make the account feel rich for five minutes, but random spending can still leave the team with the same wave-clear or boss-damage problem.',
+        ],
+        bullets: [
+          'Need roster depth: use boxes and rolls.',
+          'Need a stronger keeper: save for traits or focused rerolls.',
+          'Need map progress now: spend only if the pull or upgrade fixes that map.',
         ],
       },
       {
