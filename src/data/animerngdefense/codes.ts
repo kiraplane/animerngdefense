@@ -71,6 +71,17 @@ export const activeCodes: GameCode[] = [
     notes:
       'Several sources list a 10,000-roll requirement. Keep it in the active list, but warn new players not to troubleshoot it before they meet the roll gate.',
   },
+  {
+    code: 'TYFOR100LIKES',
+    reward: '200 Crystals and 10 Common Boxes',
+    status: 'active',
+    firstSeen: '2026-07-08',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Beebom and Official Code Zone July 2026 trackers',
+    confidence: 'medium',
+    notes:
+      'Source-checked July 8 from two current code trackers. It was not visible in the official Roblox description during this pass, so keep it source-checked rather than game-tested.',
+  },
 ];
 
 export const watchCodes: GameCode[] = [
