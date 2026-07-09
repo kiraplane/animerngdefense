@@ -1,9 +1,31 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-08';
+export const CODE_CHECKED_AT = '2026-07-09';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'THANKSFORPLAYING',
+    reward: '150 Crystals and 10 Epic Boxes',
+    status: 'active',
+    firstSeen: '2026-07-09',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics and current YouTube code results',
+    confidence: 'medium',
+    notes:
+      'Newest July 2026 source-checked code. Use it before a major summon session so the box rewards feed directly into roster depth.',
+  },
+  {
+    code: 'SORRYFORSHUTDOWN2',
+    reward: '200 Crystals and 5 Cursed Fingers',
+    status: 'active',
+    firstSeen: '2026-07-09',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics and current YouTube code results',
+    confidence: 'medium',
+    notes:
+      'Fresh shutdown-compensation code reported in current July 2026 trackers. It was not visible in the public Roblox description during this pass, so this site treats it as source-checked, not game-tested.',
+  },
   {
     code: 'RELEASE',
     reward: '250 Crystals and 5 Common Boxes',
@@ -154,6 +176,10 @@ export const codeCheckSummary = {
     {
       label: 'Roblox Den codes',
       url: 'https://robloxden.com/game-codes/anime-rng-defense',
+    },
+    {
+      label: 'Pocket Tactics codes',
+      url: 'https://www.pockettactics.com/anime-rng-defense-codes',
     },
     {
       label: 'Beebom codes',
