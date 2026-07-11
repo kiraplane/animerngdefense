@@ -1,7 +1,7 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-10';
+export const CODE_CHECKED_AT = '2026-07-11';
 
 export const activeCodes: GameCode[] = [
   {
@@ -159,7 +159,7 @@ export const expiredCodes: GameCode[] = [
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
   status:
-    'Anime RNG Defense has one official public code in the Roblox description and six active codes cross-checked across current July 2026 code trackers.',
+    `${activeCodes.length} active Anime RNG Defense codes are source-checked across current July 2026 code trackers. RELEASE was visible in the public Roblox description during the July 8 pass; the rest remain source-checked rather than game-tested.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',
@@ -180,6 +180,10 @@ export const codeCheckSummary = {
     {
       label: 'Pocket Tactics codes',
       url: 'https://www.pockettactics.com/anime-rng-defense-codes',
+    },
+    {
+      label: 'PCGamesN codes',
+      url: 'https://www.pcgamesn.com/anime-rng-defense-codes',
     },
     {
       label: 'Beebom codes',

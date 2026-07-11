@@ -203,7 +203,7 @@ export const guides: Guide[] = [
       {
         heading: 'Redeem active codes before spending resources',
         paragraphs: [
-          'Current sources agree that Anime RNG Defense codes can grant Crystals, boxes, Cursed Fingers, and free rewards. The official Roblox page itself lists RELEASE, while multiple current code trackers list six active codes for July 2026.',
+          'Current sources agree that Anime RNG Defense codes can grant Crystals, boxes, Cursed Fingers, and free rewards. The official Roblox page itself lists RELEASE, while multiple current code trackers list the current July 2026 active set.',
           'Use codes before a major rolling session. Crystals and boxes are strongest when they help you build a first roster or improve the carry that clears your current map. If you redeem after spending all your early resources, you lose the chance to make a cleaner first plan.',
         ],
         bullets: [
