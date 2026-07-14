@@ -1,9 +1,55 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-11';
+export const CODE_CHECKED_AT = '2026-07-14';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'FairyForest',
+    reward:
+      '250 Crystals, 5 Basic Luck Potions, 5 Basic Coin Potions, 5 Basic Damage Potions, and 5 Basic Roll Speed Potions',
+    status: 'active',
+    firstSeen: '2026-07-14',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid, Pro Game Guides',
+    confidence: 'medium',
+    notes:
+      'Newest Update 3 / 7DS-era code cross-checked on July 14. Potion timers should be used before a planned farming or rolling session.',
+  },
+  {
+    code: 'UPDATE3',
+    reward: '250 Crystals',
+    status: 'active',
+    firstSeen: '2026-07-14',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid, Pro Game Guides',
+    confidence: 'medium',
+    notes:
+      'Newest Update 3 code reported by several current July 2026 code trackers. It was not game-tested here, so keep it source-checked.',
+  },
+  {
+    code: 'TYFOR10KCCU',
+    reward: 'Free rewards',
+    status: 'active',
+    firstSeen: '2026-07-14',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid, Pro Game Guides',
+    confidence: 'medium',
+    requirement: 'Requires at least 10,000 rolls',
+    notes:
+      'New milestone code with a roll gate. Do not troubleshoot it on a fresh account before reaching the 10,000-roll requirement.',
+  },
+  {
+    code: 'SorryForShutdown3',
+    reward: '1 Divine Roll and 5 Cursed Fingers',
+    status: 'active',
+    firstSeen: '2026-07-14',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid, Pro Game Guides',
+    confidence: 'medium',
+    notes:
+      'Newest shutdown-compensation code reported in current July 2026 trackers. Copy the capital S exactly.',
+  },
   {
     code: 'THANKSFORPLAYING',
     reward: '150 Crystals and 10 Epic Boxes',
@@ -159,7 +205,7 @@ export const expiredCodes: GameCode[] = [
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
   status:
-    `${activeCodes.length} active Anime RNG Defense codes are source-checked across current July 2026 code trackers. RELEASE was visible in the public Roblox description during the July 8 pass; the rest remain source-checked rather than game-tested.`,
+    `${activeCodes.length} active Anime RNG Defense codes are source-checked across current July 2026 code trackers. July 14 added the Update 3 / 7DS-era code set. RELEASE was visible in the public Roblox description during the July 8 pass; the rest remain source-checked rather than game-tested.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',

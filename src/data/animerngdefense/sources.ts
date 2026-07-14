@@ -1,7 +1,7 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-07-11';
-export const OFFICIAL_CHECKED_AT = '2026-07-11';
+export const CHECKED_AT = '2026-07-14';
+export const OFFICIAL_CHECKED_AT = '2026-07-14';
 
 export const officialGameFacts = {
   name: '[JJK] Anime RNG Defense',
@@ -19,11 +19,11 @@ export const officialGameFacts = {
   genreL2: 'Tower Defense',
   status: 'Live Roblox experience',
   createdAt: '2026-03-26T01:57:38.197Z',
-  updatedAt: '2026-07-06T03:47:28.352Z',
+  updatedAt: '2026-07-14T03:34:31.8169194Z',
   maxPlayers: 4,
-  activePlayersAtCheck: 3720,
-  visitsAtCheck: 444565,
-  favoritesAtCheck: 17291,
+  activePlayersAtCheck: 8510,
+  visitsAtCheck: 2543491,
+  favoritesAtCheck: 69855,
   upVotesAtCheck: 3489,
   downVotesAtCheck: 92,
   officialRobloxUrl:
