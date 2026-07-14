@@ -57,7 +57,7 @@ export const guideCategoryIntro: Record<GuideCategory, string> = {
   Maps: 'Read maps as pathing and wave problems, not only as bigger stat checks.',
   Luck: 'Use boosts, boxes, crystals, and rerolls in focused windows with stop rules.',
   Updates:
-    'Track current JJK/update signals and separate them from old Anime Defense RNG data.',
+    'Track the current Update 3 / 7DS signals while preserving older JJK notes as dated history.',
   Safety:
     'Stay on the official Roblox page and avoid scripts, executors, fake downloads, and copied wrong-game data.',
 };
@@ -73,7 +73,7 @@ export const relatedRouteLabels: Record<string, string> = {
   '/maps': 'Maps and Waves',
   '/summons': 'Summons and Rolls',
   '/download': 'Official Roblox Page',
-  '/updates': 'JJK Update Notes',
+  '/updates': 'Current Update Notes',
   '/tools': 'Tools Hub',
   '/tools/team-builder': 'Team Builder Checklist',
   '/tools/luck-planner': 'Luck Spend Planner',
@@ -144,7 +144,7 @@ export const guides: Guide[] = [
       {
         heading: 'Use codes before your first real roll plan',
         paragraphs: [
-          'The official Roblox description explicitly lists RELEASE, and current code trackers cross-check UPDATE1, UPDATE2, CURSEDHIGHSCHOOL, INNOVATIONCITY, and TYFORSUPPORT1. Redeeming these early gives you Crystals, boxes, and update materials that make the first team much smoother.',
+          'The official Roblox description explicitly lists FairyForest, and current code trackers cross-check UPDATE3, TYFOR10KCCU, SorryForShutdown3, and several older codes. Redeeming current rewards early gives you Crystals, boxes, potions, and update materials that make the first team much smoother.',
           'The mistake is spending rewards before you know the job. Common Boxes and Crystals are best used to create a usable roster, then improve the unit that actually carries waves. If a code has a requirement, such as the reported 10,000-roll gate on TYFORSUPPORT1, do not treat the error as a typo until you meet the requirement.',
         ],
       },
@@ -182,7 +182,7 @@ export const guides: Guide[] = [
     seoDescription:
       'Redeem Anime RNG Defense codes for Crystals, Boxes, Cursed Fingers, and free rewards with current July 2026 code checks and wrong-game warnings.',
     summary:
-      'A source-checked code guide that separates official RELEASE evidence, cross-checked active codes, reported requirements, expired codes, and wrong-game code traps.',
+      'A source-checked code guide that separates the official FairyForest code, cross-checked active codes, reported requirements, older update codes, and wrong-game code traps.',
     category: 'Codes',
     difficulty: 'Beginner',
     coverImageUrl: videoCover(videos.codes),
@@ -203,7 +203,7 @@ export const guides: Guide[] = [
       {
         heading: 'Redeem active codes before spending resources',
         paragraphs: [
-          'Current sources agree that Anime RNG Defense codes can grant Crystals, boxes, Cursed Fingers, and free rewards. The official Roblox page itself lists RELEASE, while multiple current code trackers list the current July 2026 active set.',
+          'Current sources agree that Anime RNG Defense codes can grant Crystals, boxes, potions, Divine Rolls, Cursed Fingers, and free rewards. The official Roblox page now lists FairyForest, while multiple current code trackers also list UPDATE3, TYFOR10KCCU, and other July 2026 codes.',
           'Use codes before a major rolling session. Crystals and boxes are strongest when they help you build a first roster or improve the carry that clears your current map. If you redeem after spending all your early resources, you lose the chance to make a cleaner first plan.',
         ],
         bullets: [
@@ -232,7 +232,7 @@ export const guides: Guide[] = [
       {
         question: 'What is the official Anime RNG Defense code?',
         answer:
-          'The Roblox description checked on July 8, 2026 explicitly lists RELEASE. Other active codes are cross-checked from current code trackers.',
+          'The Roblox description checked on July 14, 2026 explicitly lists FairyForest. Other active codes are cross-checked from current code trackers.',
       },
       {
         question: 'Why does TYFORSUPPORT1 not work?',
@@ -286,7 +286,7 @@ export const guides: Guide[] = [
           'S priority: units that clear waves or finish the exact enemy that leaks.',
           'A priority: strong units that need map placement or upgrades to shine.',
           'B priority: usable fillers that help early maps but should not eat premium resources.',
-          'Watch priority: new JJK/update units until current data stabilizes.',
+          'Watch priority: new Update 3 / 7DS units until current data stabilizes.',
         ],
       },
       {
@@ -297,15 +297,15 @@ export const guides: Guide[] = [
         ],
       },
       {
-        heading: 'Treat JJK and update units as role candidates first',
+        heading: 'Treat Update 3 / 7DS units as role candidates first',
         paragraphs: [
-          'Recent search and video demand is clustered around JJK update pulls, new codes, gems, and best units. That is useful as a watch signal, but it does not mean every new unit should jump to S tier on day one.',
+          'The live Roblox title has moved from JJK to 7DS, while current code and competitor signals point to Update 3 and Fairy Forest. That is useful as a watch signal, but it does not mean every recent pull should jump to S tier on day one.',
           'Put a new update unit into a job first: wave clear, boss damage, support, lane control, or farming value. If the unit does not outperform your current holder of that job on the same map, keep it as a watch unit until more source-checked data stabilizes.',
         ],
         bullets: [
-          'JJK/update carry: test against the wave that currently leaks.',
-          'JJK/update support: test whether it makes your main carry clear faster.',
-          'JJK/update finisher: test against durable enemies, not easy starter waves.',
+          '7DS/update carry: test against the Fairy Forest wave that currently leaks.',
+          '7DS/update support: test whether it makes your main carry clear faster.',
+          '7DS/update finisher: test against durable enemies, not easy starter waves.',
         ],
       },
       {
@@ -611,7 +611,7 @@ export const guides: Guide[] = [
     seoDescription:
       'Track the Anime RNG Defense JJK update tag, Cursed Fingers, current codes, update rewards, and what to verify before spending resources.',
     summary:
-      'A current update snapshot for the JJK-tagged Roblox title, code rewards, Cursed Fingers, and update-safe progression decisions.',
+      'A dated JJK update archive that explains Cursed Fingers and older codes, then directs players to the current Update 3 / 7DS cycle.',
     category: 'Updates',
     difficulty: 'Intermediate',
     coverImageUrl: videoCover(videos.jjkCodes),
@@ -630,32 +630,32 @@ export const guides: Guide[] = [
     relatedRoutes: ['/updates', '/codes', '/guides/codes-redeem-guide'],
     body: [
       {
-        heading: 'What is confirmed right now',
+        heading: 'JJK is now a previous update cycle',
         paragraphs: [
-          'The Roblox game title currently displays a JJK update tag, and current code trackers list CURSEDHIGHSCHOOL as a code that rewards Cursed Fingers. The official description also still presents the basic gameplay loop and the RELEASE code.',
-          'That gives enough confidence for an update page, but not enough for a complete item database or exact unit ranking. Treat this page as a checked snapshot rather than permanent truth.',
+          'The Roblox game title no longer displays the JJK tag. On July 14, 2026, the official API shows a 7DS tag and the official description publishes FairyForest instead of RELEASE.',
+          'Keep this URL as the archive for CURSEDHIGHSCHOOL and Cursed Fingers, but use the updates and codes pages for current Update 3 decisions.',
         ],
       },
       {
         heading: 'Spend update items after the game explains them',
         paragraphs: [
-          'Cursed Fingers look like the update-specific reward to watch. If you redeem CURSEDHIGHSCHOOL, check the in-game UI before spending them. Do not assume rules from other JJK-themed Roblox games apply here.',
-          'The safest update routine is: redeem codes, identify the new reward, test whether it affects units, traits, or maps, then update your team plan.',
+          'Cursed Fingers belong to the earlier JJK cycle. If an older code still redeems, check the in-game UI before spending them and do not assume the item remains important in the current 7DS build.',
+          'The safest current routine is: redeem FairyForest and UPDATE3, inventory the reward, establish a repeatable Fairy Forest run, then compare new units by wave clear, boss damage, or support value.',
         ],
       },
       {
         heading: 'What to recheck after the next update',
         paragraphs: [
-          'Recheck the Roblox title, description, update timestamp, active codes, and whether competitors have published new unit or trait evidence. If the title tag changes, JJK-specific advice should move from P0 current coverage to archived update notes.',
-          'This is also where future pages can expand: exact event unit pages, map routes, and item usage guides should wait until sources are clearer.',
+          'Recheck the Roblox title, description, update timestamp, active codes, and whether competitors have published unit, world, or trait evidence. The JJK material now stays archived unless the game rotates it back.',
+          'Future current pages can expand around verified 7DS units, Fairy Forest waves, raids, and item usage once exact live values are available.',
         ],
       },
     ],
     faq: [
       {
-        question: 'Is the JJK update official?',
+        question: 'Is the JJK update still current?',
         answer:
-          'The current Roblox title carries a JJK update tag. Exact mechanics beyond current code rewards should be verified in-game or through official/community sources.',
+          'No. The official title checked on July 14, 2026 carries a 7DS tag. This page is retained as an archive for the prior JJK cycle.',
       },
       {
         question: 'What code gives Cursed Fingers?',
@@ -805,6 +805,7 @@ export const allCoreRoutes = [
   '/teams',
   '/maps',
   '/summons',
+  '/gems',
   '/download',
   '/updates',
   '/tools',

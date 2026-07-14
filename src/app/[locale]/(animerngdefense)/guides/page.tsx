@@ -53,7 +53,7 @@ export default function GuidesPage() {
           </h1>
           <p className="text-[#E6D7EC] text-lg leading-8">
             Decision-first Roblox guides for codes, units, traits, best teams,
-            maps, rolling, JJK update rewards, AFK-safe setup, and wrong-game
+            maps, rolling, Update 3 rewards, AFK-safe setup, and wrong-game
             source confusion.
           </p>
         </header>

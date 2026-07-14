@@ -38,7 +38,7 @@ export const topicPages: Record<string, TopicPage> = {
           'Keep a starter carry that clears early waves.',
           'Prioritize AoE when many enemies leak.',
           'Prioritize single-target damage when durable enemies survive.',
-          'Treat new JJK update units as watch items until tested.',
+          'Treat new Update 3 / 7DS units as watch items until tested.',
         ],
       },
     ],
@@ -223,6 +223,67 @@ export const topicPages: Record<string, TopicPage> = {
       },
     ],
   },
+  gems: {
+    route: '/gems',
+    label: 'Gems and Currency',
+    eyebrow: 'Spending Priorities',
+    title: 'Anime RNG Defense Gems and Currency Guide',
+    seoTitle:
+      'Anime RNG Defense Gems - Crystals, Cursed Fingers and Divine Rolls',
+    seoDescription:
+      'Use Anime RNG Defense Gems, Crystals, Cursed Fingers and Divine Rolls efficiently with a role-first spending order and safe stop rules.',
+    summary:
+      'Treat every currency as a progression tool: claim free rewards first, solve the roster bottleneck, then spend rare materials only on units you intend to keep.',
+    image: commonImage,
+    updatedAt: CHECKED_AT,
+    featuredRoutes: ['/codes', '/summons', '/traits', '/tools/luck-planner'],
+    sections: [
+      {
+        heading: 'What each currency is for',
+        paragraphs: [
+          'Gems support the summon loop, while Crystals and update materials belong to narrower upgrade or potential systems. Cursed Fingers now belong to the older JJK cycle, and Divine Rolls should be treated as scarce until a current source confirms the exact reward table.',
+          'Names and costs can move between updates. Check the in-game shop or upgrade panel before committing a large stack, especially after joining an older server.',
+        ],
+        bullets: [
+          'Gems: reserve them for summons that target a missing team role.',
+          'Crystals: spend on a proven keeper unit rather than a temporary pull.',
+          'Cursed Fingers: keep them only if the live 7DS build still exposes a use.',
+          'Divine Rolls: use only when the displayed pool and pity state match your goal.',
+        ],
+      },
+      {
+        heading: 'A safe daily spending order',
+        paragraphs: [
+          'Redeem current codes and claim free rewards before buying anything. Next, identify whether your team lacks wave clear, boss damage, or support. Spend only enough to test that role, then return to maps before rolling again.',
+          'Do not convert every currency immediately. A saved stack protects you when an update changes the unit pool, introduces a limited banner, or reveals that an upgrade material has a better use later.',
+        ],
+      },
+      {
+        heading: 'Stop rules prevent wasted rolls',
+        paragraphs: [
+          'Set a session cap before using boosts or Divine Rolls. Stop after obtaining the target role, reaching the planned pity checkpoint, or spending the amount you can rebuild through normal play.',
+          'If a result is unclear, test it on the map that blocked you. Progress is better evidence than rarity color alone.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What should I spend Gems on first?',
+        answer:
+          'Use Gems to target the role your current team lacks, after claiming codes and free rewards. Stop when the team can clear the next map.',
+      },
+      {
+        question: 'Should I spend Crystals on every new unit?',
+        answer:
+          'No. Save Crystals for a unit that has already proved it will remain in your main team.',
+      },
+      {
+        question: 'Are Divine Roll odds listed here?',
+        answer:
+          'No. Use the current in-game pool and pity display because exact odds can change between updates.',
+      },
+    ],
+  },
   download: {
     route: '/download',
     label: 'Roblox',
@@ -276,7 +337,7 @@ export const topicPages: Record<string, TopicPage> = {
     seoDescription:
       'Track Anime RNG Defense update signals, the JJK title tag, current codes, Roblox update timestamp, Cursed Fingers, and source-check notes.',
     summary:
-      'The current Roblox title carries a JJK update tag. Use this page to track current codes, update rewards, and facts that need rechecking.',
+      'The current Roblox title carries a 7DS tag. Use this page to track Update 3 codes, Fairy Forest, update rewards, and facts that need rechecking.',
     image: commonImage,
     updatedAt: OFFICIAL_CHECKED_AT,
     featuredRoutes: [
@@ -288,8 +349,8 @@ export const topicPages: Record<string, TopicPage> = {
       {
         heading: 'Current official update signal',
         paragraphs: [
-          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public title currently includes a JJK update tag and the description explicitly lists code RELEASE.`,
-          'Current third-party code trackers also list UPDATE2, CURSEDHIGHSCHOOL, INNOVATIONCITY, UPDATE1, and TYFORSUPPORT1. Those are kept as source-checked, not official-only, until the Roblox page or official community confirms them publicly.',
+          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public title currently includes a 7DS tag and the description explicitly lists code FairyForest.`,
+          'Current third-party code trackers also list UPDATE3, TYFOR10KCCU, SorryForShutdown3, and several older codes. Those are kept as source-checked, not official-only, until the Roblox page or official community confirms them publicly.',
         ],
       },
       {
@@ -303,12 +364,12 @@ export const topicPages: Record<string, TopicPage> = {
       {
         question: 'What is the latest checked update?',
         answer:
-          'The site checked Roblox API and the public Roblox page on July 8, 2026. The API updatedAt timestamp was July 6, 2026.',
+          'The site checked Roblox API and the public Roblox page on July 14, 2026. The API updatedAt timestamp was July 14, 2026.',
       },
       {
-        question: 'What changed for JJK?',
+        question: 'What changed in Update 3?',
         answer:
-          'The public title carries a JJK tag and current code sources list CURSEDHIGHSCHOOL with Cursed Fingers. Exact mechanics should be verified before deeper pages are added.',
+          'The public title now carries a 7DS tag, the official description publishes FairyForest, and current trackers report UPDATE3. Exact unit and world values still need live verification.',
       },
     ],
   },

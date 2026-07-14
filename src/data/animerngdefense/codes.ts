@@ -81,7 +81,7 @@ export const activeCodes: GameCode[] = [
     sourceLabel: 'Official Roblox page plus three code-site cross-checks',
     confidence: 'high',
     notes:
-      'This is the only code explicitly visible in the official Roblox description during the July 8, 2026 check.',
+      'This code was explicitly visible in the official Roblox description on July 8, 2026. FairyForest replaced it in the July 14 description, so treat RELEASE as an older code that still needs a live redemption check.',
   },
   {
     code: 'UPDATE1',
@@ -114,7 +114,7 @@ export const activeCodes: GameCode[] = [
     sourceLabel: 'Destructoid, Pro Game Guides, Roblox Den, Beebom',
     confidence: 'medium',
     notes:
-      'Current JJK-themed reward code reported by multiple third-party trackers.',
+      'Legacy JJK-themed reward code reported by multiple third-party trackers; recheck it in the current 7DS build.',
   },
   {
     code: 'INNOVATIONCITY',
@@ -205,7 +205,7 @@ export const expiredCodes: GameCode[] = [
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
   status:
-    `${activeCodes.length} active Anime RNG Defense codes are source-checked across current July 2026 code trackers. July 14 added the Update 3 / 7DS-era code set. RELEASE was visible in the public Roblox description during the July 8 pass; the rest remain source-checked rather than game-tested.`,
+    `${activeCodes.length} Anime RNG Defense codes are tracked across current July 2026 sources. FairyForest is the official-description code on July 14; UPDATE3 and the rest remain source-checked rather than game-tested.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',

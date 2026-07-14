@@ -100,7 +100,7 @@ const keywordLinks = [
   { keyword: 'best team', href: '/teams' },
   { keyword: 'maps', href: '/maps' },
   { keyword: 'luck boosts', href: '/guides/luck-boosts-guide' },
-  { keyword: 'JJK update', href: '/updates' },
+  { keyword: '7DS update', href: '/updates' },
   { keyword: 'AFK units', href: '/guides/afk-units-guide' },
   { keyword: 'official Roblox', href: '/download' },
 ];
@@ -114,7 +114,7 @@ const startSteps = [
   {
     title: 'Redeem current codes',
     href: '/codes',
-    body: 'Claim Crystals, boxes, and JJK rewards before your first serious rolling session.',
+    body: 'Claim FairyForest, UPDATE3, Crystals, boxes, and potions before your first serious rolling session.',
   },
   {
     title: 'Pick a first carry',
@@ -135,14 +135,14 @@ const latestUpdateItems = [
     body: `${officialGameFacts.shortName} is verified at place ${officialGameFacts.robloxPlaceId}, universe ${officialGameFacts.robloxUniverseId}, by ${officialGameFacts.creatorName}.`,
   },
   {
-    title: 'JJK update watch',
-    date: '2026-07-08',
-    body: 'The public title carries a JJK tag; CURSEDHIGHSCHOOL and Cursed Fingers are tracked as current update rewards.',
+    title: 'Update 3 / 7DS watch',
+    date: '2026-07-14',
+    body: 'The public title carries a 7DS tag; FairyForest is published in the official Roblox description and UPDATE3 is source-checked.',
   },
   {
     title: 'Codes cross-checked',
-    date: '2026-07-08',
-    body: `${activeCodes.length} active codes are tracked, with RELEASE visible on the Roblox page and the rest cross-checked across current code sources.`,
+    date: '2026-07-14',
+    body: `${activeCodes.length} active codes are tracked, with FairyForest visible on the Roblox page and the rest cross-checked across current code sources.`,
   },
 ];
 
@@ -150,12 +150,12 @@ const coreDataModules = [
   {
     title: 'Unit Role Data',
     count: units.length,
-    body: 'Starter carry, AoE wave clear, single-target DPS, support, and JJK update-watch roles.',
+    body: 'Starter carry, AoE wave clear, single-target DPS, support, and Update 3 / 7DS watch roles.',
     href: '/database/units',
     toolHref: '/tools/roll-tracker',
     toolLabel: 'Track roles',
     guideHref: '/guides/unit-tier-list-guide',
-    samples: ['Starter Defender', 'AoE Carry', 'JJK Update Unit'],
+    samples: ['Starter Defender', 'AoE Carry', 'Update 3 / 7DS Unit'],
     icon: Star,
   },
   {
@@ -172,12 +172,12 @@ const coreDataModules = [
   {
     title: 'Team Checks',
     count: teamChecks.length,
-    body: 'Starter code team, balanced wave team, trait-focused team, and JJK update team checks.',
+    body: 'Starter code team, balanced wave team, trait-focused team, and Update 3 / 7DS checks.',
     href: '/database/teams',
     toolHref: '/tools/team-builder',
     toolLabel: 'Build team',
     guideHref: '/guides/team-building-guide',
-    samples: ['Starter Code Team', 'Balanced Wave Team', 'JJK Update Team'],
+    samples: ['Starter Code Team', 'Balanced Wave Team', 'Update 3 / 7DS Team'],
     icon: Users,
   },
   {
@@ -261,7 +261,7 @@ export function AnimeRngDefenseHomePage() {
                   variant="outline"
                   className="border-[#6EE7B7] bg-[#09060F]/80 text-[#D7FFF0]"
                 >
-                  JJK Update Watch
+                  Update 3 / 7DS
                 </Badge>
               </div>
               <h1 className="font-display text-4xl font-black leading-tight sm:text-5xl md:text-7xl">
@@ -359,7 +359,7 @@ export function AnimeRngDefenseHomePage() {
                 </div>
                 <div className="rounded-md bg-[#25102B] p-3">
                   <p className="font-display text-2xl font-black text-[#FF6B9A]">
-                    JJK
+                    7DS
                   </p>
                   <p className="text-[#E6D7EC] text-xs">update tag</p>
                 </div>

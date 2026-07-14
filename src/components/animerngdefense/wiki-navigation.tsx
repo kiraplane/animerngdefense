@@ -49,7 +49,7 @@ const wikiNavGroups: WikiNavGroup[] = [
       { href: '/', label: 'Home' },
       { href: '/guides/beginner-guide', label: 'Beginner Guide' },
       { href: '/download', label: 'Official Roblox' },
-      { href: '/updates', label: 'JJK Update' },
+      { href: '/updates', label: 'Update 3 / 7DS' },
     ],
   },
   {
@@ -58,7 +58,7 @@ const wikiNavGroups: WikiNavGroup[] = [
     links: [
       { href: '/codes', label: 'Codes Status' },
       { href: '/guides/codes-redeem-guide', label: 'Redeem Guide' },
-      { href: '/guides/jjk-update-guide', label: 'JJK Code Notes' },
+      { href: '/guides/jjk-update-guide', label: 'JJK Update Archive' },
     ],
   },
   {
@@ -119,6 +119,7 @@ const wikiNavGroups: WikiNavGroup[] = [
     links: [
       { href: '/guides/name-confusion-guide', label: 'Wrong-Game Guide' },
       { href: '/guides/luck-boosts-guide', label: 'Luck Boosts' },
+      { href: '/gems', label: 'Gems and Currency' },
       { href: '/guides', label: 'All Guides' },
     ],
     activePrefixes: ['/guides'],

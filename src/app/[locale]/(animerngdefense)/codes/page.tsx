@@ -38,12 +38,12 @@ export default function CodesPage() {
     {
       question: 'What Anime RNG Defense codes are active?',
       answer:
-        'The July 8, 2026 check tracks RELEASE, UPDATE1, UPDATE2, CURSEDHIGHSCHOOL, INNOVATIONCITY, and TYFORSUPPORT1 as active or source-checked active codes.',
+        'The July 14, 2026 check prioritizes FairyForest, UPDATE3, TYFOR10KCCU, and SorryForShutdown3, with older codes retained as source-checked attempts.',
     },
     {
       question: 'Which code is visible on the official Roblox page?',
       answer:
-        'The official Roblox description explicitly lists RELEASE during the July 8, 2026 check.',
+        'The official Roblox description explicitly lists FairyForest during the July 14, 2026 check.',
     },
     {
       question: 'Why are Anime Defense RNG codes excluded?',
@@ -93,8 +93,8 @@ export default function CodesPage() {
           </h2>
           <p className="mt-3 max-w-3xl text-[#E6D7EC] text-sm leading-7">
             Redeem codes before a major rolling session. Crystals and boxes help
-            build your first roster, while Cursed Fingers are tracked as current
-            JJK update rewards.
+            build your first roster, while potions support focused farming and
+            Cursed Fingers remain a legacy JJK inventory check.
           </p>
           <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             {activeCodes.map((code) => (
