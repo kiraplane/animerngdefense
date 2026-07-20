@@ -38,12 +38,12 @@ export default function CodesPage() {
     {
       question: 'What Anime RNG Defense codes are active?',
       answer:
-        'The July 14, 2026 check prioritizes FairyForest, UPDATE3, TYFOR10KCCU, and SorryForShutdown3, with older codes retained as source-checked attempts.',
+        'The July 20, 2026 check prioritizes the official UPDATE4 code, with FairyForest, UPDATE3, and older codes retained as source-checked attempts.',
     },
     {
       question: 'Which code is visible on the official Roblox page?',
       answer:
-        'The official Roblox description explicitly lists FairyForest during the July 14, 2026 check.',
+        'The official Roblox description explicitly lists UPDATE4 during the July 20, 2026 check.',
     },
     {
       question: 'Why are Anime Defense RNG codes excluded?',

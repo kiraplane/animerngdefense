@@ -144,7 +144,7 @@ export const guides: Guide[] = [
       {
         heading: 'Use codes before your first real roll plan',
         paragraphs: [
-          'The official Roblox description explicitly lists FairyForest, and current code trackers cross-check UPDATE3, TYFOR10KCCU, SorryForShutdown3, and several older codes. Redeeming current rewards early gives you Crystals, boxes, potions, and update materials that make the first team much smoother.',
+          'The official Roblox description explicitly lists UPDATE4, and current code trackers retain FairyForest, UPDATE3, TYFOR10KCCU, SorryForShutdown3, and several older codes. Redeem the official code first, then treat older rewards as source-checked attempts.',
           'The mistake is spending rewards before you know the job. Common Boxes and Crystals are best used to create a usable roster, then improve the unit that actually carries waves. If a code has a requirement, such as the reported 10,000-roll gate on TYFORSUPPORT1, do not treat the error as a typo until you meet the requirement.',
         ],
       },
@@ -182,7 +182,7 @@ export const guides: Guide[] = [
     seoDescription:
       'Redeem Anime RNG Defense codes for Crystals, Boxes, Cursed Fingers, and free rewards with current July 2026 code checks and wrong-game warnings.',
     summary:
-      'A source-checked code guide that separates the official FairyForest code, cross-checked active codes, reported requirements, older update codes, and wrong-game code traps.',
+      'A source-checked code guide that separates the official UPDATE4 code, cross-checked active codes, reported requirements, older update codes, and wrong-game code traps.',
     category: 'Codes',
     difficulty: 'Beginner',
     coverImageUrl: videoCover(videos.codes),
@@ -203,7 +203,7 @@ export const guides: Guide[] = [
       {
         heading: 'Redeem active codes before spending resources',
         paragraphs: [
-          'Current sources agree that Anime RNG Defense codes can grant Crystals, boxes, potions, Divine Rolls, Cursed Fingers, and free rewards. The official Roblox page now lists FairyForest, while multiple current code trackers also list UPDATE3, TYFOR10KCCU, and other July 2026 codes.',
+          'Current sources agree that Anime RNG Defense codes can grant Crystals, boxes, potions, Divine Rolls, Cursed Fingers, and free rewards. The official Roblox page now lists UPDATE4, while multiple current code trackers retain FairyForest, UPDATE3, TYFOR10KCCU, and other July 2026 codes.',
           'Use codes before a major rolling session. Crystals and boxes are strongest when they help you build a first roster or improve the carry that clears your current map. If you redeem after spending all your early resources, you lose the chance to make a cleaner first plan.',
         ],
         bullets: [
@@ -232,7 +232,7 @@ export const guides: Guide[] = [
       {
         question: 'What is the official Anime RNG Defense code?',
         answer:
-          'The Roblox description checked on July 14, 2026 explicitly lists FairyForest. Other active codes are cross-checked from current code trackers.',
+          'The Roblox description checked on July 20, 2026 explicitly lists UPDATE4. Other active codes are cross-checked from current code trackers.',
       },
       {
         question: 'Why does TYFORSUPPORT1 not work?',
@@ -299,7 +299,7 @@ export const guides: Guide[] = [
       {
         heading: 'Treat Update 3 / 7DS units as role candidates first',
         paragraphs: [
-          'The live Roblox title has moved from JJK to 7DS, while current code and competitor signals point to Update 3 and Fairy Forest. That is useful as a watch signal, but it does not mean every recent pull should jump to S tier on day one.',
+          'The official description now publishes UPDATE4, while competitor and code signals still retain Fairy Forest and Update 3 topics. That is useful as a watch signal, but it does not mean every recent pull should jump to S tier on day one.',
           'Put a new update unit into a job first: wave clear, boss damage, support, lane control, or farming value. If the unit does not outperform your current holder of that job on the same map, keep it as a watch unit until more source-checked data stabilizes.',
         ],
         bullets: [
@@ -632,7 +632,7 @@ export const guides: Guide[] = [
       {
         heading: 'JJK is now a previous update cycle',
         paragraphs: [
-          'The Roblox game title no longer displays the JJK tag. On July 14, 2026, the official API shows a 7DS tag and the official description publishes FairyForest instead of RELEASE.',
+          'The official Roblox description changed again by July 20, 2026 and now publishes UPDATE4. Older FairyForest and UPDATE3 entries remain useful as source-checked attempts, not proof of the newest meta.',
           'Keep this URL as the archive for CURSEDHIGHSCHOOL and Cursed Fingers, but use the updates and codes pages for current Update 3 decisions.',
         ],
       },
@@ -640,14 +640,14 @@ export const guides: Guide[] = [
         heading: 'Spend update items after the game explains them',
         paragraphs: [
           'Cursed Fingers belong to the earlier JJK cycle. If an older code still redeems, check the in-game UI before spending them and do not assume the item remains important in the current 7DS build.',
-          'The safest current routine is: redeem FairyForest and UPDATE3, inventory the reward, establish a repeatable Fairy Forest run, then compare new units by wave clear, boss damage, or support value.',
+          'The safest current routine is: redeem UPDATE4 first, try the older source-checked codes, inventory each reward, then compare new units by wave clear, boss damage, or support value.',
         ],
       },
       {
         heading: 'What to recheck after the next update',
         paragraphs: [
           'Recheck the Roblox title, description, update timestamp, active codes, and whether competitors have published unit, world, or trait evidence. The JJK material now stays archived unless the game rotates it back.',
-          'Future current pages can expand around verified 7DS units, Fairy Forest waves, raids, and item usage once exact live values are available.',
+          'Future current pages can expand around verified Update 4 units, maps, raids, and item usage once exact live values are available.',
         ],
       },
     ],

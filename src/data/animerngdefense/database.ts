@@ -204,12 +204,12 @@ export const units: UnitEntry[] = [
       'If a unit appears only in a new update, wait for more source confirmation before treating it as permanent tier-list truth.',
     trackerTasks: [
       'Check the Roblox title and description.',
-      'Redeem FairyForest, UPDATE3, and other current source-checked codes.',
+      'Redeem UPDATE4 first, then try FairyForest, UPDATE3, and other current source-checked codes.',
       'Test the unit on the map that blocks you.',
       'Avoid copying tier claims from unrelated anime TD games.',
     ],
     relatedRoutes: ['/updates', '/guides/jjk-update-guide', '/tier-list'],
-    relatedEntities: ['7DS update', 'FairyForest', 'Update 3'],
+    relatedEntities: ['Update 4', 'UPDATE4', 'FairyForest', 'Update 3'],
     sourcePages: ['Roblox official title', 'Current code trackers'],
     confidence: 'medium',
   },
@@ -437,10 +437,10 @@ export const teamChecks: TeamEntry[] = [
     stage: 'Update',
     location: 'Current Update 3 / 7DS content',
     summary:
-      'The current Roblox title uses a 7DS tag, so update teams should test recent pulls against Fairy Forest before replacing a stable older roster.',
+      'The official description now publishes UPDATE4, so update teams should test recent pulls against the current repeatable map before replacing a stable older roster.',
     prerequisites: ['FairyForest redeemed', 'Update page checked'],
     recommendedPrep: [
-      'Redeem FairyForest, UPDATE3, and other current codes.',
+      'Redeem UPDATE4 first, then try FairyForest, UPDATE3, and other current codes.',
       'Keep older Cursed Fingers only if the live UI still exposes a use.',
       'Test new event units on current maps.',
       'Avoid importing Anime Defense RNG or Anime RNG TD claims.',
@@ -449,7 +449,7 @@ export const teamChecks: TeamEntry[] = [
     routeHint:
       'Treat Update 3 advice as a snapshot. Recheck after Roblox title, world, or code changes.',
     relatedRoutes: ['/updates', '/guides/jjk-update-guide', '/codes'],
-    relatedEntities: ['FairyForest', '7DS update', 'current codes'],
+    relatedEntities: ['UPDATE4', 'FairyForest', 'current codes'],
     sourcePages: ['Roblox official title', 'Current code trackers'],
     confidence: 'medium',
   },

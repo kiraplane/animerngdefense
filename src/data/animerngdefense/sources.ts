@@ -1,10 +1,10 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-07-19';
-export const OFFICIAL_CHECKED_AT = '2026-07-19';
+export const CHECKED_AT = '2026-07-20';
+export const OFFICIAL_CHECKED_AT = '2026-07-20';
 
 export const officialGameFacts = {
-  name: '[7DS🐲] Anime RNG Defense',
+  name: '[🍀] Anime RNG Defense',
   shortName: 'Anime RNG Defense',
   commonName: 'Anime RNG Defense',
   siteName: 'Anime RNG Defense Wiki',
@@ -19,17 +19,17 @@ export const officialGameFacts = {
   genreL2: 'Tower Defense',
   status: 'Live Roblox experience',
   createdAt: '2026-03-26T01:57:38.197Z',
-  updatedAt: '2026-07-14T03:34:31.8169194Z',
+  updatedAt: '2026-07-19T21:20:48.7510215Z',
   maxPlayers: 4,
-  activePlayersAtCheck: 9744,
-  visitsAtCheck: 2692680,
-  favoritesAtCheck: 72476,
+  activePlayersAtCheck: 4510,
+  visitsAtCheck: 4199589,
+  favoritesAtCheck: 93869,
   upVotesAtCheck: 3489,
   downVotesAtCheck: 92,
   officialRobloxUrl:
     'https://www.roblox.com/games/104693964860826/Anime-RNG-Defense',
   officialDescriptionSummary:
-    'A Roblox RNG tower defense game where players roll anime-style units, enter maps, clear enemy waves, place defenders, upgrade teams, boost luck, and protect the base. The Roblox page currently displays a 7DS update tag and explicitly lists code FairyForest.',
+    'A Roblox RNG tower defense game where players roll anime-style units, enter maps, clear enemy waves, place defenders, upgrade teams, boost luck, and protect the base. The current official description explicitly lists code UPDATE4.',
 };
 
 export const siteDescription =
@@ -42,7 +42,7 @@ export const officialSources: DataSource[] = [
     url: officialGameFacts.officialRobloxUrl,
     checkedAt: OFFICIAL_CHECKED_AT,
     confidence: 'high',
-    note: 'Primary source for current 7DS title tag, creator group, official code FairyForest, gameplay loop, supported platforms, and official play link.',
+    note: 'Primary source for the current title, creator group, official code UPDATE4, gameplay loop, supported platforms, and official play link.',
   },
   {
     type: 'roblox_api',

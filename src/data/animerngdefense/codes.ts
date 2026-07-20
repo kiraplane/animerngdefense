@@ -1,9 +1,20 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-19';
+export const CODE_CHECKED_AT = '2026-07-20';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'UPDATE4',
+    reward: 'Free rewards; the official description does not list the exact contents',
+    status: 'active',
+    firstSeen: '2026-07-20',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Official Roblox description',
+    confidence: 'high',
+    notes:
+      'The official Roblox description explicitly publishes UPDATE4. Copy the uppercase code exactly, then use the in-game reward popup to confirm the contents.',
+  },
   {
     code: 'FairyForest',
     reward:
@@ -205,7 +216,7 @@ export const expiredCodes: GameCode[] = [
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
   status:
-    `${activeCodes.length} Anime RNG Defense codes are tracked across current July 2026 sources. FairyForest is the official-description code on July 14; UPDATE3 and the rest remain source-checked rather than game-tested.`,
+    `${activeCodes.length} Anime RNG Defense codes are tracked across current July 2026 sources. UPDATE4 is published in the official Roblox description on July 20; older codes remain source-checked rather than game-tested.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',

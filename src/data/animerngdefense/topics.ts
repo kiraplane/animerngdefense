@@ -337,7 +337,7 @@ export const topicPages: Record<string, TopicPage> = {
     seoDescription:
       'Track Anime RNG Defense update signals, the JJK title tag, current codes, Roblox update timestamp, Cursed Fingers, and source-check notes.',
     summary:
-      'The current Roblox title carries a 7DS tag. Use this page to track Update 3 codes, Fairy Forest, update rewards, and facts that need rechecking.',
+      'The official Roblox description now publishes UPDATE4. Use this page to track the current code, older source-checked rewards, and update facts that still need rechecking.',
     image: commonImage,
     updatedAt: OFFICIAL_CHECKED_AT,
     featuredRoutes: [
@@ -349,8 +349,8 @@ export const topicPages: Record<string, TopicPage> = {
       {
         heading: 'Current official update signal',
         paragraphs: [
-          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public title currently includes a 7DS tag and the description explicitly lists code FairyForest.`,
-          'Current third-party code trackers also list UPDATE3, TYFOR10KCCU, SorryForShutdown3, and several older codes. Those are kept as source-checked, not official-only, until the Roblox page or official community confirms them publicly.',
+          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public description explicitly lists code UPDATE4.`,
+          'Current third-party code trackers also list FairyForest, UPDATE3, TYFOR10KCCU, SorryForShutdown3, and several older codes. Those are kept as source-checked, not official-only, until the Roblox page or official community confirms them publicly.',
         ],
       },
       {
@@ -369,7 +369,7 @@ export const topicPages: Record<string, TopicPage> = {
       {
         question: 'What changed in Update 3?',
         answer:
-          'The public title now carries a 7DS tag, the official description publishes FairyForest, and current trackers report UPDATE3. Exact unit and world values still need live verification.',
+          'The official description now publishes UPDATE4, while current trackers retain FairyForest and UPDATE3. Exact new unit, map, and reward values still need live verification.',
       },
     ],
   },
