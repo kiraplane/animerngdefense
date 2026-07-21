@@ -22,6 +22,7 @@ export enum Routes {
   Maps = '/maps',
   Summons = '/summons',
   Download = '/download',
+  Discord = '/discord',
   Updates = '/updates',
   Tools = '/tools',
   TeamBuilder = '/tools/team-builder',

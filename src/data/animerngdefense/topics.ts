@@ -328,6 +328,66 @@ export const topicPages: Record<string, TopicPage> = {
       },
     ],
   },
+  discord: {
+    route: '/discord',
+    label: 'Discord',
+    eyebrow: 'Community Status',
+    title: 'Anime RNG Defense Discord Status',
+    seoTitle: 'Anime RNG Defense Discord - Invite and Mera Server Check',
+    seoDescription:
+      'Check Anime RNG Defense Discord invite candidates, verify Mera branding and universe ID 9940812243, and avoid wrong-game servers or unsafe DMs.',
+    summary:
+      'Current public sources disagree between two vanity invites. Preview the destination and verify Mera branding, the correct Roblox universe, and current game channels before joining.',
+    image: commonImage,
+    updatedAt: CHECKED_AT,
+    featuredRoutes: ['/download', '/codes', '/updates'],
+    sections: [
+      {
+        heading: 'Two current invite identifiers need destination checks',
+        paragraphs: [
+          'Current exact-game sources publish discord.gg/animerngdefense and discord.gg/adrng. Because the public Roblox page exposes the community link only to eligible signed-in users, this page does not silently choose one vanity code and label it official.',
+          'Enter an invite manually in Discord, stop at the preview screen, and check that the destination identifies Anime RNG Defense by Mera. A vanity code can be changed or reassigned, so the destination matters more than the text.',
+        ],
+        bullets: [
+          'Candidate 1: discord.gg/animerngdefense',
+          'Candidate 2: discord.gg/adrng',
+          `Correct game universe: ${officialGameFacts.robloxUniverseId}`,
+          `Correct Roblox creator: ${officialGameFacts.creatorName}`,
+        ],
+      },
+      {
+        heading: 'Match the server to the live game',
+        paragraphs: [
+          'A correct server should discuss the current Anime RNG Defense worlds, Update 4, current codes, maps, rolls, and Mera announcements. Leave if the server is actually about Anime Defense RNG, Anime RNG TD, or another similarly named game.',
+          'Use the official Roblox page as the final identity check. The correct root place is 104693964860826 and the universe is 9940812243.',
+        ],
+      },
+      {
+        heading: 'Use Discord for fast signals, not account access',
+        paragraphs: [
+          'Discord is useful for code drops, shutdown notices, raid coordination, and early unit testing. Those are time-sensitive community signals, so compare them with the live game before spending Crystals or rare rolls.',
+          'Staff and experienced players do not need your Roblox password, browser cookie, one-time code, recovery email, or remote-control access. Ignore direct messages that offer private executors, free Robux, account recovery, or guaranteed rolls.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What is the Anime RNG Defense Discord invite?',
+        answer:
+          'Current exact-game sources disagree between animerngdefense and adrng vanity invites. Preview the destination and verify Mera branding before joining.',
+      },
+      {
+        question: 'How do I know it is the right game server?',
+        answer:
+          'Match the server to Anime RNG Defense by Mera, Roblox universe 9940812243, root place 104693964860826, and current Update 4 discussion.',
+      },
+      {
+        question: 'Does Anime RNG Defense have an official Trello?',
+        answer:
+          'No creator-controlled public Trello was confirmed in this check. Treat boards using the logo as community resources unless Mera links them.',
+      },
+    ],
+  },
   updates: {
     route: '/updates',
     label: 'Updates',

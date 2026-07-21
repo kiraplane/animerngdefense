@@ -49,6 +49,7 @@ const wikiNavGroups: WikiNavGroup[] = [
       { href: '/', label: 'Home' },
       { href: '/guides/beginner-guide', label: 'Beginner Guide' },
       { href: '/download', label: 'Official Roblox' },
+      { href: '/discord', label: 'Discord Status' },
       { href: '/updates', label: 'Update 3 / 7DS' },
     ],
   },
