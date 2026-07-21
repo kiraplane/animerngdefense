@@ -1,9 +1,43 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-20';
+export const CODE_CHECKED_AT = '2026-07-21';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'SORRYFORSHUTDOWN5',
+    reward: '1 Divine Roll',
+    status: 'active',
+    firstSeen: '2026-07-21',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid',
+    confidence: 'high',
+    notes:
+      'Newest shutdown-compensation code found consistently across current trackers. Copy the uppercase spelling exactly.',
+  },
+  {
+    code: 'TY100K',
+    reward: 'Free milestone rewards; exact contents vary across trackers',
+    status: 'active',
+    firstSeen: '2026-07-21',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid',
+    confidence: 'medium',
+    requirement: 'Current trackers report a 100,000-roll requirement',
+    notes:
+      'The code string and roll gate align across current sources, while reward wording does not. Use the in-game popup as the final reward confirmation.',
+  },
+  {
+    code: 'BULLSHIDEOUT',
+    reward: 'Free rewards; exact contents vary across trackers',
+    status: 'active',
+    firstSeen: '2026-07-21',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid',
+    confidence: 'medium',
+    notes:
+      'Current sources agree on the code string but not every reward or account requirement. Present it as source-checked rather than game-tested.',
+  },
   {
     code: 'UPDATE4',
     reward: 'Free rewards; the official description does not list the exact contents',
@@ -216,7 +250,7 @@ export const expiredCodes: GameCode[] = [
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
   status:
-    `${activeCodes.length} Anime RNG Defense codes are tracked across current July 2026 sources. UPDATE4 is published in the official Roblox description on July 20; older codes remain source-checked rather than game-tested.`,
+    `${activeCodes.length} Anime RNG Defense codes are tracked across current July 2026 sources. SORRYFORSHUTDOWN5, TY100K, and BULLSHIDEOUT were added on July 21; rewards with source conflicts remain clearly labeled.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',
