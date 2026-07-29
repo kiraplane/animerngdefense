@@ -94,9 +94,192 @@ export const relatedRouteLabels: Record<string, string> = {
   '/guides/jjk-update-guide': 'JJK Update Guide',
   '/guides/afk-units-guide': 'AFK Units Guide',
   '/guides/name-confusion-guide': 'Wrong-Game Name Guide',
+  '/guides/accessories-tier-list': 'Accessories Tier List',
+  '/guides/cursed-finger-guide': 'Cursed Finger Guide',
 };
 
 export const guides: Guide[] = [
+  {
+    slug: 'accessories-tier-list',
+    title: 'Anime RNG Defense Accessories Tier List',
+    seoTitle:
+      'Anime RNG Defense Accessories Tier List - Best Accessories Ranked',
+    seoDescription:
+      'Rank the current Anime RNG Defense accessories by practical value, rarity, obtainment, and the units that should receive each item first.',
+    summary:
+      'A current accessory ranking for deciding which chest and raid drops deserve investment, from Pirate King and Atomic Fit to early fallback items.',
+    category: 'Units',
+    difficulty: 'Intermediate',
+    coverImageUrl: localCover,
+    publishedAt: CHECKED_AT,
+    updatedAt: CHECKED_AT,
+    sourceStrategy: 'community_crosscheck',
+    sourceNotes:
+      'Current accessory names, rarity labels, and obtainment notes were cross-checked against public item databases and current tier-list coverage on July 29, 2026.',
+    videoSearchQueries: [
+      'Anime RNG Defense accessories tier list',
+      'Anime RNG Defense best accessory',
+      'Anime RNG Defense Pirate King accessory',
+    ],
+    tags: ['Accessories', 'Tier List', 'Items'],
+    relatedRoutes: [
+      '/tier-list',
+      '/units',
+      '/database',
+      '/guides/cursed-finger-guide',
+    ],
+    body: [
+      {
+        heading: 'Current accessory ranking',
+        paragraphs: [
+          'Accessories should be ranked by the job they improve, not by rarity color alone. Put the strongest limited drops on a unit that already clears difficult content; do not lock a premium item onto a temporary early-game defender.',
+          'This list reflects the current public accessory pool and obtainment notes. Treat chest and raid availability as the first filter, then compare the item with the role of the unit receiving it.',
+        ],
+        bullets: [
+          'SSS: Pirate King - Secret accessory from Epic Chests and the strongest current chase item.',
+          'SS: Atomic Fit - Mythical accessory from Epic Chests; Itochi - Mythical raid accessory.',
+          'S+: Slime Fit - Mythical accessory from Epic or Rare Chests.',
+          'S: Cleaner Fit - Mythical accessory from Rare Chests.',
+          'A: Quincie - Legendary; Behelot Necklace - Epic.',
+          'B+: Cloud Sword and Neptune Sword - Legendary fallback options.',
+          'B: Mugetsu - Epic; Ulquioro - Rare.',
+          'C: Straw Hat - Epic; Holy Sword - Rare; Saiki Glasses - Common.',
+          'D: Kento Glasses - Rare; Wolf EyePatch - Common.',
+          'F: Scouter - Common and primarily an early placeholder.',
+        ],
+      },
+      {
+        heading: 'Which accessories deserve resources first',
+        paragraphs: [
+          'Pirate King, Atomic Fit, Itochi, Slime Fit, and Cleaner Fit are the priority group because they sit at the top of the current pool and are difficult enough to replace that a good copy can stay relevant. Equip them on a proven carry, boss unit, or support whose effect matters in every serious run.',
+          'The middle tiers are useful when they solve an immediate roster problem. A Legendary label does not automatically beat a lower-rarity item whose effect fits the unit better, so compare the final battle result before moving upgrade resources.',
+        ],
+        bullets: [
+          'Main carry: test the highest-tier damage-oriented item you own.',
+          'Boss slot: prioritize consistent single-target improvement over wave-only value.',
+          'Support: keep utility uptime and team contribution ahead of personal damage.',
+          'Early roster: use B or C tier items as placeholders without overinvesting.',
+        ],
+      },
+      {
+        heading: 'How to farm without wasting chest drops',
+        paragraphs: [
+          'Epic Chests carry the highest ceiling because Pirate King and Atomic Fit are tied to that pool, while Rare Chests still matter for Slime Fit and Cleaner Fit. Raids are the important route for Itochi. Choose the activity around the exact upgrade you need instead of opening every reward as soon as it appears.',
+          'Keep one usable accessory on each active unit, but concentrate scarce upgrades on the item that will survive the next roster change. When a better drop arrives, move the old item to a secondary role instead of dismantling a useful bridge item immediately.',
+        ],
+      },
+      {
+        heading: 'A simple keep or replace rule',
+        paragraphs: [
+          'Keep an accessory when it improves the unit you deploy most and the next realistic replacement is several tiers or a different activity away. Replace it when the new item improves the same role and the old item can strengthen another active unit.',
+          'Do not chase the list in isolation. A top accessory on an underbuilt unit is usually less valuable than finishing the upgrades on the carry that already clears the map.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What is the best accessory in Anime RNG Defense?',
+        answer:
+          'Pirate King currently leads the public accessory rankings, with Atomic Fit and Itochi immediately behind it.',
+      },
+      {
+        question: 'Where does Itochi come from?',
+        answer:
+          'Current item coverage lists Itochi as a Mythical raid accessory.',
+      },
+      {
+        question: 'Should I upgrade a low-tier accessory?',
+        answer:
+          'Use it as a light-investment placeholder if it helps an active unit, but keep expensive resources for an item likely to remain equipped.',
+      },
+    ],
+  },
+  {
+    slug: 'cursed-finger-guide',
+    title: 'Anime RNG Defense Cursed Finger Guide',
+    seoTitle:
+      'Anime RNG Defense Cursed Finger Guide - Effect, Sources and Best Use',
+    seoDescription:
+      'Learn what Cursed Finger does in Anime RNG Defense, how players obtain it, and when its random buff and nerf are worth using on a unit.',
+    summary:
+      'Cursed Finger applies a random positive and negative effect, so the correct play is to use it on a stable unit only when you can absorb a bad outcome.',
+    category: 'Traits',
+    difficulty: 'Intermediate',
+    coverImageUrl: localCover,
+    publishedAt: CHECKED_AT,
+    updatedAt: CHECKED_AT,
+    sourceStrategy: 'manual_data',
+    sourceNotes:
+      'The effect and known acquisition routes were checked against the current public item database and July 2026 code history.',
+    videoSearchQueries: [
+      'Anime RNG Defense Cursed Finger',
+      'Anime RNG Defense King of Curses boss',
+    ],
+    tags: ['Cursed Finger', 'Items', 'JJK'],
+    relatedRoutes: [
+      '/traits',
+      '/codes',
+      '/units',
+      '/guides/accessories-tier-list',
+    ],
+    body: [
+      {
+        heading: 'What Cursed Finger does',
+        paragraphs: [
+          'Cursed Finger applies one random buff and one random nerf to the selected unit. It is not a guaranteed upgrade. The value comes from accepting a tradeoff that improves the unit in the role you actually use.',
+          'Because both sides are random, use the item only when you understand the unit before and after the change. Record the original performance so a flashy buff does not hide a nerf that damages the real job.',
+        ],
+      },
+      {
+        heading: 'Known ways to obtain Cursed Fingers',
+        paragraphs: [
+          'Cursed Fingers have appeared in JJK-era code rewards and through the King of Curses boss quest. Older codes such as CURSEDHIGHSCHOOL and SORRYFORSHUTDOWN2 were reported with Cursed Finger rewards, but code availability changes and should be checked on the live codes page before planning around them.',
+          'For repeatable progress, treat the King of Curses route as the activity to inspect first. If the quest or reward is unavailable in the current build, keep the item rather than spending it only because an older guide says the source is permanent.',
+        ],
+        bullets: [
+          'Check the current Codes page before entering an expired code.',
+          'Inspect the King of Curses boss quest and its displayed rewards.',
+          'Do not assume an old JJK update source remains active after a new update.',
+        ],
+      },
+      {
+        heading: 'Best units to use it on',
+        paragraphs: [
+          'Use Cursed Finger on a unit whose baseline role is already secure and whose current build can survive a negative roll. A permanent carry or boss specialist is a better candidate than a fresh pull you have not tested.',
+          'Avoid spending it on economy or support units unless the possible buff directly helps their team job. Personal damage rarely compensates for losing the utility that earned the unit a slot.',
+        ],
+        bullets: [
+          'Good candidate: a long-term carry with completed core upgrades.',
+          'Conditional candidate: a boss unit used in a specific mode.',
+          'Poor candidate: an untested pull, temporary starter, or essential support.',
+        ],
+      },
+      {
+        heading: 'Use a before-and-after test',
+        paragraphs: [
+          'Run the same map, placement, and upgrade order before using the item. After the roll, repeat the test and compare clear time, leaks, boss damage, and upgrade pressure. Keep the result only when the unit performs its real job better.',
+          'One run can be noisy. Test more than once when RNG, critical hits, or enemy timing can change the outcome.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is Cursed Finger always an upgrade?',
+        answer:
+          'No. It applies both a random buff and a random nerf, so the final tradeoff can be worse for the unit.',
+      },
+      {
+        question: 'Can codes give Cursed Fingers?',
+        answer:
+          'Some older JJK-era codes were reported with them, but current availability must be checked because Roblox codes expire.',
+      },
+      {
+        question: 'Who should receive the first Cursed Finger?',
+        answer:
+          'Use it on a proven long-term unit only after recording its baseline performance and deciding what negative outcome you can tolerate.',
+      },
+    ],
+  },
   {
     slug: 'beginner-guide',
     title: 'Anime RNG Defense Beginner Guide',
