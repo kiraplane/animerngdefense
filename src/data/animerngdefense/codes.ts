@@ -1,9 +1,43 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-07-24';
+export const CODE_CHECKED_AT = '2026-07-29';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'UPDATE5',
+    reward: 'Free Crystals and potions',
+    status: 'active',
+    firstSeen: '2026-07-27',
+    lastChecked: '2026-07-29',
+    sourceLabel: 'PCGamesN',
+    confidence: 'medium',
+    notes:
+      'Newest Update 5 code in the July 27 current list. Redeem before the next announced update rotation.',
+  },
+  {
+    code: 'EISENBERNCASTLE',
+    reward: 'Free Crystals and potions',
+    status: 'active',
+    firstSeen: '2026-07-27',
+    lastChecked: '2026-07-29',
+    sourceLabel: 'PCGamesN',
+    confidence: 'medium',
+    notes:
+      'Current Update 5 map code. Copy the all-uppercase spelling exactly.',
+  },
+  {
+    code: 'WEATHERS',
+    reward: 'Free rewards',
+    status: 'active',
+    firstSeen: '2026-07-27',
+    lastChecked: '2026-07-29',
+    sourceLabel: 'PCGamesN',
+    confidence: 'medium',
+    requirement: 'Requires at least 10,000 rolls',
+    notes:
+      'Current weather-system code with a 10,000-roll gate. Do not troubleshoot it on a new account before meeting the requirement.',
+  },
   {
     code: 'SORRYFORSHUTDOWN5',
     reward: '1 Divine Roll',
@@ -250,7 +284,7 @@ export const expiredCodes: GameCode[] = [
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
   status:
-    `${activeCodes.length} Anime RNG Defense codes are tracked across current July 2026 sources. SORRYFORSHUTDOWN5, TY100K, and BULLSHIDEOUT were added on July 21; rewards with source conflicts remain clearly labeled.`,
+    `${activeCodes.length} Anime RNG Defense codes are tracked across current July 2026 sources. UPDATE5, EISENBERNCASTLE, and WEATHERS were added on July 28; rewards with source conflicts remain clearly labeled.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',

@@ -1,10 +1,10 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-07-24';
-export const OFFICIAL_CHECKED_AT = '2026-07-24';
+export const CHECKED_AT = '2026-07-29';
+export const OFFICIAL_CHECKED_AT = '2026-07-29';
 
 export const officialGameFacts = {
-  name: '[🍀] Anime RNG Defense',
+  name: '[FATE🔥] Anime RNG Defense',
   shortName: 'Anime RNG Defense',
   commonName: 'Anime RNG Defense',
   siteName: 'Anime RNG Defense Wiki',
@@ -19,21 +19,21 @@ export const officialGameFacts = {
   genreL2: 'Tower Defense',
   status: 'Live Roblox experience',
   createdAt: '2026-03-26T01:57:38.197Z',
-  updatedAt: '2026-07-19T21:20:48.7510215Z',
+  updatedAt: '2026-07-27T00:28:29.817Z',
   maxPlayers: 4,
-  activePlayersAtCheck: 4510,
-  visitsAtCheck: 4199589,
-  favoritesAtCheck: 93869,
+  activePlayersAtCheck: 2864,
+  visitsAtCheck: 5617163,
+  favoritesAtCheck: 106188,
   upVotesAtCheck: 3489,
   downVotesAtCheck: 92,
   officialRobloxUrl:
     'https://www.roblox.com/games/104693964860826/Anime-RNG-Defense',
   officialDescriptionSummary:
-    'A Roblox RNG tower defense game where players roll anime-style units, enter maps, clear enemy waves, place defenders, upgrade teams, boost luck, and protect the base. The current official description explicitly lists code UPDATE4.',
+    'A Roblox RNG tower defense game where players roll anime-style units, enter maps, clear enemy waves, place defenders, upgrade teams, boost luck, and protect the base. The current FATE title and official description explicitly list code UPDATE5.',
 };
 
 export const siteDescription =
-  'Anime RNG Defense Wiki helps Roblox players redeem codes, roll units, build teams, manage traits and luck, clear maps, and follow current Update 3 / 7DS notes.';
+  'Anime RNG Defense Wiki helps Roblox players redeem codes, roll units, build teams, manage traits and luck, clear maps, and follow the current FATE / Update 5 cycle.';
 
 export const officialSources: DataSource[] = [
   {
@@ -42,7 +42,7 @@ export const officialSources: DataSource[] = [
     url: officialGameFacts.officialRobloxUrl,
     checkedAt: OFFICIAL_CHECKED_AT,
     confidence: 'high',
-    note: 'Primary source for the current title, creator group, official code UPDATE4, gameplay loop, supported platforms, and official play link.',
+    note: 'Primary source for the current FATE title, creator group, official code UPDATE5, gameplay loop, supported platforms, and official play link.',
   },
   {
     type: 'roblox_api',
