@@ -100,7 +100,7 @@ const keywordLinks = [
   { keyword: 'best team', href: '/teams' },
   { keyword: 'maps', href: '/maps' },
   { keyword: 'luck boosts', href: '/guides/luck-boosts-guide' },
-  { keyword: '7DS update', href: '/updates' },
+  { keyword: 'Update 6 event', href: '/updates' },
   { keyword: 'AFK units', href: '/guides/afk-units-guide' },
   { keyword: 'official Roblox', href: '/download' },
 ];
@@ -135,14 +135,14 @@ const latestUpdateItems = [
     body: `${officialGameFacts.shortName} is verified at place ${officialGameFacts.robloxPlaceId}, universe ${officialGameFacts.robloxUniverseId}, by ${officialGameFacts.creatorName}.`,
   },
   {
-    title: 'Update 3 / 7DS watch',
-    date: '2026-07-14',
-    body: 'The public title carries a 7DS tag; FairyForest is published in the official Roblox description and UPDATE3 is source-checked.',
+    title: 'Update 6 / Event is live',
+    date: '2026-08-03',
+    body: 'The current Roblox title carries an EVENT tag and the official description publishes UPDATE6.',
   },
   {
     title: 'Codes cross-checked',
-    date: '2026-07-14',
-    body: `${activeCodes.length} active codes are tracked, with FairyForest visible on the Roblox page and the rest cross-checked across current code sources.`,
+    date: '2026-08-03',
+    body: `${activeCodes.length} active codes are tracked, with UPDATE6 visible on the Roblox page and older strings kept source-checked where expiry is not confirmed.`,
   },
 ];
 
@@ -150,12 +150,12 @@ const coreDataModules = [
   {
     title: 'Unit Role Data',
     count: units.length,
-    body: 'Starter carry, AoE wave clear, single-target DPS, support, and Update 3 / 7DS watch roles.',
+    body: 'Starter carry, AoE wave clear, single-target DPS, support, and Update 6 / Event watch roles.',
     href: '/database/units',
     toolHref: '/tools/roll-tracker',
     toolLabel: 'Track roles',
     guideHref: '/guides/unit-tier-list-guide',
-    samples: ['Starter Defender', 'AoE Carry', 'Update 3 / 7DS Unit'],
+    samples: ['Starter Defender', 'AoE Carry', 'Update 6 / Event Unit'],
     icon: Star,
   },
   {
@@ -172,12 +172,12 @@ const coreDataModules = [
   {
     title: 'Team Checks',
     count: teamChecks.length,
-    body: 'Starter code team, balanced wave team, trait-focused team, and Update 3 / 7DS checks.',
+    body: 'Starter code team, balanced wave team, trait-focused team, and Update 6 / Event checks.',
     href: '/database/teams',
     toolHref: '/tools/team-builder',
     toolLabel: 'Build team',
     guideHref: '/guides/team-building-guide',
-    samples: ['Starter Code Team', 'Balanced Wave Team', 'Update 3 / 7DS Team'],
+    samples: ['Starter Code Team', 'Balanced Wave Team', 'Update 6 / Event Team'],
     icon: Users,
   },
   {
@@ -261,7 +261,7 @@ export function AnimeRngDefenseHomePage() {
                   variant="outline"
                   className="border-[#6EE7B7] bg-[#09060F]/80 text-[#D7FFF0]"
                 >
-                  Update 3 / 7DS
+                  Update 6 / Event
                 </Badge>
               </div>
               <h1 className="font-display text-4xl font-black leading-tight sm:text-5xl md:text-7xl">
@@ -359,9 +359,9 @@ export function AnimeRngDefenseHomePage() {
                 </div>
                 <div className="rounded-md bg-[#25102B] p-3">
                   <p className="font-display text-2xl font-black text-[#FF6B9A]">
-                    7DS
+                    U6
                   </p>
-                  <p className="text-[#E6D7EC] text-xs">update tag</p>
+                  <p className="text-[#E6D7EC] text-xs">current update</p>
                 </div>
               </div>
             </div>

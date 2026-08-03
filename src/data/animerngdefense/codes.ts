@@ -1,26 +1,37 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-08-01';
+export const CODE_CHECKED_AT = '2026-08-03';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'UPDATE6',
+    reward: 'Free update rewards; the official description does not list exact contents',
+    status: 'active',
+    firstSeen: '2026-08-02',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Official Roblox description',
+    confidence: 'high',
+    notes:
+      'The current official Roblox description publishes UPDATE6. Copy the uppercase string exactly and use the in-game popup as the final reward confirmation.',
+  },
   {
     code: 'UPDATE5',
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-01',
+    lastChecked: '2026-08-03',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
-      'Newest Update 5 code in the July 27 current list. Redeem before the next announced update rotation.',
+      'Previous Update 5 code retained as source-checked after the official page advanced to Update 6. Test it before planning around the reward.',
   },
   {
     code: 'EISENBERNCASTLE',
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-01',
+    lastChecked: '2026-08-03',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
@@ -31,7 +42,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free rewards',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-01',
+    lastChecked: '2026-08-03',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     requirement: 'Requires at least 10,000 rolls',
@@ -81,7 +92,7 @@ export const activeCodes: GameCode[] = [
     sourceLabel: 'Official Roblox description',
     confidence: 'high',
     notes:
-      'The official Roblox description explicitly publishes UPDATE4. Copy the uppercase code exactly, then use the in-game reward popup to confirm the contents.',
+      'Previous official update code retained as source-checked after the Roblox description advanced to UPDATE6.',
   },
   {
     code: 'FairyForest',
@@ -284,7 +295,7 @@ export const expiredCodes: GameCode[] = [
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
   status:
-    `${activeCodes.length} Anime RNG Defense codes are tracked across current July 2026 sources. UPDATE5, EISENBERNCASTLE, and WEATHERS were added on July 28; rewards with source conflicts remain clearly labeled.`,
+    `${activeCodes.length} Anime RNG Defense codes are tracked after the August 3 check. UPDATE6 is the current official-description code; older Update 5 and earlier strings remain source-checked where expiry is not confirmed.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',

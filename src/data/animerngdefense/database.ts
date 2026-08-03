@@ -189,7 +189,7 @@ export const units: UnitEntry[] = [
   {
     kind: 'unit',
     id: 'event-or-jjk-unit',
-    name: 'Update 3 / 7DS Unit',
+    name: 'Update 6 / Event Unit',
     aliases: ['event unit', 'limited unit'],
     category: 'Update unit role',
     stage: 'Update',
@@ -432,12 +432,12 @@ export const teamChecks: TeamEntry[] = [
   {
     kind: 'team',
     id: 'jjk-update-team',
-    name: 'Update 3 / 7DS Team',
+    name: 'Update 6 / Event Team',
     category: 'Update team',
     stage: 'Update',
-    location: 'Current Update 3 / 7DS content',
+    location: 'Current Update 6 / Event content',
     summary:
-      'The official description now publishes UPDATE4, so update teams should test recent pulls against the current repeatable map before replacing a stable older roster.',
+      'The official description now publishes UPDATE6, so event teams should test recent pulls against the current repeatable map before replacing a stable older roster.',
     prerequisites: ['FairyForest redeemed', 'Update page checked'],
     recommendedPrep: [
       'Redeem UPDATE4 first, then try FairyForest, UPDATE3, and other current codes.',
@@ -564,7 +564,7 @@ export const databaseHubCards = [
     title: 'Units Database',
     href: '/database/units',
     count: units.length,
-    body: 'Unit roles for starter carries, AoE wave clear, single-target DPS, support, and current Update 3 / 7DS testing.',
+    body: 'Unit roles for starter carries, AoE wave clear, single-target DPS, support, and current Update 6 / Event testing.',
   },
   {
     title: 'Rewards Database',
@@ -576,7 +576,7 @@ export const databaseHubCards = [
     title: 'Teams Database',
     href: '/database/teams',
     count: teamChecks.length,
-    body: 'Starter code teams, balanced wave teams, trait-focused teams, and Update 3 / 7DS checks.',
+    body: 'Starter code teams, balanced wave teams, trait-focused teams, and Update 6 / Event checks.',
   },
   {
     title: 'Maps Database',

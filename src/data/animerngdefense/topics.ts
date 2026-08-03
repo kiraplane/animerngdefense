@@ -38,7 +38,7 @@ export const topicPages: Record<string, TopicPage> = {
           'Keep a starter carry that clears early waves.',
           'Prioritize AoE when many enemies leak.',
           'Prioritize single-target damage when durable enemies survive.',
-          'Treat new Update 3 / 7DS units as watch items until tested.',
+          'Treat new Update 6 / Event units as watch items until tested.',
         ],
       },
     ],
@@ -397,7 +397,7 @@ export const topicPages: Record<string, TopicPage> = {
     seoDescription:
       'Track Anime RNG Defense update signals, the JJK title tag, current codes, Roblox update timestamp, Cursed Fingers, and source-check notes.',
     summary:
-      'The official Roblox description now publishes UPDATE4. Use this page to track the current code, older source-checked rewards, and update facts that still need rechecking.',
+      'The official Roblox description now publishes UPDATE6. Use this page to track the current code, older source-checked rewards, and update facts that still need rechecking.',
     image: commonImage,
     updatedAt: OFFICIAL_CHECKED_AT,
     featuredRoutes: [
@@ -409,8 +409,8 @@ export const topicPages: Record<string, TopicPage> = {
       {
         heading: 'Current official update signal',
         paragraphs: [
-          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public description explicitly lists code UPDATE4.`,
-          'Current third-party code trackers also list FairyForest, UPDATE3, TYFOR10KCCU, SorryForShutdown3, and several older codes. Those are kept as source-checked, not official-only, until the Roblox page or official community confirms them publicly.',
+          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public description explicitly lists code UPDATE6 and the title carries an EVENT tag.`,
+          'Current third-party code trackers also retain Update 5 and earlier strings. Those remain source-checked rather than official-current until the Roblox page or official community confirms them again.',
         ],
       },
       {
@@ -424,12 +424,12 @@ export const topicPages: Record<string, TopicPage> = {
       {
         question: 'What is the latest checked update?',
         answer:
-          'The site checked Roblox API and the public Roblox page on July 14, 2026. The API updatedAt timestamp was July 14, 2026.',
+          `The site checked Roblox API and the public Roblox page on ${OFFICIAL_CHECKED_AT}. The current API timestamp is ${officialGameFacts.updatedAt}.`,
       },
       {
-        question: 'What changed in Update 3?',
+        question: 'What changed in Update 6?',
         answer:
-          'The official description now publishes UPDATE4, while current trackers retain FairyForest and UPDATE3. Exact new unit, map, and reward values still need live verification.',
+          'The official title now carries an EVENT tag and the description publishes UPDATE6. Exact event units, maps, and reward values still need live verification before they become fixed database rows.',
       },
     ],
   },

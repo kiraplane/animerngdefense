@@ -57,7 +57,7 @@ export const guideCategoryIntro: Record<GuideCategory, string> = {
   Maps: 'Read maps as pathing and wave problems, not only as bigger stat checks.',
   Luck: 'Use boosts, boxes, crystals, and rerolls in focused windows with stop rules.',
   Updates:
-    'Track the current Update 3 / 7DS signals while preserving older JJK notes as dated history.',
+    'Track the current Update 6 / Event signals while preserving older JJK and 7DS notes as dated history.',
   Safety:
     'Stay on the official Roblox page and avoid scripts, executors, fake downloads, and copied wrong-game data.',
 };
@@ -470,7 +470,7 @@ export const guides: Guide[] = [
           'S priority: units that clear waves or finish the exact enemy that leaks.',
           'A priority: strong units that need map placement or upgrades to shine.',
           'B priority: usable fillers that help early maps but should not eat premium resources.',
-          'Watch priority: new Update 3 / 7DS units until current data stabilizes.',
+          'Watch priority: new Update 6 / Event units until current data stabilizes.',
         ],
       },
       {
@@ -481,15 +481,15 @@ export const guides: Guide[] = [
         ],
       },
       {
-        heading: 'Treat Update 3 / 7DS units as role candidates first',
+        heading: 'Treat Update 6 / Event units as role candidates first',
         paragraphs: [
-          'The official description now publishes UPDATE4, while competitor and code signals still retain Fairy Forest and Update 3 topics. That is useful as a watch signal, but it does not mean every recent pull should jump to S tier on day one.',
+          'The official description now publishes UPDATE6, while competitor and code signals still retain older Update 5, Fairy Forest, and 7DS topics. Those are useful as history, but they do not mean every recent pull should jump to S tier on day one.',
           'Put a new update unit into a job first: wave clear, boss damage, support, lane control, or farming value. If the unit does not outperform your current holder of that job on the same map, keep it as a watch unit until more source-checked data stabilizes.',
         ],
         bullets: [
-          '7DS/update carry: test against the Fairy Forest wave that currently leaks.',
-          '7DS/update support: test whether it makes your main carry clear faster.',
-          '7DS/update finisher: test against durable enemies, not easy starter waves.',
+          'Event carry: test against the current event wave that leaks.',
+          'Event support: test whether it makes your main carry clear faster.',
+          'Event finisher: test against durable enemies, not easy starter waves.',
         ],
       },
       {
@@ -795,7 +795,7 @@ export const guides: Guide[] = [
     seoDescription:
       'Track the Anime RNG Defense JJK update tag, Cursed Fingers, current codes, update rewards, and what to verify before spending resources.',
     summary:
-      'A dated JJK update archive that explains Cursed Fingers and older codes, then directs players to the current Update 3 / 7DS cycle.',
+      'A dated JJK update archive that explains Cursed Fingers and older codes, then directs players to the current Update 6 / Event cycle.',
     category: 'Updates',
     difficulty: 'Intermediate',
     coverImageUrl: videoCover(videos.jjkCodes),
@@ -816,7 +816,7 @@ export const guides: Guide[] = [
       {
         heading: 'JJK is now a previous update cycle',
         paragraphs: [
-          'The official Roblox description changed again by July 20, 2026 and now publishes UPDATE4. Older FairyForest and UPDATE3 entries remain useful as source-checked attempts, not proof of the newest meta.',
+          'The official Roblox description changed again by August 3, 2026 and now publishes UPDATE6. Older Update 5, FairyForest, and UPDATE3 entries remain useful as source-checked attempts, not proof of the newest meta.',
           'Keep this URL as the archive for CURSEDHIGHSCHOOL and Cursed Fingers, but use the updates and codes pages for current Update 3 decisions.',
         ],
       },
@@ -824,7 +824,7 @@ export const guides: Guide[] = [
         heading: 'Spend update items after the game explains them',
         paragraphs: [
           'Cursed Fingers belong to the earlier JJK cycle. If an older code still redeems, check the in-game UI before spending them and do not assume the item remains important in the current 7DS build.',
-          'The safest current routine is: redeem UPDATE4 first, try the older source-checked codes, inventory each reward, then compare new units by wave clear, boss damage, or support value.',
+          'The safest current routine is: redeem UPDATE6 first, try the older source-checked codes, inventory each reward, then compare new units by wave clear, boss damage, or support value.',
         ],
       },
       {
