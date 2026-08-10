@@ -54,7 +54,7 @@ export default function TeamsDatabasePage() {
           </h1>
           <p className="text-[#E6D7EC] text-lg leading-8">
             Browse team checklist data for beginner code teams, balanced wave
-            teams, trait-focused builds, and Update 6 / Event testing.
+            teams, trait-focused builds, and Update 7 / Bleach testing.
           </p>
           <p className="text-[#B99BC3] text-sm">
             Checked {databaseUpdatedAt}. {databaseSourceNote}

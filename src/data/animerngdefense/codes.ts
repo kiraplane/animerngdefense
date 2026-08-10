@@ -1,37 +1,48 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-08-04';
+export const CODE_CHECKED_AT = '2026-08-10';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'UPDATE7',
+    reward: 'Free update rewards; the official description does not list exact contents',
+    status: 'active',
+    firstSeen: '2026-08-10',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Official Roblox description',
+    confidence: 'high',
+    notes:
+      'The current BLEACH-era official Roblox description publishes UPDATE7. Copy the uppercase string exactly and use the in-game popup as the final reward confirmation.',
+  },
   {
     code: 'UPDATE6',
     reward: 'Free update rewards; the official description does not list exact contents',
     status: 'active',
     firstSeen: '2026-08-02',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Official Roblox description',
-    confidence: 'high',
+    sourceLabel: 'Previous official Roblox description',
+    confidence: 'medium',
     notes:
-      'The current official Roblox description publishes UPDATE6. Copy the uppercase string exactly and use the in-game popup as the final reward confirmation.',
+      'Previous official update code retained as source-checked after the Roblox description advanced to UPDATE7. Test it before planning around the reward.',
   },
   {
     code: 'UPDATE5',
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-04',
+    lastChecked: '2026-08-10',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
-      'Previous Update 5 code retained as source-checked after the official page advanced to Update 6. Test it before planning around the reward.',
+      'Previous Update 5 code retained as source-checked after the official page advanced to Update 7. Test it before planning around the reward.',
   },
   {
     code: 'EISENBERNCASTLE',
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-04',
+    lastChecked: '2026-08-10',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
@@ -42,7 +53,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free rewards',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-04',
+    lastChecked: '2026-08-10',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     requirement: 'Requires at least 10,000 rolls',
@@ -92,7 +103,7 @@ export const activeCodes: GameCode[] = [
     sourceLabel: 'Official Roblox description',
     confidence: 'high',
     notes:
-      'Previous official update code retained as source-checked after the Roblox description advanced to UPDATE6.',
+      'Previous official update code retained as source-checked after the Roblox description advanced to UPDATE7.',
   },
   {
     code: 'FairyForest',
@@ -295,7 +306,7 @@ export const expiredCodes: GameCode[] = [
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
   status:
-    `${activeCodes.length} Anime RNG Defense codes are tracked after the August 3 check. UPDATE6 is the current official-description code; older Update 5 and earlier strings remain source-checked where expiry is not confirmed.`,
+    `${activeCodes.length} Anime RNG Defense codes are tracked after the August 10 check. UPDATE7 is the current official-description code; UPDATE6 and earlier strings remain source-checked where expiry is not confirmed.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',

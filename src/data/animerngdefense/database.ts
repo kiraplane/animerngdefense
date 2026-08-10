@@ -189,7 +189,7 @@ export const units: UnitEntry[] = [
   {
     kind: 'unit',
     id: 'event-or-jjk-unit',
-    name: 'Update 6 / Event Unit',
+    name: 'Update 7 / Bleach Unit',
     aliases: ['event unit', 'limited unit'],
     category: 'Update unit role',
     stage: 'Update',
@@ -432,12 +432,12 @@ export const teamChecks: TeamEntry[] = [
   {
     kind: 'team',
     id: 'jjk-update-team',
-    name: 'Update 6 / Event Team',
+    name: 'Update 7 / Bleach Team',
     category: 'Update team',
     stage: 'Update',
-    location: 'Current Update 6 / Event content',
+    location: 'Current Update 7 / Bleach content',
     summary:
-      'The official description now publishes UPDATE6, so event teams should test recent pulls against the current repeatable map before replacing a stable older roster.',
+      'The official description now publishes UPDATE7, so Bleach-era teams should test recent pulls against the current repeatable map before replacing a stable older roster.',
     prerequisites: ['FairyForest redeemed', 'Update page checked'],
     recommendedPrep: [
       'Redeem UPDATE4 first, then try FairyForest, UPDATE3, and other current codes.',
@@ -564,7 +564,7 @@ export const databaseHubCards = [
     title: 'Units Database',
     href: '/database/units',
     count: units.length,
-    body: 'Unit roles for starter carries, AoE wave clear, single-target DPS, support, and current Update 6 / Event testing.',
+    body: 'Unit roles for starter carries, AoE wave clear, single-target DPS, support, and current Update 7 / Bleach testing.',
   },
   {
     title: 'Rewards Database',
@@ -576,7 +576,7 @@ export const databaseHubCards = [
     title: 'Teams Database',
     href: '/database/teams',
     count: teamChecks.length,
-    body: 'Starter code teams, balanced wave teams, trait-focused teams, and Update 6 / Event checks.',
+    body: 'Starter code teams, balanced wave teams, trait-focused teams, and Update 7 / Bleach checks.',
   },
   {
     title: 'Maps Database',

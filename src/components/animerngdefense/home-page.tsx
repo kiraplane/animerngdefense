@@ -100,7 +100,7 @@ const keywordLinks = [
   { keyword: 'best team', href: '/teams' },
   { keyword: 'maps', href: '/maps' },
   { keyword: 'luck boosts', href: '/guides/luck-boosts-guide' },
-  { keyword: 'Update 6 event', href: '/updates' },
+  { keyword: 'Update 7 Bleach', href: '/updates' },
   { keyword: 'AFK units', href: '/guides/afk-units-guide' },
   { keyword: 'official Roblox', href: '/download' },
 ];
@@ -135,14 +135,14 @@ const latestUpdateItems = [
     body: `${officialGameFacts.shortName} is verified at place ${officialGameFacts.robloxPlaceId}, universe ${officialGameFacts.robloxUniverseId}, by ${officialGameFacts.creatorName}.`,
   },
   {
-    title: 'Update 6 / Event is live',
+    title: 'Update 7 / Bleach is live',
     date: '2026-08-03',
-    body: 'The current Roblox title carries an EVENT tag and the official description publishes UPDATE6.',
+    body: 'The current Roblox title carries a BLEACH tag and the official description publishes UPDATE7.',
   },
   {
     title: 'Codes cross-checked',
     date: '2026-08-03',
-    body: `${activeCodes.length} active codes are tracked, with UPDATE6 visible on the Roblox page and older strings kept source-checked where expiry is not confirmed.`,
+    body: `${activeCodes.length} active codes are tracked, with UPDATE7 visible on the Roblox page and older strings kept source-checked where expiry is not confirmed.`,
   },
 ];
 
@@ -150,12 +150,12 @@ const coreDataModules = [
   {
     title: 'Unit Role Data',
     count: units.length,
-    body: 'Starter carry, AoE wave clear, single-target DPS, support, and Update 6 / Event watch roles.',
+    body: 'Starter carry, AoE wave clear, single-target DPS, support, and Update 7 / Bleach watch roles.',
     href: '/database/units',
     toolHref: '/tools/roll-tracker',
     toolLabel: 'Track roles',
     guideHref: '/guides/unit-tier-list-guide',
-    samples: ['Starter Defender', 'AoE Carry', 'Update 6 / Event Unit'],
+    samples: ['Starter Defender', 'AoE Carry', 'Update 7 / Bleach Unit'],
     icon: Star,
   },
   {
@@ -172,12 +172,12 @@ const coreDataModules = [
   {
     title: 'Team Checks',
     count: teamChecks.length,
-    body: 'Starter code team, balanced wave team, trait-focused team, and Update 6 / Event checks.',
+    body: 'Starter code team, balanced wave team, trait-focused team, and Update 7 / Bleach checks.',
     href: '/database/teams',
     toolHref: '/tools/team-builder',
     toolLabel: 'Build team',
     guideHref: '/guides/team-building-guide',
-    samples: ['Starter Code Team', 'Balanced Wave Team', 'Update 6 / Event Team'],
+    samples: ['Starter Code Team', 'Balanced Wave Team', 'Update 7 / Bleach Team'],
     icon: Users,
   },
   {
@@ -261,7 +261,7 @@ export function AnimeRngDefenseHomePage() {
                   variant="outline"
                   className="border-[#6EE7B7] bg-[#09060F]/80 text-[#D7FFF0]"
                 >
-                  Update 6 / Event
+                  Update 7 / Bleach
                 </Badge>
               </div>
               <h1 className="font-display text-4xl font-black leading-tight sm:text-5xl md:text-7xl">
