@@ -1,7 +1,7 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-08-10';
+export const CODE_CHECKED_AT = '2026-08-11';
 
 export const activeCodes: GameCode[] = [
   {
@@ -31,7 +31,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-10',
+    lastChecked: '2026-08-11',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
@@ -42,7 +42,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-10',
+    lastChecked: '2026-08-11',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
@@ -53,7 +53,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free rewards',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-10',
+    lastChecked: '2026-08-11',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     requirement: 'Requires at least 10,000 rolls',
