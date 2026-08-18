@@ -189,12 +189,12 @@ export const units: UnitEntry[] = [
   {
     kind: 'unit',
     id: 'event-or-jjk-unit',
-    name: 'Update 7 / Bleach Unit',
+    name: 'Update 8 / DB Unit',
     aliases: ['event unit', 'limited unit'],
     category: 'Update unit role',
     stage: 'Update',
     summary:
-      'The Roblox title currently carries a 7DS tag, so Update 3 units deserve watch coverage without inventing an unsupported exact unit table.',
+      'The Roblox title currently carries a DB tag, so Update 8 units deserve watch coverage without inventing an unsupported exact unit table.',
     unlockMethod:
       'Use current update resources and official game links before relying on old unit lists.',
     abilityFocus:
@@ -204,7 +204,7 @@ export const units: UnitEntry[] = [
       'If a unit appears only in a new update, wait for more source confirmation before treating it as permanent tier-list truth.',
     trackerTasks: [
       'Check the Roblox title and description.',
-      'Redeem UPDATE4 first, then try FairyForest, UPDATE3, and other current source-checked codes.',
+      'Redeem UPDATE8 first, then try older source-checked codes only after the current value.',
       'Test the unit on the map that blocks you.',
       'Avoid copying tier claims from unrelated anime TD games.',
     ],
@@ -302,7 +302,7 @@ export const rewardItems: RewardEntry[] = [
     ],
     usefulFor: ['legacy JJK content', 'event progression', 'inventory checks'],
     routeHint:
-      'Do not assume an older event item is still required. Check the live UI before spending or farming Cursed Fingers in the 7DS build.',
+      'Do not assume an older event item is still required. Check the live UI before spending or farming Cursed Fingers in the current DB build.',
     relatedRoutes: ['/updates', '/guides/jjk-update-guide', '/codes'],
     relatedEntities: ['CURSEDHIGHSCHOOL', 'legacy JJK update'],
     sourcePages: ['Current code trackers', 'Roblox title tag'],
@@ -432,22 +432,22 @@ export const teamChecks: TeamEntry[] = [
   {
     kind: 'team',
     id: 'jjk-update-team',
-    name: 'Update 7 / Bleach Team',
+    name: 'Update 8 / DB Team',
     category: 'Update team',
     stage: 'Update',
-    location: 'Current Update 7 / Bleach content',
+    location: 'Current Update 8 / DB content',
     summary:
-      'The official description now publishes UPDATE7, so Bleach-era teams should test recent pulls against the current repeatable map before replacing a stable older roster.',
-    prerequisites: ['FairyForest redeemed', 'Update page checked'],
+      'The official description now publishes UPDATE8, so DB-era teams should test recent pulls against the current repeatable map before replacing a stable older roster.',
+    prerequisites: ['UPDATE8 redeemed', 'Update page checked'],
     recommendedPrep: [
-      'Redeem UPDATE4 first, then try FairyForest, UPDATE3, and other current codes.',
+      'Redeem UPDATE8 first, then try older source-checked codes.',
       'Keep older Cursed Fingers only if the live UI still exposes a use.',
       'Test new event units on current maps.',
       'Avoid importing Anime Defense RNG or Anime RNG TD claims.',
     ],
     rewards: ['Current update progress', 'event reward clarity'],
     routeHint:
-      'Treat Update 3 advice as a snapshot. Recheck after Roblox title, world, or code changes.',
+      'Treat every update guide as a dated snapshot. Recheck after Roblox title, world, or code changes.',
     relatedRoutes: ['/updates', '/guides/jjk-update-guide', '/codes'],
     relatedEntities: ['UPDATE4', 'FairyForest', 'current codes'],
     sourcePages: ['Roblox official title', 'Current code trackers'],
@@ -564,7 +564,7 @@ export const databaseHubCards = [
     title: 'Units Database',
     href: '/database/units',
     count: units.length,
-    body: 'Unit roles for starter carries, AoE wave clear, single-target DPS, support, and current Update 7 / Bleach testing.',
+    body: 'Unit roles for starter carries, AoE wave clear, single-target DPS, support, and current Update 8 / DB testing.',
   },
   {
     title: 'Rewards Database',
@@ -576,7 +576,7 @@ export const databaseHubCards = [
     title: 'Teams Database',
     href: '/database/teams',
     count: teamChecks.length,
-    body: 'Starter code teams, balanced wave teams, trait-focused teams, and Update 7 / Bleach checks.',
+    body: 'Starter code teams, balanced wave teams, trait-focused teams, and Update 8 / DB checks.',
   },
   {
     title: 'Maps Database',

@@ -38,7 +38,7 @@ export const topicPages: Record<string, TopicPage> = {
           'Keep a starter carry that clears early waves.',
           'Prioritize AoE when many enemies leak.',
           'Prioritize single-target damage when durable enemies survive.',
-          'Treat new Update 7 / Bleach units as watch items until tested.',
+          'Treat new Update 8 / DB units as watch items until tested.',
         ],
       },
     ],
@@ -247,7 +247,7 @@ export const topicPages: Record<string, TopicPage> = {
         bullets: [
           'Gems: reserve them for summons that target a missing team role.',
           'Crystals: spend on a proven keeper unit rather than a temporary pull.',
-          'Cursed Fingers: keep them only if the live 7DS build still exposes a use.',
+          'Cursed Fingers: keep them only if the live DB build still exposes a use.',
           'Divine Rolls: use only when the displayed pool and pity state match your goal.',
         ],
       },
@@ -397,7 +397,7 @@ export const topicPages: Record<string, TopicPage> = {
     seoDescription:
       'Track Anime RNG Defense update signals, the JJK title tag, current codes, Roblox update timestamp, Cursed Fingers, and source-check notes.',
     summary:
-      'The official Roblox description now publishes UPDATE7 under the Bleach update label. Use this page to track the current code, older source-checked rewards, and update facts that still need rechecking.',
+      'The official Roblox description now publishes UPDATE8 under the DB update label. Use this page to track the current code, older source-checked rewards, and update facts that still need rechecking.',
     image: commonImage,
     updatedAt: OFFICIAL_CHECKED_AT,
     featuredRoutes: [
@@ -409,8 +409,8 @@ export const topicPages: Record<string, TopicPage> = {
       {
         heading: 'Current official update signal',
         paragraphs: [
-          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public description explicitly lists code UPDATE7 and the title carries a BLEACH tag.`,
-          'UPDATE6 and earlier strings remain source-checked rather than official-current until the Roblox page or official community confirms them again.',
+          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public description explicitly lists code UPDATE8 and the title carries a DB tag.`,
+          'UPDATE7 and earlier strings remain source-checked rather than official-current until the Roblox page or official community confirms them again.',
         ],
       },
       {
@@ -427,9 +427,9 @@ export const topicPages: Record<string, TopicPage> = {
           `The site checked Roblox API and the public Roblox page on ${OFFICIAL_CHECKED_AT}. The current API timestamp is ${officialGameFacts.updatedAt}.`,
       },
       {
-        question: 'What changed in Update 7?',
+        question: 'What changed in Update 8?',
         answer:
-          'The official title now carries a BLEACH tag and the description publishes UPDATE7. Exact new units, maps, and reward values still need live verification before they become fixed database rows.',
+          'The official title now carries a DB tag and the description publishes UPDATE8. A current video also shows Dragon Ball-themed rolling activity, but exact new units, maps, and reward values remain live-build details until stronger same-version data agrees.',
       },
     ],
   },

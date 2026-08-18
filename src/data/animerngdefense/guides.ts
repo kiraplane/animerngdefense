@@ -57,7 +57,7 @@ export const guideCategoryIntro: Record<GuideCategory, string> = {
   Maps: 'Read maps as pathing and wave problems, not only as bigger stat checks.',
   Luck: 'Use boosts, boxes, crystals, and rerolls in focused windows with stop rules.',
   Updates:
-    'Track the current Update 7 / Bleach signals while preserving older JJK, 7DS, and Event notes as dated history.',
+    'Track the current Update 8 / DB signals while preserving older Bleach, JJK, 7DS, and Event notes as dated history.',
   Safety:
     'Stay on the official Roblox page and avoid scripts, executors, fake downloads, and copied wrong-game data.',
 };
@@ -470,7 +470,7 @@ export const guides: Guide[] = [
           'S priority: units that clear waves or finish the exact enemy that leaks.',
           'A priority: strong units that need map placement or upgrades to shine.',
           'B priority: usable fillers that help early maps but should not eat premium resources.',
-          'Watch priority: new Update 7 / Bleach units until current data stabilizes.',
+          'Watch priority: new Update 8 / DB units until current data stabilizes.',
         ],
       },
       {
@@ -481,9 +481,9 @@ export const guides: Guide[] = [
         ],
       },
       {
-        heading: 'Treat Update 7 / Bleach units as role candidates first',
+        heading: 'Treat Update 8 / DB units as role candidates first',
         paragraphs: [
-          'The official description now publishes UPDATE7 under a Bleach label, while competitor and code signals still retain older Update 6, Update 5, Fairy Forest, and 7DS topics. Those are useful as history, but they do not mean every recent pull should jump to S tier on day one.',
+          'The official description now publishes UPDATE8 under a DB label, while competitor and code signals still retain older Update 7, Update 6, Update 5, Fairy Forest, and 7DS topics. Those are useful as history, but they do not mean every recent pull should jump to S tier on day one.',
           'Put a new update unit into a job first: wave clear, boss damage, support, lane control, or farming value. If the unit does not outperform your current holder of that job on the same map, keep it as a watch unit until more source-checked data stabilizes.',
         ],
         bullets: [
@@ -795,7 +795,7 @@ export const guides: Guide[] = [
     seoDescription:
       'Track the Anime RNG Defense JJK update tag, Cursed Fingers, current codes, update rewards, and what to verify before spending resources.',
     summary:
-      'A dated JJK update archive that explains Cursed Fingers and older codes, then directs players to the current Update 7 / Bleach cycle.',
+      'A dated JJK update archive that explains Cursed Fingers and older codes, then directs players to the current Update 8 / DB cycle.',
     category: 'Updates',
     difficulty: 'Intermediate',
     coverImageUrl: videoCover(videos.jjkCodes),
@@ -816,22 +816,22 @@ export const guides: Guide[] = [
       {
         heading: 'JJK is now a previous update cycle',
         paragraphs: [
-          'The official Roblox description changed again by August 10, 2026 and now publishes UPDATE7 under a Bleach title. Older Update 6, Update 5, FairyForest, and UPDATE3 entries remain useful as source-checked attempts, not proof of the newest meta.',
-          'Keep this URL as the archive for CURSEDHIGHSCHOOL and Cursed Fingers, but use the updates and codes pages for current Update 3 decisions.',
+          'The official Roblox description changed again on August 16, 2026 and now publishes UPDATE8 under a DB title. Older Update 7, Update 6, Update 5, FairyForest, and UPDATE3 entries remain useful as source-checked attempts, not proof of the newest meta.',
+          'Keep this URL as the archive for CURSEDHIGHSCHOOL and Cursed Fingers, but use the updates and codes pages for current Update 8 decisions.',
         ],
       },
       {
         heading: 'Spend update items after the game explains them',
         paragraphs: [
-          'Cursed Fingers belong to the earlier JJK cycle. If an older code still redeems, check the in-game UI before spending them and do not assume the item remains important in the current 7DS build.',
-          'The safest current routine is: redeem UPDATE7 first, try the older source-checked codes, inventory each reward, then compare new units by wave clear, boss damage, or support value.',
+          'Cursed Fingers belong to the earlier JJK cycle. If an older code still redeems, check the in-game UI before spending them and do not assume the item remains important in the current DB build.',
+          'The safest current routine is: redeem UPDATE8 first, try the older source-checked codes, inventory each reward, then compare new units by wave clear, boss damage, or support value.',
         ],
       },
       {
         heading: 'What to recheck after the next update',
         paragraphs: [
           'Recheck the Roblox title, description, update timestamp, active codes, and whether competitors have published unit, world, or trait evidence. The JJK material now stays archived unless the game rotates it back.',
-          'Future current pages can expand around verified Update 4 units, maps, raids, and item usage once exact live values are available.',
+          'Future current pages can expand around verified DB-era units, maps, raids, and item usage once exact live values are available.',
         ],
       },
     ],

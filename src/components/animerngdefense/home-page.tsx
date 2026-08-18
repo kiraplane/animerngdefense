@@ -100,7 +100,7 @@ const keywordLinks = [
   { keyword: 'best team', href: '/teams' },
   { keyword: 'maps', href: '/maps' },
   { keyword: 'luck boosts', href: '/guides/luck-boosts-guide' },
-  { keyword: 'Update 7 Bleach', href: '/updates' },
+  { keyword: 'Update 8 DB', href: '/updates' },
   { keyword: 'AFK units', href: '/guides/afk-units-guide' },
   { keyword: 'official Roblox', href: '/download' },
 ];
@@ -114,7 +114,7 @@ const startSteps = [
   {
     title: 'Redeem current codes',
     href: '/codes',
-    body: 'Claim FairyForest, UPDATE3, Crystals, boxes, and potions before your first serious rolling session.',
+    body: 'Claim UPDATE8 first, then try older source-checked codes before your first serious rolling session.',
   },
   {
     title: 'Pick a first carry',
@@ -135,14 +135,14 @@ const latestUpdateItems = [
     body: `${officialGameFacts.shortName} is verified at place ${officialGameFacts.robloxPlaceId}, universe ${officialGameFacts.robloxUniverseId}, by ${officialGameFacts.creatorName}.`,
   },
   {
-    title: 'Update 7 / Bleach is live',
-    date: '2026-08-03',
-    body: 'The current Roblox title carries a BLEACH tag and the official description publishes UPDATE7.',
+    title: 'Update 8 / DB is live',
+    date: '2026-08-17',
+    body: 'The current Roblox title carries a DB tag and the official description publishes UPDATE8.',
   },
   {
     title: 'Codes cross-checked',
-    date: '2026-08-03',
-    body: `${activeCodes.length} active codes are tracked, with UPDATE7 visible on the Roblox page and older strings kept source-checked where expiry is not confirmed.`,
+    date: '2026-08-17',
+    body: `${activeCodes.length} active codes are tracked, with UPDATE8 visible on the Roblox page and older strings kept source-checked where expiry is not confirmed.`,
   },
 ];
 
@@ -150,12 +150,12 @@ const coreDataModules = [
   {
     title: 'Unit Role Data',
     count: units.length,
-    body: 'Starter carry, AoE wave clear, single-target DPS, support, and Update 7 / Bleach watch roles.',
+    body: 'Starter carry, AoE wave clear, single-target DPS, support, and Update 8 / DB watch roles.',
     href: '/database/units',
     toolHref: '/tools/roll-tracker',
     toolLabel: 'Track roles',
     guideHref: '/guides/unit-tier-list-guide',
-    samples: ['Starter Defender', 'AoE Carry', 'Update 7 / Bleach Unit'],
+    samples: ['Starter Defender', 'AoE Carry', 'Update 8 / DB Unit'],
     icon: Star,
   },
   {
@@ -172,12 +172,12 @@ const coreDataModules = [
   {
     title: 'Team Checks',
     count: teamChecks.length,
-    body: 'Starter code team, balanced wave team, trait-focused team, and Update 7 / Bleach checks.',
+    body: 'Starter code team, balanced wave team, trait-focused team, and Update 8 / DB checks.',
     href: '/database/teams',
     toolHref: '/tools/team-builder',
     toolLabel: 'Build team',
     guideHref: '/guides/team-building-guide',
-    samples: ['Starter Code Team', 'Balanced Wave Team', 'Update 7 / Bleach Team'],
+    samples: ['Starter Code Team', 'Balanced Wave Team', 'Update 8 / DB Team'],
     icon: Users,
   },
   {
@@ -261,7 +261,7 @@ export function AnimeRngDefenseHomePage() {
                   variant="outline"
                   className="border-[#6EE7B7] bg-[#09060F]/80 text-[#D7FFF0]"
                 >
-                  Update 7 / Bleach
+                  Update 8 / DB
                 </Badge>
               </div>
               <h1 className="font-display text-4xl font-black leading-tight sm:text-5xl md:text-7xl">
