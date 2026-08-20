@@ -1,7 +1,7 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-08-17';
+export const CODE_CHECKED_AT = '2026-08-20';
 
 export const activeCodes: GameCode[] = [
   {
@@ -14,6 +14,92 @@ export const activeCodes: GameCode[] = [
     confidence: 'high',
     notes:
       'The current DB-era official Roblox description publishes UPDATE8. Copy the uppercase string exactly and use the in-game popup as the final reward confirmation.',
+  },
+  {
+    code: 'CAPSULECORP',
+    reward: 'Cursed Fingers and 1 Divine Reroll',
+    status: 'active',
+    firstSeen: '2026-08-17',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'NerdsChalk August 17 code refresh',
+    confidence: 'medium',
+    requirement: 'Requires at least 10,000 total rolls',
+    notes: 'Current DB-era code with a 10,000-roll gate.',
+  },
+  {
+    code: 'WISHEVENT',
+    reward: 'Cursed Fingers and 1 Divine Reroll',
+    status: 'active',
+    firstSeen: '2026-08-17',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'NerdsChalk August 17 code refresh',
+    confidence: 'medium',
+    requirement: 'Requires at least 100,000 total rolls',
+    notes: 'Current wish-event code with a 100,000-roll gate.',
+  },
+  {
+    code: 'UPDATE7',
+    reward: 'Cursed Fingers and 1 Divine Reroll',
+    status: 'active',
+    firstSeen: '2026-08-10',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Previous official description and NerdsChalk August 17 refresh',
+    confidence: 'medium',
+    notes: 'The previous official update code remains listed as working after UPDATE8 launched.',
+  },
+  {
+    code: 'VAHRWELT',
+    reward: 'Cursed Fingers and 1 Divine Reroll',
+    status: 'active',
+    firstSeen: '2026-08',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'NerdsChalk August 17 code refresh',
+    confidence: 'medium',
+    requirement: 'Requires at least 10,000 total rolls',
+    notes: 'Current code with a 10,000-roll gate. Copy the uppercase spelling exactly.',
+  },
+  {
+    code: 'EXTREMERAID',
+    reward: 'Cursed Fingers and 1 Divine Reroll',
+    status: 'active',
+    firstSeen: '2026-08',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'NerdsChalk August 17 code refresh',
+    confidence: 'medium',
+    requirement: 'Requires at least 100,000 total rolls',
+    notes: 'Current raid code with a 100,000-roll gate.',
+  },
+  {
+    code: 'SORRYFORSHUTDOWN6',
+    reward: 'Cursed Fingers and 1 Divine Reroll',
+    status: 'active',
+    firstSeen: '2026-08',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'NerdsChalk and PCGamesN August code refreshes',
+    confidence: 'medium',
+    notes: 'Current shutdown-compensation code from the Update 6/7 cycle.',
+  },
+  {
+    code: 'SOLOEVENT',
+    reward: 'Cursed Fingers and 1 Divine Reroll',
+    status: 'active',
+    firstSeen: '2026-08',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'NerdsChalk August 17 code refresh',
+    confidence: 'medium',
+    requirement: 'Requires at least 10,000 total rolls',
+    notes: 'Current solo-event code with a 10,000-roll gate.',
+  },
+  {
+    code: 'THEPLAYER',
+    reward: 'Cursed Fingers and 1 Divine Reroll',
+    status: 'active',
+    firstSeen: '2026-08',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'NerdsChalk August 17 code refresh',
+    confidence: 'medium',
+    requirement: 'Requires at least 10,000 total rolls',
+    notes: 'Current event code with a 10,000-roll gate.',
   },
   {
     code: 'UPDATE6',
@@ -31,7 +117,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-17',
+    lastChecked: '2026-08-20',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
@@ -42,7 +128,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-17',
+    lastChecked: '2026-08-20',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
@@ -53,7 +139,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free rewards',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-17',
+    lastChecked: '2026-08-20',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     requirement: 'Requires at least 10,000 rolls',
@@ -255,17 +341,6 @@ export const activeCodes: GameCode[] = [
 
 export const watchCodes: GameCode[] = [
   {
-    code: 'UPDATE7',
-    reward: 'Previous official update rewards; exact contents were not published',
-    status: 'watch',
-    firstSeen: '2026-08-10',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Previous official Roblox description',
-    confidence: 'medium',
-    notes:
-      'The official description advanced to UPDATE8 on August 16. Try UPDATE7 only after the current code and use the live popup to decide whether it still redeems.',
-  },
-  {
     code: 'Anime Defense RNG codes',
     reward: 'Wrong-game code cluster',
     status: 'watch',
@@ -326,6 +401,10 @@ export const codeCheckSummary = {
     {
       label: 'Destructoid codes',
       url: 'https://www.destructoid.com/anime-rng-defense-codes/',
+    },
+    {
+      label: 'NerdsChalk August 17 codes',
+      url: 'https://nerdschalk.com/anime-rng-defense-codes/',
     },
     {
       label: 'Pro Game Guides codes',

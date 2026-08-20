@@ -1,7 +1,7 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-08-17';
-export const OFFICIAL_CHECKED_AT = '2026-08-17';
+export const CHECKED_AT = '2026-08-20';
+export const OFFICIAL_CHECKED_AT = '2026-08-20';
 
 export const officialGameFacts = {
   name: '[DB] Anime RNG Defense',
@@ -65,6 +65,14 @@ export const officialSources: DataSource[] = [
     checkedAt: CHECKED_AT,
     confidence: 'medium',
     note: 'Competitor hub exposes demand for codes, units, tier list, traits, maps, best team, AFK units, rewards, and update pages. Used for coverage planning, not copied prose.',
+  },
+  {
+    type: 'competitor',
+    label: 'NerdsChalk Anime RNG Defense codes',
+    url: 'https://nerdschalk.com/anime-rng-defense-codes/',
+    checkedAt: CHECKED_AT,
+    confidence: 'medium',
+    note: 'Rechecked August 20, 2026. Used for the current UPDATE8 batch, roll requirements, and seven additional August code strings.',
   },
   {
     type: 'competitor',
