@@ -1,9 +1,20 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-08-22';
+export const CODE_CHECKED_AT = '2026-08-24';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'UPDATE9',
+    reward: 'Free update rewards; the official description does not list exact contents',
+    status: 'active',
+    firstSeen: '2026-08-23',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Official Roblox description',
+    confidence: 'high',
+    notes:
+      'The current Chainsaw-era official Roblox description publishes UPDATE9. Copy the uppercase string exactly and use the in-game popup as the final reward confirmation.',
+  },
   {
     code: 'UPDATE8',
     reward: 'Free update rewards; the official description does not list exact contents',
@@ -13,7 +24,7 @@ export const activeCodes: GameCode[] = [
     sourceLabel: 'Official Roblox description',
     confidence: 'high',
     notes:
-      'The current DB-era official Roblox description publishes UPDATE8. Copy the uppercase string exactly and use the in-game popup as the final reward confirmation.',
+      'The previous DB-era official Roblox description published UPDATE8. It remains source-checked after the game advanced to UPDATE9, but the live client is the final status check.',
   },
   {
     code: 'CAPSULECORP',
@@ -117,7 +128,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-22',
+    lastChecked: '2026-08-24',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
@@ -128,7 +139,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free Crystals and potions',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-22',
+    lastChecked: '2026-08-24',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     notes:
@@ -139,7 +150,7 @@ export const activeCodes: GameCode[] = [
     reward: 'Free rewards',
     status: 'active',
     firstSeen: '2026-07-27',
-    lastChecked: '2026-08-22',
+    lastChecked: '2026-08-24',
     sourceLabel: 'PCGamesN',
     confidence: 'medium',
     requirement: 'Requires at least 10,000 rolls',
