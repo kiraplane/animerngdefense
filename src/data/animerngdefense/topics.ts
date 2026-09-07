@@ -397,7 +397,7 @@ export const topicPages: Record<string, TopicPage> = {
     seoDescription:
       'Track Anime RNG Defense update signals, the JJK title tag, current codes, Roblox update timestamp, Cursed Fingers, and source-check notes.',
     summary:
-      'The official Roblox description now publishes UPDATE8 under the DB update label. Use this page to track the current code, older source-checked rewards, and update facts that still need rechecking.',
+      'The official Roblox description now publishes UPDATEGHOUL under the Ghoul update label. Use this page to claim the current official code, then compare new units and maps against a known team before spending rare resources.',
     image: commonImage,
     updatedAt: OFFICIAL_CHECKED_AT,
     featuredRoutes: [
@@ -409,8 +409,8 @@ export const topicPages: Record<string, TopicPage> = {
       {
         heading: 'Current official update signal',
         paragraphs: [
-          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public description explicitly lists code UPDATE8 and the title carries a DB tag.`,
-          'UPDATE7 and earlier strings remain source-checked rather than official-current until the Roblox page or official community confirms them again.',
+          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public description explicitly lists code UPDATEGHOUL and the title carries a Ghoul tag.`,
+          'UPDATE9 and earlier strings remain prior-cycle source checks rather than official-current until the live client accepts them again.',
         ],
       },
       {
@@ -427,9 +427,9 @@ export const topicPages: Record<string, TopicPage> = {
           `The site checked Roblox API and the public Roblox page on ${OFFICIAL_CHECKED_AT}. The current API timestamp is ${officialGameFacts.updatedAt}.`,
       },
       {
-        question: 'What changed in Update 8?',
+        question: 'What changed in the Ghoul update?',
         answer:
-          'The official title now carries a DB tag and the description publishes UPDATE8. A current video also shows Dragon Ball-themed rolling activity, but exact new units, maps, and reward values remain live-build details until stronger same-version data agrees.',
+          'The official title now carries a Ghoul tag and the description publishes UPDATEGHOUL. Exact new units, maps, and reward values remain live-build details until stronger same-version evidence agrees.',
       },
     ],
   },

@@ -1,441 +1,144 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-08-24';
+export const CODE_CHECKED_AT = '2026-09-07';
+
+const currentSource = 'NerdsChalk and Pocket Tactics September 2026 checks';
+
+function active(
+  code: string,
+  reward: string,
+  firstSeen: string,
+  requirement?: string,
+  sourceLabel = currentSource
+): GameCode {
+  return {
+    code,
+    reward,
+    status: 'active',
+    firstSeen,
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel,
+    confidence: sourceLabel.startsWith('Official') ? 'high' : 'medium',
+    requirement,
+    notes:
+      'Copy the spelling exactly and use the live Roblox reward popup as the final status and reward check.',
+  };
+}
 
 export const activeCodes: GameCode[] = [
-  {
-    code: 'UPDATE9',
-    reward: 'Free update rewards; the official description does not list exact contents',
-    status: 'active',
-    firstSeen: '2026-08-23',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Official Roblox description',
-    confidence: 'high',
-    notes:
-      'The current Chainsaw-era official Roblox description publishes UPDATE9. Copy the uppercase string exactly and use the in-game popup as the final reward confirmation.',
-  },
-  {
-    code: 'UPDATE8',
-    reward: 'Free update rewards; the official description does not list exact contents',
-    status: 'active',
-    firstSeen: '2026-08-16',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Official Roblox description',
-    confidence: 'high',
-    notes:
-      'The previous DB-era official Roblox description published UPDATE8. It remains source-checked after the game advanced to UPDATE9, but the live client is the final status check.',
-  },
-  {
-    code: 'CAPSULECORP',
-    reward: 'Cursed Fingers and 1 Divine Reroll',
-    status: 'active',
-    firstSeen: '2026-08-17',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'NerdsChalk August 17 code refresh',
-    confidence: 'medium',
-    requirement: 'Requires at least 10,000 total rolls',
-    notes: 'Current DB-era code with a 10,000-roll gate.',
-  },
-  {
-    code: 'WISHEVENT',
-    reward: 'Cursed Fingers and 1 Divine Reroll',
-    status: 'active',
-    firstSeen: '2026-08-17',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'NerdsChalk August 17 code refresh',
-    confidence: 'medium',
-    requirement: 'Requires at least 100,000 total rolls',
-    notes: 'Current wish-event code with a 100,000-roll gate.',
-  },
-  {
-    code: 'UPDATE7',
-    reward: 'Cursed Fingers and 1 Divine Reroll',
-    status: 'active',
-    firstSeen: '2026-08-10',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Previous official description and NerdsChalk August 17 refresh',
-    confidence: 'medium',
-    notes: 'The previous official update code remains listed as working after UPDATE8 launched.',
-  },
-  {
-    code: 'VAHRWELT',
-    reward: 'Cursed Fingers and 1 Divine Reroll',
-    status: 'active',
-    firstSeen: '2026-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'NerdsChalk August 17 code refresh',
-    confidence: 'medium',
-    requirement: 'Requires at least 10,000 total rolls',
-    notes: 'Current code with a 10,000-roll gate. Copy the uppercase spelling exactly.',
-  },
-  {
-    code: 'EXTREMERAID',
-    reward: 'Cursed Fingers and 1 Divine Reroll',
-    status: 'active',
-    firstSeen: '2026-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'NerdsChalk August 17 code refresh',
-    confidence: 'medium',
-    requirement: 'Requires at least 100,000 total rolls',
-    notes: 'Current raid code with a 100,000-roll gate.',
-  },
-  {
-    code: 'SORRYFORSHUTDOWN6',
-    reward: 'Cursed Fingers and 1 Divine Reroll',
-    status: 'active',
-    firstSeen: '2026-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'NerdsChalk and PCGamesN August code refreshes',
-    confidence: 'medium',
-    notes: 'Current shutdown-compensation code from the Update 6/7 cycle.',
-  },
-  {
-    code: 'SOLOEVENT',
-    reward: 'Cursed Fingers and 1 Divine Reroll',
-    status: 'active',
-    firstSeen: '2026-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'NerdsChalk August 17 code refresh',
-    confidence: 'medium',
-    requirement: 'Requires at least 10,000 total rolls',
-    notes: 'Current solo-event code with a 10,000-roll gate.',
-  },
-  {
-    code: 'THEPLAYER',
-    reward: 'Cursed Fingers and 1 Divine Reroll',
-    status: 'active',
-    firstSeen: '2026-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'NerdsChalk August 17 code refresh',
-    confidence: 'medium',
-    requirement: 'Requires at least 10,000 total rolls',
-    notes: 'Current event code with a 10,000-roll gate.',
-  },
-  {
-    code: 'UPDATE6',
-    reward: 'Free update rewards; the official description does not list exact contents',
-    status: 'active',
-    firstSeen: '2026-08-02',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Previous official Roblox description',
-    confidence: 'medium',
-    notes:
-      'Previous official update code retained as source-checked after the Roblox description advanced to UPDATE8. Test it before planning around the reward.',
-  },
-  {
-    code: 'UPDATE5',
-    reward: 'Free Crystals and potions',
-    status: 'active',
-    firstSeen: '2026-07-27',
-    lastChecked: '2026-08-24',
-    sourceLabel: 'PCGamesN',
-    confidence: 'medium',
-    notes:
-      'Previous Update 5 code retained as source-checked after the official page advanced to Update 8. Test it before planning around the reward.',
-  },
-  {
-    code: 'EISENBERNCASTLE',
-    reward: 'Free Crystals and potions',
-    status: 'active',
-    firstSeen: '2026-07-27',
-    lastChecked: '2026-08-24',
-    sourceLabel: 'PCGamesN',
-    confidence: 'medium',
-    notes:
-      'Current Update 5 map code. Copy the all-uppercase spelling exactly.',
-  },
-  {
-    code: 'WEATHERS',
-    reward: 'Free rewards',
-    status: 'active',
-    firstSeen: '2026-07-27',
-    lastChecked: '2026-08-24',
-    sourceLabel: 'PCGamesN',
-    confidence: 'medium',
-    requirement: 'Requires at least 10,000 rolls',
-    notes:
-      'Current weather-system code with a 10,000-roll gate. Do not troubleshoot it on a new account before meeting the requirement.',
-  },
-  {
-    code: 'SORRYFORSHUTDOWN5',
-    reward: '1 Divine Roll',
-    status: 'active',
-    firstSeen: '2026-07-21',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid',
-    confidence: 'high',
-    notes:
-      'Newest shutdown-compensation code found consistently across current trackers. Copy the uppercase spelling exactly.',
-  },
-  {
-    code: 'TY100K',
-    reward: 'Free milestone rewards; exact contents vary across trackers',
-    status: 'active',
-    firstSeen: '2026-07-21',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid',
-    confidence: 'medium',
-    requirement: 'Current trackers report a 100,000-roll requirement',
-    notes:
-      'The code string and roll gate align across current sources, while reward wording does not. Use the in-game popup as the final reward confirmation.',
-  },
-  {
-    code: 'BULLSHIDEOUT',
-    reward: 'Free rewards; exact contents vary across trackers',
-    status: 'active',
-    firstSeen: '2026-07-21',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid',
-    confidence: 'medium',
-    notes:
-      'Current sources agree on the code string but not every reward or account requirement. Present it as source-checked rather than game-tested.',
-  },
-  {
-    code: 'UPDATE4',
-    reward: 'Free rewards; the official description does not list the exact contents',
-    status: 'active',
-    firstSeen: '2026-07-20',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Official Roblox description',
-    confidence: 'high',
-    notes:
-      'Previous official update code retained as source-checked after the Roblox description advanced to UPDATE8.',
-  },
-  {
-    code: 'FairyForest',
-    reward:
-      '250 Crystals, 5 Basic Luck Potions, 5 Basic Coin Potions, 5 Basic Damage Potions, and 5 Basic Roll Speed Potions',
-    status: 'active',
-    firstSeen: '2026-07-14',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid, Pro Game Guides',
-    confidence: 'medium',
-    notes:
-      'Newest Update 3 / 7DS-era code cross-checked on July 14. Potion timers should be used before a planned farming or rolling session.',
-  },
-  {
-    code: 'UPDATE3',
-    reward: '250 Crystals',
-    status: 'active',
-    firstSeen: '2026-07-14',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid, Pro Game Guides',
-    confidence: 'medium',
-    notes:
-      'Newest Update 3 code reported by several current July 2026 code trackers. It was not game-tested here, so keep it source-checked.',
-  },
-  {
-    code: 'TYFOR10KCCU',
-    reward: 'Free rewards',
-    status: 'active',
-    firstSeen: '2026-07-14',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid, Pro Game Guides',
-    confidence: 'medium',
-    requirement: 'Requires at least 10,000 rolls',
-    notes:
-      'New milestone code with a roll gate. Do not troubleshoot it on a fresh account before reaching the 10,000-roll requirement.',
-  },
-  {
-    code: 'SorryForShutdown3',
-    reward: '1 Divine Roll and 5 Cursed Fingers',
-    status: 'active',
-    firstSeen: '2026-07-14',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics, PCGamesN, Destructoid, Pro Game Guides',
-    confidence: 'medium',
-    notes:
-      'Newest shutdown-compensation code reported in current July 2026 trackers. Copy the capital S exactly.',
-  },
-  {
-    code: 'THANKSFORPLAYING',
-    reward: '150 Crystals and 10 Epic Boxes',
-    status: 'active',
-    firstSeen: '2026-07-09',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics and current YouTube code results',
-    confidence: 'medium',
-    notes:
-      'Newest July 2026 source-checked code. Use it before a major summon session so the box rewards feed directly into roster depth.',
-  },
-  {
-    code: 'SORRYFORSHUTDOWN2',
-    reward: '200 Crystals and 5 Cursed Fingers',
-    status: 'active',
-    firstSeen: '2026-07-09',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Pocket Tactics and current YouTube code results',
-    confidence: 'medium',
-    notes:
-      'Fresh shutdown-compensation code reported in current July 2026 trackers. It was not visible in the public Roblox description during this pass, so this site treats it as source-checked, not game-tested.',
-  },
-  {
-    code: 'RELEASE',
-    reward: '250 Crystals and 5 Common Boxes',
-    status: 'active',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Official Roblox page plus three code-site cross-checks',
-    confidence: 'high',
-    notes:
-      'This code was explicitly visible in the official Roblox description on July 8, 2026. FairyForest replaced it in the July 14 description, so treat RELEASE as an older code that still needs a live redemption check.',
-  },
-  {
-    code: 'UPDATE1',
-    reward: '250 Crystals',
-    status: 'active',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Destructoid, Pro Game Guides, Roblox Den, Beebom',
-    confidence: 'medium',
-    notes:
-      'Multiple current code trackers list this code, but it was not visible in the public Roblox description during the check.',
-  },
-  {
-    code: 'UPDATE2',
-    reward: '250 Crystals',
-    status: 'active',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Destructoid, Pro Game Guides, Roblox Den, Beebom',
-    confidence: 'medium',
-    notes:
-      'Cross-checked across current July 2026 code pages. Recheck after the next Roblox description or Discord code update.',
-  },
-  {
-    code: 'CURSEDHIGHSCHOOL',
-    reward: '200 Crystals and 3 Cursed Fingers',
-    status: 'active',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Destructoid, Pro Game Guides, Roblox Den, Beebom',
-    confidence: 'medium',
-    notes:
-      'Legacy JJK-themed reward code reported by multiple third-party trackers; recheck it in the current DB build.',
-  },
-  {
-    code: 'INNOVATIONCITY',
-    reward: '200 Crystals, 10 Common Boxes, 5 Rare Boxes, and 3 Epic Boxes',
-    status: 'active',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Destructoid, Pro Game Guides, Roblox Den, Beebom',
-    confidence: 'medium',
-    notes:
-      'Listed consistently across current code trackers. Use before a long rolling session because boxes and crystals help early roster depth.',
-  },
-  {
-    code: 'TYFORSUPPORT1',
-    reward: 'Free rewards',
-    status: 'active',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Destructoid, Pro Game Guides, Roblox Den, Beebom',
-    confidence: 'medium',
-    requirement: 'Requires at least 10,000 rolls',
-    notes:
-      'Several sources list a 10,000-roll requirement. Keep it in the active list, but warn new players not to troubleshoot it before they meet the roll gate.',
-  },
-  {
-    code: 'TYFOR100LIKES',
-    reward: '200 Crystals and 10 Common Boxes',
-    status: 'active',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Beebom and Official Code Zone July 2026 trackers',
-    confidence: 'medium',
-    notes:
-      'Source-checked July 8 from two current code trackers. It was not visible in the official Roblox description during this pass, so keep it source-checked rather than game-tested.',
-  },
+  active(
+    'SORRYFORSHUTDOWNGHOUL',
+    '3 Divine Rolls',
+    '2026-09-07',
+    undefined,
+    'NerdsChalk September 7 check'
+  ),
+  active(
+    'UPDATEGHOUL',
+    '1,000 Crystals and 1 Blessed Roll',
+    '2026-09-06',
+    undefined,
+    'Official Roblox description and NerdsChalk'
+  ),
+  active('GHOULCITY', 'Free rewards', '2026-09-07', 'Requires 10,000 total rolls'),
+  active('WHITEREAPER', 'Free rewards', '2026-09-07', 'Requires 25,000 total rolls'),
+  active('ONEEYEDGHOUL', 'Free rewards', '2026-09-07', 'Requires 50,000 total rolls'),
+  active('INFINITYCASTLE', 'Free rewards', '2026-09-07', 'Requires 100,000 total rolls'),
+  active(
+    '10MVISITS',
+    '10,000 Crystals, 3 Divine Rolls, and 100 Legendary Boxes',
+    '2026-09-04'
+  ),
+  active('AWAKENEDSLIME', 'Free rewards', '2026-09-04', 'Requires 100,000 total rolls'),
+  active('PAUSEPOTIONS', 'Free rewards', '2026-09-04', 'Requires 50,000 total rolls'),
+  active('DAILYCHALLENGE', 'Free rewards', '2026-09-04', 'Requires 25,000 total rolls'),
+  active('SLIMEEVENT', 'Free rewards', '2026-09-04', 'Requires 10,000 total rolls'),
+  active('UPDATE10', '1,000 Crystals and 1 Blessed Roll', '2026-09-04'),
+  active(
+    'SORRYFORSHUTDOWN10',
+    '2,500 Crystals, 3 Divine Rolls, and 2 Limit Breakers',
+    '2026-09-04'
+  ),
+  active('BATTLEPASS', 'Free rewards', '2026-09-04', 'Requires 100,000 total rolls'),
+  active('PUBLICSAFETYHQ', 'Free rewards', '2026-09-04', 'Requires 10,000 total rolls'),
+  active('UPDATE9', '1,000 Crystals and 1 Blessed Roll', '2026-08-23'),
+  active('WISHEVENT', 'Free rewards', '2026-08-17', 'Requires 100,000 total rolls'),
+  active('CAPSULECORP', 'Free rewards', '2026-08-17', 'Requires 10,000 total rolls'),
+  active('UPDATE8', '1,000 Crystals and 1 Blessed Roll', '2026-08-16'),
+  active('TY100K', 'Free rewards', '2026-07-21', 'Requires 100,000 total rolls'),
+  active('TYFOR10KCCU', 'Free rewards', '2026-07-14', 'Requires 10,000 total rolls'),
+  active('THANKSFORPLAYING', '150 Crystals and 10 Epic Boxes', '2026-07-09'),
+  active('SORRYFORSHUTDOWN6', 'Cursed Fingers and Divine Rerolls', '2026-08'),
+  active('SORRYFORSHUTDOWN5', 'Cursed Fingers and Divine Rerolls', '2026-07-21'),
 ];
 
 export const watchCodes: GameCode[] = [
   {
-    code: 'Anime Defense RNG codes',
+    code: 'Anime Defense RNG / Anime RNG TD codes',
     reward: 'Wrong-game code cluster',
     status: 'watch',
     firstSeen: '2026-07-08',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Old Fandom and YouTube results for Anime Defense RNG',
+    sourceLabel: 'Similar-name Roblox search results',
     confidence: 'watch',
     notes:
-      'Anime Defense RNG is a different Roblox game. Codes such as 25KFAVS, UPDATE0.5, and 45KLIKES are not imported into Anime RNG Defense.',
-  },
-  {
-    code: 'Anime RNG TD codes',
-    reward: 'Similar-name Roblox TD game',
-    status: 'watch',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Search results for Anime RNG TD',
-    confidence: 'watch',
-    notes:
-      'Anime RNG TD has separate place IDs, code strings, and progression systems. Treat it as wrong-game demand unless a user intentionally searches that game.',
-  },
-  {
-    code: 'script / auto farm',
-    reward: 'Unsafe shortcut intent',
-    status: 'watch',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Roblox search surface and common code-page spam patterns',
-    confidence: 'watch',
-    notes:
-      'This site does not provide scripts, executors, private servers, or account-risk automation. Use official codes and normal progression instead.',
+      'These are separate Roblox games. Do not import their code strings into Anime RNG Defense.',
   },
 ];
 
-export const expiredCodes: GameCode[] = [
-  {
-    code: 'SORRYFORSHUTDOWN',
-    reward: 'Free rewards',
-    status: 'expired',
-    firstSeen: '2026-07-08',
-    lastChecked: CODE_CHECKED_AT,
-    sourceLabel: 'Destructoid, Pro Game Guides, Beebom',
-    confidence: 'medium',
-    notes:
-      'Listed as expired/inactive by current code trackers during the July 8, 2026 check.',
-  },
+const expiredStrings = [
+  'EXTREMERAID',
+  'VAHRWELT',
+  'UPDATE7',
+  'THEPLAYER',
+  'SOLOEVENT',
+  'UPDATE6',
+  'EISENBERNCASTLE',
+  'WEATHERS',
+  'UPDATE5',
+  'UPDATE4',
+  'BULLSHIDEOUT',
+  'FairyForest',
+  'UPDATE3',
+  'CURSEDHIGHSCHOOL',
+  'TYFORSUPPORT1',
+  'UPDATE2',
+  'SorryForShutdown3',
+  'SORRYFORSHUTDOWN2',
+  'INNOVATIONCITY',
+  'UPDATE1',
+  'TYFOR100LIKES',
+  'RELEASE',
+  'SORRYFORSHUTDOWN',
 ];
+
+export const expiredCodes: GameCode[] = expiredStrings.map((code) => ({
+  code,
+  reward: 'Expired previous-cycle reward',
+  status: 'expired',
+  firstSeen: '2026-07',
+  lastChecked: CODE_CHECKED_AT,
+  sourceLabel: 'NerdsChalk September 7 expired list',
+  confidence: 'medium',
+  notes: 'Moved out of the active table during the September 7 source check.',
+}));
 
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
-  status:
-    `${activeCodes.length} Anime RNG Defense codes are tracked after the August 17 check. UPDATE8 is the current official-description code; UPDATE7 and earlier strings remain source-checked where expiry is not confirmed.`,
+  status: `${activeCodes.length} current codes are tracked after the September 7 Ghoul pass. The official description confirms UPDATEGHOUL; the wider current set is cross-checked from two September trackers.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',
       url: officialGameFacts.officialRobloxUrl,
     },
     {
-      label: 'Destructoid codes',
-      url: 'https://www.destructoid.com/anime-rng-defense-codes/',
-    },
-    {
-      label: 'NerdsChalk August 17 codes',
+      label: 'NerdsChalk September 7 codes',
       url: 'https://nerdschalk.com/anime-rng-defense-codes/',
     },
     {
-      label: 'Pro Game Guides codes',
-      url: 'https://progameguides.com/roblox/anime-rng-defense-codes/',
-    },
-    {
-      label: 'Roblox Den codes',
-      url: 'https://robloxden.com/game-codes/anime-rng-defense',
-    },
-    {
-      label: 'Pocket Tactics codes',
+      label: 'Pocket Tactics September 4 codes',
       url: 'https://www.pockettactics.com/anime-rng-defense-codes',
-    },
-    {
-      label: 'PCGamesN codes',
-      url: 'https://www.pcgamesn.com/anime-rng-defense-codes',
-    },
-    {
-      label: 'Beebom codes',
-      url: 'https://beebom.com/anime-defense-rng-codes/',
     },
   ],
 };
