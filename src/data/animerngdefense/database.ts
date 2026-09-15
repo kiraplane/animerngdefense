@@ -209,7 +209,7 @@ export const units: UnitEntry[] = [
       'Avoid copying tier claims from unrelated anime TD games.',
     ],
     relatedRoutes: ['/updates', '/guides/jjk-update-guide', '/tier-list'],
-    relatedEntities: ['Update 4', 'UPDATE4', 'FairyForest', 'Update 3'],
+    relatedEntities: ['Fire update', 'UPDATEFIRE', 'Ghoul update', 'UPDATEGHOUL'],
     sourcePages: ['Roblox official title', 'Current code trackers'],
     confidence: 'medium',
   },
@@ -449,7 +449,7 @@ export const teamChecks: TeamEntry[] = [
     routeHint:
       'Treat every update guide as a dated snapshot. Recheck after Roblox title, world, or code changes.',
     relatedRoutes: ['/updates', '/guides/jjk-update-guide', '/codes'],
-    relatedEntities: ['UPDATE4', 'FairyForest', 'current codes'],
+    relatedEntities: ['UPDATEFIRE', 'UPDATEGHOUL', 'current codes'],
     sourcePages: ['Roblox official title', 'Current code trackers'],
     confidence: 'medium',
   },

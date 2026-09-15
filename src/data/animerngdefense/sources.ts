@@ -1,10 +1,10 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-09-07';
-export const OFFICIAL_CHECKED_AT = '2026-09-07';
+export const CHECKED_AT = '2026-09-15';
+export const OFFICIAL_CHECKED_AT = '2026-09-15';
 
 export const officialGameFacts = {
-  name: '[Ghoul] Anime RNG Defense',
+  name: '[Fire🔥] Anime RNG Defense',
   shortName: 'Anime RNG Defense',
   commonName: 'Anime RNG Defense',
   siteName: 'Anime RNG Defense Wiki',
@@ -19,19 +19,19 @@ export const officialGameFacts = {
   genreL2: 'Tower Defense',
   status: 'Live Roblox experience',
   createdAt: '2026-03-26T01:57:38.197Z',
-  updatedAt: '2026-09-06T18:31:23.3061706Z',
+  updatedAt: '2026-09-15T01:58:08.190996Z',
   maxPlayers: 4,
-  activePlayersAtCheck: 3787,
-  visitsAtCheck: 12081599,
-  favoritesAtCheck: 149319,
+  activePlayersAtCheck: 3110,
+  visitsAtCheck: 13157218,
+  favoritesAtCheck: 155592,
   officialRobloxUrl:
     'https://www.roblox.com/games/104693964860826/Anime-RNG-Defense',
   officialDescriptionSummary:
-    'A Roblox RNG tower defense game where players roll anime-style units, enter maps, clear enemy waves, place defenders, upgrade teams, boost luck, and protect the base. The current Ghoul title and official description explicitly list code UPDATEGHOUL.',
+    'A Roblox RNG tower defense game where players roll anime-style units, enter maps, clear enemy waves, place defenders, upgrade teams, boost luck, and protect the base. The current Fire title and official description explicitly list code UPDATEFIRE.',
 };
 
 export const siteDescription =
-  'Anime RNG Defense Wiki helps Roblox players redeem codes, roll units, build teams, manage traits and luck, clear maps, and follow the current Ghoul update cycle.';
+  'Anime RNG Defense Wiki helps Roblox players redeem codes, roll units, build teams, manage traits and luck, clear maps, and follow the current Fire update cycle.';
 
 export const officialSources: DataSource[] = [
   {
@@ -40,7 +40,7 @@ export const officialSources: DataSource[] = [
     url: officialGameFacts.officialRobloxUrl,
     checkedAt: OFFICIAL_CHECKED_AT,
     confidence: 'high',
-    note: 'Primary source for the current Ghoul title, creator group, official code UPDATEGHOUL, gameplay loop, supported platforms, and official play link.',
+    note: 'Primary source for the current Fire title, creator group, official code UPDATEFIRE, gameplay loop, supported platforms, and official play link.',
   },
   {
     type: 'roblox_api',

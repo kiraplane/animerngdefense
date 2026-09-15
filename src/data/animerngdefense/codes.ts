@@ -1,7 +1,7 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-09-07';
+export const CODE_CHECKED_AT = '2026-09-15';
 
 const currentSource = 'NerdsChalk and Pocket Tactics September 2026 checks';
 
@@ -27,6 +27,13 @@ function active(
 }
 
 export const activeCodes: GameCode[] = [
+  active(
+    'UPDATEFIRE',
+    'Current Fire update rewards; confirm the exact bundle in the live popup',
+    '2026-09-15',
+    undefined,
+    'Official Roblox description'
+  ),
   active(
     'SORRYFORSHUTDOWNGHOUL',
     '3 Divine Rolls',
@@ -126,14 +133,14 @@ export const expiredCodes: GameCode[] = expiredStrings.map((code) => ({
 
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
-  status: `${activeCodes.length} current codes are tracked after the September 7 Ghoul pass. The official description confirms UPDATEGHOUL; the wider current set is cross-checked from two September trackers.`,
+  status: `${activeCodes.length} current codes are tracked after the September 15 Fire pass. The official description confirms UPDATEFIRE; older Ghoul and September strings remain source-checked attempts until their live redemption state changes.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',
       url: officialGameFacts.officialRobloxUrl,
     },
     {
-      label: 'NerdsChalk September 7 codes',
+      label: 'NerdsChalk September codes',
       url: 'https://nerdschalk.com/anime-rng-defense-codes/',
     },
     {

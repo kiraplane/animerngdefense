@@ -328,7 +328,7 @@ export const guides: Guide[] = [
       {
         heading: 'Use codes before your first real roll plan',
         paragraphs: [
-          'The official Roblox description explicitly lists UPDATE4, and current code trackers retain FairyForest, UPDATE3, TYFOR10KCCU, SorryForShutdown3, and several older codes. Redeem the official code first, then treat older rewards as source-checked attempts.',
+          'The official Roblox description explicitly lists UPDATEFIRE. Redeem that current official code first, then treat UPDATEGHOUL and the wider September tracker list as source-checked attempts whose live popup is final.',
           'The mistake is spending rewards before you know the job. Common Boxes and Crystals are best used to create a usable roster, then improve the unit that actually carries waves. If a code has a requirement, such as the reported 10,000-roll gate on TYFORSUPPORT1, do not treat the error as a typo until you meet the requirement.',
         ],
       },
@@ -366,7 +366,7 @@ export const guides: Guide[] = [
     seoDescription:
       'Redeem Anime RNG Defense codes for Crystals, Boxes, Cursed Fingers, and free rewards with current July 2026 code checks and wrong-game warnings.',
     summary:
-      'A source-checked code guide that separates the official UPDATE4 code, cross-checked active codes, reported requirements, older update codes, and wrong-game code traps.',
+      'A source-checked code guide that separates the official UPDATEFIRE code, cross-checked active codes, reported requirements, older update codes, and wrong-game code traps.',
     category: 'Codes',
     difficulty: 'Beginner',
     coverImageUrl: videoCover(videos.codes),
@@ -387,7 +387,7 @@ export const guides: Guide[] = [
       {
         heading: 'Redeem active codes before spending resources',
         paragraphs: [
-          'Current sources agree that Anime RNG Defense codes can grant Crystals, boxes, potions, Divine Rolls, Cursed Fingers, and free rewards. The official Roblox page now lists UPDATE4, while multiple current code trackers retain FairyForest, UPDATE3, TYFOR10KCCU, and other July 2026 codes.',
+          'Current sources agree that Anime RNG Defense codes can grant Crystals, boxes, potions, Divine Rolls, Cursed Fingers, and free rewards. The official Roblox page now lists UPDATEFIRE, while current trackers retain the previous Ghoul batch and other September strings as additional attempts.',
           'Use codes before a major rolling session. Crystals and boxes are strongest when they help you build a first roster or improve the carry that clears your current map. If you redeem after spending all your early resources, you lose the chance to make a cleaner first plan.',
         ],
         bullets: [
@@ -416,7 +416,7 @@ export const guides: Guide[] = [
       {
         question: 'What is the official Anime RNG Defense code?',
         answer:
-          'The Roblox description checked on July 20, 2026 explicitly lists UPDATE4. Other active codes are cross-checked from current code trackers.',
+          'The Roblox description checked on September 15, 2026 explicitly lists UPDATEFIRE. Other active codes are cross-checked from current code trackers.',
       },
       {
         question: 'Why does TYFORSUPPORT1 not work?',

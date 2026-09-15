@@ -358,7 +358,7 @@ export const topicPages: Record<string, TopicPage> = {
       {
         heading: 'Match the server to the live game',
         paragraphs: [
-          'A correct server should discuss the current Anime RNG Defense worlds, Update 4, current codes, maps, rolls, and Mera announcements. Leave if the server is actually about Anime Defense RNG, Anime RNG TD, or another similarly named game.',
+          'A correct server should discuss the current Anime RNG Defense Fire cycle, current codes, maps, rolls, and Mera announcements. Leave if the server is actually about Anime Defense RNG, Anime RNG TD, or another similarly named game.',
           'Use the official Roblox page as the final identity check. The correct root place is 104693964860826 and the universe is 9940812243.',
         ],
       },
@@ -379,7 +379,7 @@ export const topicPages: Record<string, TopicPage> = {
       {
         question: 'How do I know it is the right game server?',
         answer:
-          'Match the server to Anime RNG Defense by Mera, Roblox universe 9940812243, root place 104693964860826, and current Update 4 discussion.',
+          'Match the server to Anime RNG Defense by Mera, Roblox universe 9940812243, root place 104693964860826, and current Fire update discussion.',
       },
       {
         question: 'Does Anime RNG Defense have an official Trello?',
@@ -397,7 +397,7 @@ export const topicPages: Record<string, TopicPage> = {
     seoDescription:
       'Track Anime RNG Defense update signals, the JJK title tag, current codes, Roblox update timestamp, Cursed Fingers, and source-check notes.',
     summary:
-      'The official Roblox description now publishes UPDATEGHOUL under the Ghoul update label. Use this page to claim the current official code, then compare new units and maps against a known team before spending rare resources.',
+      'The official Roblox description now publishes UPDATEFIRE under the Fire update label. Use this page to claim the current official code, then compare new units and maps against a known team before spending rare resources.',
     image: commonImage,
     updatedAt: OFFICIAL_CHECKED_AT,
     featuredRoutes: [
@@ -409,7 +409,7 @@ export const topicPages: Record<string, TopicPage> = {
       {
         heading: 'Current official update signal',
         paragraphs: [
-          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public description explicitly lists code UPDATEGHOUL and the title carries a Ghoul tag.`,
+          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the game was last updated on ${officialGameFacts.updatedAt}. The public description explicitly lists code UPDATEFIRE and the title carries a Fire tag.`,
           'UPDATE9 and earlier strings remain prior-cycle source checks rather than official-current until the live client accepts them again.',
         ],
       },
@@ -427,9 +427,9 @@ export const topicPages: Record<string, TopicPage> = {
           `The site checked Roblox API and the public Roblox page on ${OFFICIAL_CHECKED_AT}. The current API timestamp is ${officialGameFacts.updatedAt}.`,
       },
       {
-        question: 'What changed in the Ghoul update?',
+        question: 'What changed in the Fire update?',
         answer:
-          'The official title now carries a Ghoul tag and the description publishes UPDATEGHOUL. Exact new units, maps, and reward values remain live-build details until stronger same-version evidence agrees.',
+          'The official title now carries a Fire tag and the description publishes UPDATEFIRE. Exact new units, maps, and reward values remain live-build details until stronger same-version evidence agrees.',
       },
     ],
   },
