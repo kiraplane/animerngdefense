@@ -1,7 +1,7 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-09-15';
+export const CODE_CHECKED_AT = '2026-10-12';
 
 const currentSource = 'NerdsChalk and Pocket Tactics September 2026 checks';
 
@@ -27,6 +27,12 @@ function active(
 }
 
 export const activeCodes: GameCode[] = [
+  active('HALLOWEENSOON', 'Current Shinobi update rewards', '2026-10-11', undefined, 'Pro Game Guides October 11 check'),
+  active('UPDATESHINOBI', 'Current Shinobi update rewards', '2026-10-11', undefined, 'Official Roblox description and Pro Game Guides'),
+  active('HIDDENVILLAGE', 'Current Shinobi update rewards', '2026-10-11', undefined, 'Pro Game Guides October 11 check'),
+  active('KAMUI', 'Current Shinobi update rewards', '2026-10-11', undefined, 'Pro Game Guides October 11 check'),
+  active('TSUKUYOMI', 'Current Shinobi update rewards', '2026-10-11', undefined, 'Pro Game Guides October 11 check'),
+  active('SHINOBITRIALS', 'Current Shinobi update rewards', '2026-10-11', undefined, 'Pro Game Guides October 11 check'),
   active(
     'UPDATEFIRE',
     'Current Fire update rewards; confirm the exact bundle in the live popup',
@@ -133,11 +139,15 @@ export const expiredCodes: GameCode[] = expiredStrings.map((code) => ({
 
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
-  status: `${activeCodes.length} current codes are tracked after the September 15 Fire pass. The official description confirms UPDATEFIRE; older Ghoul and September strings remain source-checked attempts until their live redemption state changes.`,
+  status: `${activeCodes.length} current codes are tracked after the October 12 Shinobi pass. The official description confirms UPDATESHINOBI; five additional Shinobi strings are current tracker-backed attempts, while older Fire and Ghoul strings remain in the retry set until the live client rejects them.`,
   sourcesChecked: [
     {
       label: 'Roblox game page',
       url: officialGameFacts.officialRobloxUrl,
+    },
+    {
+      label: 'Pro Game Guides October 11 codes',
+      url: 'https://progameguides.com/roblox/anime-rng-defense-codes/',
     },
     {
       label: 'NerdsChalk September codes',
